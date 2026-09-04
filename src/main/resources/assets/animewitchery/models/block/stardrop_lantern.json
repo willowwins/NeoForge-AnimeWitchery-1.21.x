@@ -1,0 +1,6 @@
+{
+  "parent": "block/lantern",
+  "textures": {
+    "lantern": "animewitchery:block/stardrop_lantern"
+  }
+}

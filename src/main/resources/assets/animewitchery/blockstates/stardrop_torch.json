@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=up": { "model": "animewitchery:block/stardrop_torch" },
+    "facing=down": { "model": "animewitchery:block/stardrop_torch", "x": 180 },
+    "facing=north": { "model": "animewitchery:block/stardrop_torch_wall" },
+    "facing=south": { "model": "animewitchery:block/stardrop_torch_wall", "y": 180 },
+    "facing=east": { "model": "animewitchery:block/stardrop_torch_wall", "y": 90 },
+    "facing=west": { "model": "animewitchery:block/stardrop_torch_wall", "y": 270 }
+  }
+}

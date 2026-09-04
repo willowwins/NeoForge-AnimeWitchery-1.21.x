@@ -1,0 +1,24 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "animewitchery:block/stardrop_torch",
+		"particle": "animewitchery:block/stardrop_torch"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 10, 9],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [3.5, 3, 4.5, 8], "texture": "#0"},
+				"east": {"uv": [3.5, 3, 4.5, 8], "texture": "#0"},
+				"south": {"uv": [3.5, 3, 4.5, 8], "texture": "#0"},
+				"west": {"uv": [3.5, 3, 4.5, 8], "texture": "#0"},
+				"up": {"uv": [3.5, 3, 4.5, 4], "texture": "#0"},
+				"down": {"uv": [3.5, 7, 4.5, 8], "texture": "#0"}
+			}
+		}
+	]
+}

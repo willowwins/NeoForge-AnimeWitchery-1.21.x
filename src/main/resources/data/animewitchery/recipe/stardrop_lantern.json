@@ -1,0 +1,18 @@
+{
+  "type": "animewitchery:starlight_infusion",
+  "base": {
+    "item": "minecraft:lantern"
+  },
+  "ingredients": [
+    { "item": "animewitchery:stardrop" }
+  ],
+  "result": {
+    "count": 4,
+    "id": "animewitchery:stardrop_lantern"
+  },
+  "fluid": {
+    "fluid": "animewitchery:starlight"
+  },
+  "fluidCost": 1000,
+  "duration": 5
+}

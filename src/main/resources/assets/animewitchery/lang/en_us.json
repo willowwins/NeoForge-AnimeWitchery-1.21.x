@@ -1,0 +1,36 @@
+{
+  "itemtab.anime_witchery_combat": "Anime Witchery Combat",
+  "itemtab.anime_witchery_basic": "Anime Witchery",
+
+  "block.animewitchery.silver_block": "Block of Silver",
+  "block.animewitchery.raw_silver_block": "Block of Raw Silver",
+  "block.animewitchery.silver_ore": "Silver Ore",
+  "block.animewitchery.luna_crystal": "Luna Crystal",
+  "block.animewitchery.stardrop_lantern": "Stardrop Lantern",
+  "block.animewitchery.starlight_pool": "StarLight_pool",
+  "block.animewitchery.deepslate_silver_ore": "DeepSlate Silver Ore",
+  "block.animewitchery.starlight": "Starlight",
+  "block.animewitchery.diamond_shard": "Diamond Shard",
+  "block.animewitchery.starlight_infusion_pedestal": "Starlight Infusion Pedestal",
+  "block.animewitchery.starlight_infusion_altar": "Starlight Infusion Altar",
+  "block.animewitchery.ancient_variable_switch": "Ancient Variable Switch",
+  "block.animewitchery.crystallized_starlight": "Crystallized Starlight",
+
+
+
+  "item.animewitchery.blaze_powder_sack": "Blaze Powder Sack",
+  "item.animewitchery.silver_ingot": "Silver Ingot",
+  "item.animewitchery.wand": "Wand",
+  "item.animewitchery.stardrop_wand": "Stardrop Wand",
+  "item.animewitchery.silver_smithing_template": "Silver Smithing Template",
+  "item.animewitchery.mana_reader": "Mana Gauge",
+  "item.animewitchery.resonant_catalyst": "Resonant Catalyst",
+  "item.animewitchery.alchemical_catalyst": "Alchemical Catalyst",
+  "item.animewitchery.diamond_shard": "Diamond Shard",
+  "item.animewitchery.stardrop": "StarDrop",
+  "item.animewitchery.starlight_dust": "Starlight Dust",
+  "item.animewitchery.raw_silver": "Raw_Silver",
+  "item.animewitchery.starlight_bottle": "Bottled Starlight",
+  "item.animewitchery.starlight_bucket": "Starlight Bucket",
+  "fluid_type.animewitchery.starlight": "Starlight"
+}

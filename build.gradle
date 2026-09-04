@@ -27,6 +27,13 @@ sourceSets.main.resources {
 }
 
 repositories {
+    maven {
+        // Repository for DevAuth (me.djtheredstoner), used for development login.
+        url = "https://pkgs.dev.azure.com/djtheredstoner/DevAuth/_packaging/public/maven/v1"
+        content {
+            includeGroup("me.djtheredstoner")
+        }
+    }
     // Add here additional repositories if required by some of the dependencies below.
 }
 
@@ -116,6 +123,7 @@ configurations {
 }
 
 dependencies {
+     runtimeOnly("me.djtheredstoner:DevAuth-neoforge:1.2.1")
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

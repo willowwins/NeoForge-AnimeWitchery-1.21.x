@@ -1,0 +1,11 @@
+{
+  "type": "animewitchery:blocktransmutation",
+  "block": "minecraft:cauldron",
+  "mainhand": {
+    "item": "animewitchery:alchemical_catalyst"
+  },
+  "result": {
+    "count": 1,
+    "id": "animewitchery:starlight_pool"
+  }
+}

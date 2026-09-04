@@ -1,0 +1,6 @@
+{
+  "parent": "block/lantern_hanging",
+  "textures": {
+    "lantern": "animewitchery:block/stardrop_lantern"
+  }
+}

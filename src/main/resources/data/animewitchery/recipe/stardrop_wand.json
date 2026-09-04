@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "animewitchery:silver_smithing_template"
+  },
+  "base": {
+    "item": "animewitchery:wand"
+  },
+  "addition": {
+    "item": "animewitchery:stardrop"
+  },
+  "result": {
+    "id": "animewitchery:stardrop_wand"
+  }
+}

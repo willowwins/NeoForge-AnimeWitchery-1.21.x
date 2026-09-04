@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "hanging=false": { "model": "animewitchery:block/stardrop_lantern" },
+    "hanging=true": { "model": "animewitchery:block/stardrop_lantern_hanging" }
+  }
+}
+

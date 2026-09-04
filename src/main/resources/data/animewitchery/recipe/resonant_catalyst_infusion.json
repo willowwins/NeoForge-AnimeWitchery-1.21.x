@@ -1,0 +1,27 @@
+  {
+    "type": "animewitchery:starlight_infusion",
+    "base": {
+      "item": "minecraft:emerald_block"
+    },
+    "ingredients": [
+      { "item": "animewitchery:alchemical_catalyst" },
+      { "item": "animewitchery:alchemical_catalyst" },
+      { "item": "animewitchery:alchemical_catalyst" },
+      { "item": "animewitchery:alchemical_catalyst" },
+      { "item": "animewitchery:alchemical_catalyst" },
+      { "item": "animewitchery:alchemical_catalyst" },
+      { "item": "animewitchery:alchemical_catalyst" },
+      { "item": "animewitchery:alchemical_catalyst" }
+    ],
+    "result": {
+      "count": 1,
+      "id": "animewitchery:resonant_catalyst"
+    },
+    "fluid": {
+      "fluid": "animewitchery:starlight"
+    },
+    "fluidCost": 20000,
+    "duration": 30
+  }
+
+

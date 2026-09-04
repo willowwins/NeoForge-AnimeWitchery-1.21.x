@@ -1,0 +1,11 @@
+{
+  "type": "animewitchery:blocktransmutation",
+  "block": "minecraft:amethyst_cluster",
+  "mainhand": {
+    "item": "animewitchery:blaze_powder_sack"
+  },
+  "result": {
+    "count": 1,
+    "id": "animewitchery:alchemical_catalyst"
+  }
+}

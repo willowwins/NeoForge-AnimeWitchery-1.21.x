@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:blaze_powder"
+    },
+    "A": {
+      "item": "minecraft:bundle"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SAS",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:blaze_powder_sack"
+  }
+}
