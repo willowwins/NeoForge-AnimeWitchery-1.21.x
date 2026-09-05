@@ -13,7 +13,7 @@ import net.willowins.animewitchery.network.ManaSyncPayload;
 
 public class StarlightBottleItem extends Item {
 
-    private static final int MANA_RESTORED = 10;
+    public static final int CAPACITY = 250;
 
     public StarlightBottleItem(Properties properties) {
         super(properties);
@@ -26,13 +26,11 @@ public class StarlightBottleItem extends Item {
 
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity livingEntity) {
-        // Let the food handler convert to a glass bottle / apply effects first.
         ItemStack result = super.finishUsingItem(stack, level, livingEntity);
 
-        // Restore mana on the server only, so the client doesn't desync.
         if (!level.isClientSide && livingEntity instanceof ServerPlayer serverPlayer) {
             ManaData data = serverPlayer.getData(ModAttachments.MANA);
-            ManaData newMana = data.addMana(MANA_RESTORED);
+            ManaData newMana = data.addMana(10);
             serverPlayer.setData(ModAttachments.MANA, newMana);
             PacketDistributor.sendToPlayer(serverPlayer, new ManaSyncPayload(newMana.current(), newMana.max()));
         }

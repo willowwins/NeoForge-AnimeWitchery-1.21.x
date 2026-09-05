@@ -50,6 +50,21 @@ public class ModItems {
     public static final DeferredItem<Item> STARLIGHT_BUCKET = ITEMS.register("starlight_bucket",
             () -> new BucketItem(ModFluids.STARLIGHT_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public static final DeferredItem<Item> LIQUIFIED_SKULK_BUCKET = ITEMS.register("liquified_skulk_bucket",
+            () -> new BucketItem(ModFluids.LIQUIFIED_SKULK_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final DeferredItem<Item> LIQUID_EXPERIENCE_BUCKET = ITEMS.register("liquid_experience_bucket",
+            () -> new BucketItem(ModFluids.LIQUID_EXPERIENCE_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final DeferredItem<Item> OBSIDIAN_TEARS_BUCKET = ITEMS.register("obsidian_tears_bucket",
+            () -> new BucketItem(ModFluids.OBSIDIAN_TEARS_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final DeferredItem<Item> BLOOD_BUCKET = ITEMS.register("blood_bucket",
+            () -> new BucketItem(ModFluids.BLOOD_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public static final DeferredItem<Item> ANTIFLUID_BUCKET = ITEMS.register("antifluid_bucket",
+            () -> new BucketItem(ModFluids.ANTIFLUID_SOURCE.get(), new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

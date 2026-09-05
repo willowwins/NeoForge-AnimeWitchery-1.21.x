@@ -7,7 +7,7 @@
   "block.animewitchery.silver_ore": "Silver Ore",
   "block.animewitchery.luna_crystal": "Luna Crystal",
   "block.animewitchery.stardrop_lantern": "Stardrop Lantern",
-  "block.animewitchery.starlight_pool": "StarLight_pool",
+  "block.animewitchery.starlight_pool": "StarLight pool",
   "block.animewitchery.deepslate_silver_ore": "DeepSlate Silver Ore",
   "block.animewitchery.starlight": "Starlight",
   "block.animewitchery.diamond_shard": "Diamond Shard",
@@ -32,5 +32,25 @@
   "item.animewitchery.raw_silver": "Raw_Silver",
   "item.animewitchery.starlight_bottle": "Bottled Starlight",
   "item.animewitchery.starlight_bucket": "Starlight Bucket",
-  "fluid_type.animewitchery.starlight": "Starlight"
+  "fluid_type.animewitchery.starlight": "Starlight",
+
+  "block.animewitchery.liquified_skulk": "Liquified Skulk",
+  "item.animewitchery.liquified_skulk_bucket": "Liquified Skulk Bucket",
+  "fluid_type.animewitchery.liquified_skulk": "Liquified Skulk",
+
+  "block.animewitchery.liquid_experience": "Liquid Experience",
+  "item.animewitchery.liquid_experience_bucket": "Liquid Experience Bucket",
+  "fluid_type.animewitchery.liquid_experience": "Liquid Experience",
+
+  "block.animewitchery.obsidian_tears": "Obsidian Tears",
+  "item.animewitchery.obsidian_tears_bucket": "Obsidian Tears Bucket",
+  "fluid_type.animewitchery.obsidian_tears": "Obsidian Tears",
+
+  "block.animewitchery.blood": "Blood",
+  "item.animewitchery.blood_bucket": "Blood Bucket",
+  "fluid_type.animewitchery.blood": "Blood",
+
+  "block.animewitchery.antifluid": "Antifluid",
+  "item.animewitchery.antifluid_bucket": "Antifluid Bucket",
+  "fluid_type.animewitchery.antifluid": "Antifluid"
 }

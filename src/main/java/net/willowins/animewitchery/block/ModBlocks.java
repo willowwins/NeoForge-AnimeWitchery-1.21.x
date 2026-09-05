@@ -14,6 +14,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.willowins.animewitchery.AnimeWitchery;
 import net.willowins.animewitchery.block.custom.AncientVariableSwitchBlock;
+import net.willowins.animewitchery.block.custom.AntifluidBlock;
 import net.willowins.animewitchery.block.custom.CrystallizedStarlightBlock;
 import net.willowins.animewitchery.block.custom.LunaCrystalBlock;
 import net.willowins.animewitchery.block.custom.StardropLanternBlock;
@@ -82,6 +83,22 @@ public static final DeferredBlock<Block> STARDROP_LANTERN = registerBlock("stard
     public static final DeferredBlock<Block> CRYSTALLIZED_STARLIGHT = registerBlock("crystallized_starlight",
             () -> new CrystallizedStarlightBlock(BlockBehaviour.Properties.of()
                     .strength(0.5F).sound(SoundType.AMETHYST).noOcclusion().lightLevel(state -> 8)));
+
+    public static final DeferredBlock<LiquidBlock> LIQUIFIED_SKULK_BLOCK = BLOCKS.register("liquified_skulk",
+            () -> new LiquidBlock(ModFluids.LIQUIFIED_SKULK_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).lightLevel(state -> 5)));
+
+    public static final DeferredBlock<LiquidBlock> LIQUID_EXPERIENCE_BLOCK = BLOCKS.register("liquid_experience",
+            () -> new LiquidBlock(ModFluids.LIQUID_EXPERIENCE_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).lightLevel(state -> 10)));
+
+    public static final DeferredBlock<LiquidBlock> OBSIDIAN_TEARS_BLOCK = BLOCKS.register("obsidian_tears",
+            () -> new LiquidBlock(ModFluids.OBSIDIAN_TEARS_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).lightLevel(state -> 3)));
+
+    public static final DeferredBlock<LiquidBlock> BLOOD_BLOCK = BLOCKS.register("blood",
+            () -> new LiquidBlock(ModFluids.BLOOD_SOURCE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER)));
+
+    @SuppressWarnings("unchecked")
+    public static final DeferredBlock<LiquidBlock> ANTIFLUID_BLOCK = (DeferredBlock<LiquidBlock>)(DeferredBlock<? extends Block>) BLOCKS.register("antifluid",
+            () -> new AntifluidBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).lightLevel(state -> 12)));
 
 
 

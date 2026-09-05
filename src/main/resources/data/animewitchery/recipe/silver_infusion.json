@@ -1,0 +1,18 @@
+{
+  "type": "animewitchery:starlight_infusion",
+  "base": {
+    "item": "minecraft:iron_ingot"
+  },
+  "ingredients": [
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:silver_ingot"
+  },
+  "fluid": {
+    "fluid": "animewitchery:starlight"
+  },
+  "fluidCost": 10,
+  "duration":1
+}

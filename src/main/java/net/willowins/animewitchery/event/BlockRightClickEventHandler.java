@@ -28,8 +28,8 @@ import java.util.List;
 @EventBusSubscriber(modid = "animewitchery")
 public class BlockRightClickEventHandler {
 
-    // 30% of a bucket (1000 mb) = 300 mb per bottle.
-    private static final int BOTTLE_CAPACITY = 300;
+    // 25% of a bucket (1000 mb) = 250 mb per bottle.
+    private static final int BOTTLE_CAPACITY = 250;
 
     @SubscribeEvent
     public static void onBlockRightClick(PlayerInteractEvent.RightClickBlock event) {

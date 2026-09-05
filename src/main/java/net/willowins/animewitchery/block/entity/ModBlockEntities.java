@@ -46,6 +46,7 @@ public class ModBlockEntities {
                     ).build(null)
             );
 
+
     // 3. Call this method in your main mod constructor
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

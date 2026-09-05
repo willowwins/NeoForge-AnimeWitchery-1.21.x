@@ -1,0 +1,21 @@
+{
+  "type": "animewitchery:starlight_infusion",
+  "base": {
+    "item": "minecraft:gold_block"
+  },
+  "ingredients": [
+    { "item": "minecraft:ancient_debris"},
+    { "item": "minecraft:ancient_debris"}
+
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:netherite_block"
+  },
+  "fluid": {
+    "fluid": "minecraft:lava"
+  },
+  "fluidCost": 5000,
+  "duration":1
+}

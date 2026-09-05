@@ -26,6 +26,11 @@ public class ModDataComponentTypes {
             () -> DataComponentType.<BlockPos>builder().persistent(BlockPos.CODEC).build()
     );
 
+    public static final Supplier<DataComponentType<Integer>> STORED_STARLIGHT = DATA_COMPONENT_TYPES.register(
+            "stored_starlight",
+            () -> DataComponentType.<Integer>builder().persistent(Codec.INT).build()
+    );
+
     public static void register(IEventBus modEventBus) {
         DATA_COMPONENT_TYPES.register(modEventBus);
     }

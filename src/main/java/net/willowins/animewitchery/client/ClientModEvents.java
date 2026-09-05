@@ -35,6 +35,7 @@ public class ClientModEvents {
         event.registerBlockEntityRenderer(ModBlockEntities.STARLIGHT_POOL_BE.get(), StarlightPoolBlockRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.STARLIGHT_INFUSION_ALTAR_BE.get(), StarlightInfusionAltarRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.STARLIGHT_INFUSION_PEDESTAL_BE.get(), StarlightInfusionPedestalRenderer::new);
+
     }
 
     @SubscribeEvent

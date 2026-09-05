@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -158,7 +159,7 @@ public class StarlightInfusionAltarBlockEntity extends BlockEntity {
                     serverLevel.playSound(
                             null,
                             pedestalPos,
-                            net.minecraft.sounds.SoundEvents.EXPERIENCE_ORB_PICKUP,
+                            SoundEvents.ENCHANTMENT_TABLE_USE,
                             net.minecraft.sounds.SoundSource.BLOCKS,
                             0.8F,
                             1.2F);
