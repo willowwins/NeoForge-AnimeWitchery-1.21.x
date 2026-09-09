@@ -2,8 +2,8 @@
   "required": true,
   "package": "net.willowins.animewitchery.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "LiquidBlockRendererMixin"
+  "client": [
+    "AntifluidBufferSourceMixin"
   ],
   "injectors": {
     "defaultRequire": 1

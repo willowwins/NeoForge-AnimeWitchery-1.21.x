@@ -210,8 +210,8 @@ public class ModFluids {
                 @Override
                 public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
                     consumer.accept(new IClientFluidTypeExtensions() {
-                        private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath("minecraft", "block/water_still");
-                        private static final ResourceLocation FLOW = ResourceLocation.fromNamespaceAndPath("minecraft", "block/water_flow");
+                        private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(AnimeWitchery.MOD_ID, "block/antifluid_still");
+                        private static final ResourceLocation FLOW = ResourceLocation.fromNamespaceAndPath(AnimeWitchery.MOD_ID, "block/antifluid_flow");
                         @Override public ResourceLocation getStillTexture() { return STILL; }
                         @Override public ResourceLocation getFlowingTexture() { return FLOW; }
                         @Override public int getTintColor() { return 0x00000000; }

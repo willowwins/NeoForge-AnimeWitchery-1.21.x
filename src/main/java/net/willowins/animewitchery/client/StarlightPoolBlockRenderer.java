@@ -11,6 +11,7 @@ import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.willowins.animewitchery.block.entity.StarlighPoolBlockEntity;
+import net.willowins.animewitchery.fluid.ModFluids;
 
 public class StarlightPoolBlockRenderer implements BlockEntityRenderer<StarlighPoolBlockEntity> {
 
@@ -31,6 +32,13 @@ public class StarlightPoolBlockRenderer implements BlockEntityRenderer<StarlighP
     public void render(StarlighPoolBlockEntity pool, float partialTick, PoseStack poseStack, MultiBufferSource bufferSource, int packedLight, int packedOverlay) {
         int amount = pool.fluidTank.getFluidAmount();
         if (amount <= 0) {
+            return;
+        }
+
+        var tankFluid = pool.fluidTank.getFluid().getFluid();
+        boolean antifluid = tankFluid.isSame(ModFluids.ANTIFLUID_SOURCE.get())
+                || tankFluid.isSame(ModFluids.ANTIFLUID_FLOWING.get());
+        if (antifluid) {
             return;
         }
 
