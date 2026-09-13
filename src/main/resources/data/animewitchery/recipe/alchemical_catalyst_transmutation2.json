@@ -2,13 +2,13 @@
   "type": "animewitchery:blocktransmutation",
   "block": "minecraft:gold_ore",
   "mainhand": {
-    "item": "minecraft:iron"
+    "item": "minecraft:iron_ingot"
   },
   "offhand": {
     "item": "minecraft:amethyst_shard"
   },
   "result": {
     "count": 4,
-    "id": "minecraft:gold"
+    "id": "minecraft:gold_ingot"
   }
 }

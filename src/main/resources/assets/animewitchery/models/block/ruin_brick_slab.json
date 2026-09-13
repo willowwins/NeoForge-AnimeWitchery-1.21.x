@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "animewitchery:block/ruin_brick",
+    "side": "animewitchery:block/ruin_brick",
+    "top": "animewitchery:block/ruin_brick"
+  }
+}

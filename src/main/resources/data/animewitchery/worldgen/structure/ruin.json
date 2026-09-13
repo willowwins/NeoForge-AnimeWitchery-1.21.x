@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#animewitchery:has_structure/ruin",
+  "step": "underground_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "animewitchery:ruin/start_pool",
+  "size": 12,
+  "start_height": {
+    "type": "minecraft:uniform",
+    "max_inclusive": {
+      "absolute": -24
+    },
+    "min_inclusive": {
+      "absolute": -50
+    }
+  },
+  "max_distance_from_center": 64,
+  "use_expansion_hack": false,
+  "liquid_settings": "ignore_waterlogging"
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "animewitchery:block/pocket_expansion_jigsaw" },
+    "facing=east":  { "model": "animewitchery:block/pocket_expansion_jigsaw", "y": 90 },
+    "facing=south": { "model": "animewitchery:block/pocket_expansion_jigsaw", "y": 180 },
+    "facing=west":  { "model": "animewitchery:block/pocket_expansion_jigsaw", "y": 270 }
+  }
+}

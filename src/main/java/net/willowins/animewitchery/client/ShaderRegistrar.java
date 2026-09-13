@@ -22,6 +22,14 @@ public class ShaderRegistrar {
                     ),
                     shader -> AntifluidShaders.antifluidPortalShader = shader
             );
+            event.registerShader(
+                    new ShaderInstance(
+                            event.getResourceProvider(),
+                            AntifluidShaders.ANTIFLUID_SPACE_SHADER,
+                            DefaultVertexFormat.POSITION_TEX_COLOR
+                    ),
+                    shader -> AntifluidShaders.antifluidSpaceShader = shader
+            );
         } catch (Exception e) {
             throw new RuntimeException("Failed to register antifluid portal shader", e);
         }

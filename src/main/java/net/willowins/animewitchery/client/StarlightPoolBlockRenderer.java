@@ -15,9 +15,6 @@ import net.willowins.animewitchery.fluid.ModFluids;
 
 public class StarlightPoolBlockRenderer implements BlockEntityRenderer<StarlighPoolBlockEntity> {
 
-    private static final ResourceLocation STARLIGHT_STILL =
-            ResourceLocation.fromNamespaceAndPath("animewitchery", "block/starlight_still");
-
     private static final float MIN_X = 0.125F;
     private static final float MAX_X = 0.875F;
     private static final float MIN_Z = 0.125F;
@@ -42,9 +39,7 @@ public class StarlightPoolBlockRenderer implements BlockEntityRenderer<StarlighP
             return;
         }
 
-        TextureAtlasSprite sprite = Minecraft.getInstance()
-                .getTextureAtlas(net.minecraft.world.inventory.InventoryMenu.BLOCK_ATLAS)
-                .apply(STARLIGHT_STILL);
+        TextureAtlasSprite sprite = spriteFor(tankFluid);
 
         int capacity = pool.fluidTank.getCapacity();
         float fillRatio = Mth.clamp((float) amount / capacity, 0.0F, 1.0F);
@@ -57,6 +52,13 @@ public class StarlightPoolBlockRenderer implements BlockEntityRenderer<StarlighP
 
         renderBox(consumer, poseStack, MIN_X, MIN_Y, MIN_Z, MAX_X, topY, MAX_Z, sprite);
         poseStack.popPose();
+    }
+
+    private static TextureAtlasSprite spriteFor(net.minecraft.world.level.material.Fluid fluid) {
+        ResourceLocation still = net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions
+                .of(fluid).getStillTexture();
+        return Minecraft.getInstance().getTextureAtlas(net.minecraft.world.inventory.InventoryMenu.BLOCK_ATLAS)
+                .apply(still);
     }
 
     private static void renderBox(VertexConsumer consumer, PoseStack poseStack,

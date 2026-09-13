@@ -35,4 +35,25 @@ public class AntifluidRenderTypes {
                             () -> RenderSystem.disablePolygonOffset()))
                     .createCompositeState(false)
     );
+
+    public static final RenderType SPACE = RenderType.create(
+            "antifluid_space",
+            DefaultVertexFormat.POSITION_TEX_COLOR,
+            VertexFormat.Mode.QUADS,
+            RenderType.BIG_BUFFER_SIZE,
+            false,
+            false,
+            RenderType.CompositeState.builder()
+                    .setShaderState(new RenderStateShard.ShaderStateShard(AntifluidShaders.ANTIFLUID_SPACE_SUPPLIER))
+                    .setTransparencyState(new RenderStateShard.TransparencyStateShard("antifluid_space_transparency",
+                            () -> {
+                                RenderSystem.enableBlend();
+                                RenderSystem.blendFunc(GL11.GL_ONE, GL11.GL_ONE);
+                            },
+                            () -> RenderSystem.disableBlend()))
+                    .setDepthTestState(new RenderStateShard.DepthTestStateShard("antifluid_space_depth", GL11.GL_LEQUAL))
+                    .setCullState(new RenderStateShard.CullStateShard(false))
+                    .setWriteMaskState(new RenderStateShard.WriteMaskStateShard(true, false))
+                    .createCompositeState(false)
+    );
 }

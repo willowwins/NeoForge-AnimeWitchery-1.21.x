@@ -46,6 +46,31 @@ public class ModBlockEntities {
                     ).build(null)
             );
 
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AntifountainBlockEntity>> ANTIFOUNTAIN_BE =
+            BLOCK_ENTITIES.register("antifountain", () ->
+                    BlockEntityType.Builder.of(
+                            AntifountainBlockEntity::new,
+                            ModBlocks.ANTIFOUNTAIN.get()
+                    ).build(null)
+            );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PocketVeilBlockEntity>> POCKET_VEIL_BE =
+            BLOCK_ENTITIES.register("pocket_veil", () ->
+                    BlockEntityType.Builder.of(
+                            PocketVeilBlockEntity::new,
+                            ModBlocks.POCKET_VEIL.get(),
+                            ModBlocks.POCKET_RETURN.get()
+                    ).build(null)
+            );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DarkFountainBlockEntity>> DARK_FOUNTAIN_BE =
+            BLOCK_ENTITIES.register("dark_fountain", () ->
+                    BlockEntityType.Builder.of(
+                            DarkFountainBlockEntity::new,
+                            ModBlocks.DARK_FOUNTAIN.get()
+                    ).build(null)
+            );
+
 
     // 3. Call this method in your main mod constructor
     public static void register(IEventBus eventBus) {

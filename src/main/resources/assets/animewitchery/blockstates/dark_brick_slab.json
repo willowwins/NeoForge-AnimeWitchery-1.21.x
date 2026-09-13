@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "animewitchery:block/dark_brick_slab"
+    },
+    "type=double": {
+      "model": "animewitchery:block/dark_brick"
+    },
+    "type=top": {
+      "model": "animewitchery:block/dark_brick_slab_top"
+    }
+  }
+}

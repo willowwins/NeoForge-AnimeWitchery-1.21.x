@@ -3,11 +3,14 @@ package net.willowins.animewitchery.client;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
 import net.minecraft.client.Camera;
+import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -22,6 +25,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 import net.willowins.animewitchery.AnimeWitchery;
+import net.willowins.animewitchery.block.ModBlocks;
 import net.willowins.animewitchery.block.entity.StarlighPoolBlockEntity;
 import net.willowins.animewitchery.fluid.ModFluids;
 import org.joml.Matrix4f;
@@ -31,6 +35,24 @@ import org.lwjgl.opengl.GL11;
 @EventBusSubscriber(modid = AnimeWitchery.MOD_ID, value = Dist.CLIENT)
 public class AntifluidWorldRenderer {
 
+    private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger("AntifluidWorldRenderer");
+    private static int lastFoundPools;
+    private static int lastFoundVeils;
+
+    public static int[] getLastCounts() {
+        return new int[]{lastFoundPools, lastFoundVeils};
+    }
+
+    public static void renderDebug(GuiGraphics guiGraphics, DeltaTracker deltaTracker) {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.player == null || mc.options.hideGui) return;
+        int[] counts = getLastCounts();
+        Vec3 cam = mc.gameRenderer.getMainCamera().getPosition();
+        String msg = String.format("AF pools=%d  veils=%d  cam=(%.1f,%.1f,%.1f)",
+                counts[0], counts[1], cam.x, cam.y, cam.z);
+        guiGraphics.drawString(mc.font, msg, 4, 4, 0xFFFFFFFF, true);
+    }
+
     @SubscribeEvent
     public static void onRenderStage(RenderLevelStageEvent event) {
         RenderLevelStageEvent.Stage stage = event.getStage();
@@ -39,14 +61,13 @@ public class AntifluidWorldRenderer {
             AntifluidTextureUsage.clearCaptured();
             return;
         }
-        if (stage == RenderLevelStageEvent.Stage.AFTER_LEVEL) {
+        if (stage != RenderLevelStageEvent.Stage.AFTER_LEVEL) return;
+
+        ClientLevel level = Minecraft.getInstance().level;
+        if (level == null) {
             AntifluidTextureUsage.setLevelScope(false);
             return;
         }
-        if (stage != RenderLevelStageEvent.Stage.AFTER_TRANSLUCENT_BLOCKS) return;
-
-        ClientLevel level = Minecraft.getInstance().level;
-        if (level == null) return;
 
         Minecraft mc = Minecraft.getInstance();
         Camera camera = event.getCamera();
@@ -57,25 +78,26 @@ public class AntifluidWorldRenderer {
         int yrange = 32;
 
         renderPass(level, camPos, frustum, event.getModelViewMatrix(), hrange, yrange);
+        AntifluidTextureUsage.setLevelScope(false);
     }
 
     private static void renderPass(ClientLevel level, Vec3 camPos, Frustum frustum,
                                    Matrix4f viewRotation, int hrange, int yrange) {
-        Tesselator tesselator = Tesselator.getInstance();
-
-        BufferBuilder meshBb = tesselator.begin(VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
-
-        Matrix4f invViewRot = new Matrix4f(viewRotation).invert();
         int captured = AntifluidTextureUsage.getCapturedCount();
-        AntifluidTextureUsage.drainInto(meshBb, invViewRot, camPos);
         AntifluidTextureUsage.clearCaptured();
 
-        int scanned = buildGeometry(meshBb, level, camPos, frustum, hrange, yrange);
-        MeshData mesh = meshBb.build();
+        ByteBufferBuilder depthBuffer = new ByteBufferBuilder(1536);
+        BufferBuilder depthBb = new BufferBuilder(depthBuffer, VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
+        ByteBufferBuilder worldBuffer = new ByteBufferBuilder(1536);
+        BufferBuilder worldBb = new BufferBuilder(worldBuffer, VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
+        int found = buildGeometry(worldBb, depthBb, level, camPos, frustum, hrange, yrange);
+        if (level.getGameTime() % 100L == 0L) {
+            LOGGER.info("AF render scan: pools={} veils={} found={}", lastFoundPools, lastFoundVeils, found);
+        }
+        MeshData depthMesh = depthBb.build();
+        MeshData worldMesh = worldBb.build();
 
-        boolean meshBuilt = mesh != null;
-        logFrame(captured, scanned, meshBuilt);
-        if (mesh == null) return;
+        if (worldMesh == null) return;
 
         Matrix4fStack modelView = RenderSystem.getModelViewStack();
         modelView.pushMatrix();
@@ -89,25 +111,42 @@ public class AntifluidWorldRenderer {
         RenderSystem.enablePolygonOffset();
         RenderSystem.polygonOffset(-0.02F, -0.05F);
         RenderSystem.disableCull();
+        RenderSystem.enableBlend();
+        RenderSystem.defaultBlendFunc();
 
-        RenderSystem.setShader(AntifluidShaders.ANTIFLUID_SHADER_SUPPLIER);
+        setFrameUniforms(camPos);
 
-        BufferUploader.drawWithShader(mesh);
+        if (worldMesh != null) {
+            RenderSystem.setShader(AntifluidShaders.ANTIFLUID_SHADER_SUPPLIER);
+            BufferUploader.drawWithShader(worldMesh);
+        }
 
+        if (depthMesh != null) {
+            RenderSystem.depthMask(false);
+            RenderSystem.blendFunc(GL11.GL_ONE, GL11.GL_ONE);
+            RenderSystem.setShader(AntifluidShaders.ANTIFLUID_SPACE_SUPPLIER);
+            BufferUploader.drawWithShader(depthMesh);
+            RenderSystem.blendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+            RenderSystem.depthMask(true);
+        }
+
+        RenderSystem.disableBlend();
         RenderSystem.disablePolygonOffset();
         RenderSystem.enableCull();
 
         modelView.popMatrix();
         RenderSystem.applyModelViewMatrix();
-        tesselator.clear();
     }
 
-    private static int buildGeometry(VertexConsumer consumer, ClientLevel level, Vec3 camPos,
-                                      Frustum frustum, int hrange, int yrange) {
+    private static int buildGeometry(VertexConsumer portalConsumer, VertexConsumer spaceConsumer,
+                                 ClientLevel level, Vec3 camPos,
+                                 Frustum frustum, int hrange, int yrange) {
         int ox = (int) camPos.x;
         int oy = (int) camPos.y;
         int oz = (int) camPos.z;
         int found = 0;
+        int foundPools = 0;
+        int foundVeils = 0;
 
         for (int y = -yrange; y <= yrange; y++) {
             for (int x = -hrange; x <= hrange; x++) {
@@ -115,38 +154,71 @@ public class AntifluidWorldRenderer {
                     BlockPos pos = new BlockPos(ox + x, oy + y, oz + z);
                     if (!frustum.isVisible(new AABB(pos))) continue;
 
+                    BlockState blockState = level.getBlockState(pos);
+                    if (blockState.is(ModBlocks.POCKET_VEIL.get())) {
+                        buildVeilCube(portalConsumer, spaceConsumer, pos);
+                        found++;
+                        foundVeils++;
+                        continue;
+                    }
+                    if (blockState.is(ModBlocks.POCKET_RETURN.get())) {
+                        buildReturnRift(portalConsumer, spaceConsumer, pos);
+                        found++;
+                        foundVeils++;
+                        continue;
+                    }
+
                     BlockEntity be = level.getBlockEntity(pos);
                     if (be instanceof StarlighPoolBlockEntity pool) {
-                        if (pool.fluidTank.getFluidAmount() > 0
-                                && isAntifluid(pool.fluidTank.getFluid().getFluid())) {
-                            buildPoolSurface(consumer, level, pos, pool);
-                            found++;
+                        if (pool.fluidTank.getFluidAmount() > 0) {
+                            Fluid stored = pool.fluidTank.getFluid().getFluid();
+                            if (isAntifluid(stored)) {
+                                buildPoolSurface(portalConsumer, spaceConsumer, level, pos, pool);
+                                found++;
+                                foundPools++;
+                            }
                         }
                         continue;
                     }
 
-                    BlockState blockState = level.getBlockState(pos);
                     FluidState fluidState = blockState.getFluidState();
                     if (!isAntifluid(fluidState)) continue;
                     if (fluidState.getAmount() <= 0) continue;
 
-                    buildFluidSurface(consumer, level, pos, fluidState);
+                    buildFluidSurface(portalConsumer, spaceConsumer, level, pos, fluidState);
                     found++;
                 }
             }
         }
+        lastFoundPools = foundPools;
+        lastFoundVeils = foundVeils;
         return found;
     }
 
-    private static long lastFrameLog;
+    static final long ANIM_START = System.nanoTime();
 
-    private static void logFrame(int captured, int scanned, boolean meshBuilt) {
-        long now = System.currentTimeMillis();
-        if (now - lastFrameLog < 2000) return;
-        lastFrameLog = now;
-        AntifluidTextureUsage.logAntifluidSpritesOnce();
-        AnimeWitchery.LOGGER.info("[AntifluidWitchery] drain pass: capturedQuads={}, worldFluidBlocksScanned={}, meshBuilt={}",
-                captured, scanned, meshBuilt);
+    static void setFrameUniforms(Vec3 camPos) {
+        float anim = (float) ((System.nanoTime() - ANIM_START) / 1.0E9);
+        if (AntifluidShaders.antifluidPortalShader != null) {
+            com.mojang.blaze3d.shaders.Uniform animU = AntifluidShaders.antifluidPortalShader.getUniform("AnimTime");
+            if (animU != null) {
+                animU.set(anim);
+            }
+            com.mojang.blaze3d.shaders.Uniform cam = AntifluidShaders.antifluidPortalShader.getUniform("CamPos");
+            if (cam != null) {
+                cam.set((float) camPos.x, (float) camPos.y, (float) camPos.z);
+            }
+        }
+        if (AntifluidShaders.antifluidSpaceShader != null) {
+            com.mojang.blaze3d.shaders.Uniform animU = AntifluidShaders.antifluidSpaceShader.getUniform("AnimTime");
+            if (animU != null) {
+                animU.set(anim);
+            }
+            com.mojang.blaze3d.shaders.Uniform cam = AntifluidShaders.antifluidSpaceShader.getUniform("CamPos");
+            if (cam != null) {
+                cam.set((float) camPos.x, (float) camPos.y, (float) camPos.z);
+            }
+        }
     }
 
     private static boolean isAntifluid(FluidState state) {
@@ -218,8 +290,8 @@ public class AntifluidWorldRenderer {
         }
     }
 
-    private static void buildPoolSurface(VertexConsumer consumer, ClientLevel level,
-                                         BlockPos pos, StarlighPoolBlockEntity pool) {
+    private static void buildPoolSurface(VertexConsumer consumer, VertexConsumer spaceConsumer,
+                                         ClientLevel level, BlockPos pos, StarlighPoolBlockEntity pool) {
         float fill = Mth.clamp((float) pool.fluidTank.getFluidAmount() / pool.fluidTank.getCapacity(), 0.0F, 1.0F);
 
         float wx = pos.getX();
@@ -235,14 +307,19 @@ public class AntifluidWorldRenderer {
         float topY = Mth.lerp(fill, minY, maxY);
 
         float topAlpha = 1.0F;
-        float sideAlpha = 0.18F;
+        float sideAlpha = 0.6F;
         float bottomAlpha = 0.30F;
 
         emitVoidQuad(consumer, minX, topY, minZ, minX, topY, maxZ, maxX, topY, maxZ, maxX, topY, minZ, topAlpha);
+        emitVoidQuad(spaceConsumer, minX, topY, minZ, minX, topY, maxZ, maxX, topY, maxZ, maxX, topY, minZ, topAlpha);
         emitVoidQuad(consumer, maxX, minY, minZ, minX, minY, minZ, minX, topY, minZ, maxX, topY, minZ, sideAlpha);
         emitVoidQuad(consumer, minX, minY, maxZ, maxX, minY, maxZ, maxX, topY, maxZ, minX, topY, maxZ, sideAlpha);
         emitVoidQuad(consumer, minX, minY, minZ, minX, minY, maxZ, minX, topY, maxZ, minX, topY, minZ, sideAlpha);
         emitVoidQuad(consumer, maxX, minY, maxZ, maxX, minY, minZ, maxX, topY, minZ, maxX, topY, maxZ, sideAlpha);
+        emitVoidQuad(spaceConsumer, maxX, minY, minZ, minX, minY, minZ, minX, topY, minZ, maxX, topY, minZ, sideAlpha);
+        emitVoidQuad(spaceConsumer, minX, minY, maxZ, maxX, minY, maxZ, maxX, topY, maxZ, minX, topY, maxZ, sideAlpha);
+        emitVoidQuad(spaceConsumer, minX, minY, minZ, minX, minY, maxZ, minX, topY, maxZ, minX, topY, minZ, sideAlpha);
+        emitVoidQuad(spaceConsumer, maxX, minY, maxZ, maxX, minY, minZ, maxX, topY, minZ, maxX, topY, maxZ, sideAlpha);
         emitVoidQuad(consumer, minX, minY, minZ, maxX, minY, minZ, maxX, minY, maxZ, minX, minY, maxZ, bottomAlpha);
     }
 
@@ -257,6 +334,38 @@ public class AntifluidWorldRenderer {
         consumer.addVertex(x3, y3, z3).setColor(0.0F, 0.0F, 0.0F, alpha).setUv(x3, z3);
     }
 
+    private static void buildVeilCube(VertexConsumer consumer, VertexConsumer spaceConsumer, BlockPos pos) {
+        float inset = 0.0F;
+        float wx = pos.getX();
+        float wy = pos.getY();
+        float wz = pos.getZ();
+        float minX = wx + inset;
+        float maxX = wx + 1.0F - inset;
+        float minY = wy + inset;
+        float maxY = wy + 1.0F - inset;
+        float minZ = wz + inset;
+        float maxZ = wz + 1.0F - inset;
+        float alpha = 1.0F;
+
+        emitVoidQuad(consumer, minX, minY, minZ, maxX, minY, minZ, maxX, maxY, minZ, minX, maxY, minZ, alpha);
+        emitVoidQuad(consumer, maxX, minY, maxZ, minX, minY, maxZ, minX, maxY, maxZ, maxX, maxY, maxZ, alpha);
+        emitVoidQuad(consumer, maxX, minY, minZ, minX, minY, minZ, minX, minY, maxZ, maxX, minY, maxZ, alpha);
+        emitVoidQuad(consumer, minX, maxY, minZ, maxX, maxY, minZ, maxX, maxY, maxZ, minX, maxY, maxZ, alpha);
+        emitVoidQuad(consumer, minX, minY, maxZ, minX, minY, minZ, minX, maxY, minZ, minX, maxY, maxZ, alpha);
+        emitVoidQuad(consumer, maxX, minY, minZ, maxX, minY, maxZ, maxX, maxY, maxZ, maxX, maxY, minZ, alpha);
+
+        emitVoidQuad(spaceConsumer, minX, minY, minZ, maxX, minY, minZ, maxX, maxY, minZ, minX, maxY, minZ, alpha);
+        emitVoidQuad(spaceConsumer, maxX, minY, maxZ, minX, minY, maxZ, minX, maxY, maxZ, maxX, maxY, maxZ, alpha);
+        emitVoidQuad(spaceConsumer, maxX, minY, minZ, minX, minY, minZ, minX, minY, maxZ, maxX, minY, maxZ, alpha);
+        emitVoidQuad(spaceConsumer, minX, maxY, minZ, maxX, maxY, minZ, maxX, maxY, maxZ, minX, maxY, maxZ, alpha);
+        emitVoidQuad(spaceConsumer, minX, minY, maxZ, minX, minY, minZ, minX, maxY, minZ, minX, maxY, maxZ, alpha);
+        emitVoidQuad(spaceConsumer, maxX, minY, minZ, maxX, minY, maxZ, maxX, maxY, maxZ, maxX, maxY, minZ, alpha);
+    }
+
+    private static void buildReturnRift(VertexConsumer consumer, VertexConsumer spaceConsumer, BlockPos pos) {
+        buildVeilCube(consumer, spaceConsumer, pos);
+    }
+
     private static boolean occludesFace(ClientLevel level, BlockPos occluderPos, BlockState occluder,
                                         Direction face, float height) {
         if (!occluder.canOcclude()) return false;
@@ -265,8 +374,8 @@ public class AntifluidWorldRenderer {
         return Shapes.blockOccudes(box, occlusion, face);
     }
 
-    private static void buildFluidSurface(VertexConsumer consumer, ClientLevel level,
-                                           BlockPos pos, FluidState fluidState) {
+private static void buildFluidSurface(VertexConsumer consumer, VertexConsumer spaceConsumer,
+                                       ClientLevel level, BlockPos pos, FluidState fluidState) {
         Fluid fluid = fluidState.getType();
 
         float centerHeight = getHeight(level, fluid, pos);
@@ -310,11 +419,12 @@ public class AntifluidWorldRenderer {
         float wy = pos.getY();
         float wz = pos.getZ();
         float topAlpha = 1.0F;
-        float sideAlpha = 0.18F;
+        float sideAlpha = 0.6F;
         float bottomAlpha = 0.30F;
 
         if (renderTop) {
             emitTopSurface(consumer, wx, wy, wz, topAlpha, cornerNW, cornerNE, cornerSE, cornerSW);
+            emitTopSurface(spaceConsumer, wx, wy, wz, topAlpha, cornerNW, cornerNE, cornerSE, cornerSW);
         }
 
         if (renderNorth) {
@@ -322,24 +432,40 @@ public class AntifluidWorldRenderer {
             consumer.addVertex(wx + 1.0F, wy + cornerNE, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx + 1.0F, wy + cornerNE);
             consumer.addVertex(wx + 1.0F, wy, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx + 1.0F, wy);
             consumer.addVertex(wx, wy, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx, wy);
+            spaceConsumer.addVertex(wx, wy + cornerNW, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx, wy + cornerNW);
+            spaceConsumer.addVertex(wx + 1.0F, wy + cornerNE, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx + 1.0F, wy + cornerNE);
+            spaceConsumer.addVertex(wx + 1.0F, wy, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx + 1.0F, wy);
+            spaceConsumer.addVertex(wx, wy, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx, wy);
         }
         if (renderSouth) {
             consumer.addVertex(wx + 1.0F, wy + cornerSE, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx + 1.0F, wy + cornerSE);
             consumer.addVertex(wx, wy + cornerSW, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx, wy + cornerSW);
             consumer.addVertex(wx, wy, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx, wy);
             consumer.addVertex(wx + 1.0F, wy, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx + 1.0F, wy);
+            spaceConsumer.addVertex(wx + 1.0F, wy + cornerSE, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx + 1.0F, wy + cornerSE);
+            spaceConsumer.addVertex(wx, wy + cornerSW, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx, wy + cornerSW);
+            spaceConsumer.addVertex(wx, wy, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx, wy);
+            spaceConsumer.addVertex(wx + 1.0F, wy, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wx + 1.0F, wy);
         }
         if (renderWest) {
             consumer.addVertex(wx, wy + cornerSW, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz + 1.0F, wy + cornerSW);
             consumer.addVertex(wx, wy + cornerNW, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz, wy + cornerNW);
             consumer.addVertex(wx, wy, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz, wy);
             consumer.addVertex(wx, wy, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz + 1.0F, wy);
+            spaceConsumer.addVertex(wx, wy + cornerSW, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz + 1.0F, wy + cornerSW);
+            spaceConsumer.addVertex(wx, wy + cornerNW, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz, wy + cornerNW);
+            spaceConsumer.addVertex(wx, wy, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz, wy);
+            spaceConsumer.addVertex(wx, wy, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz + 1.0F, wy);
         }
         if (renderEast) {
             consumer.addVertex(wx + 1.0F, wy + cornerNE, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz, wy + cornerNE);
             consumer.addVertex(wx + 1.0F, wy + cornerSE, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz + 1.0F, wy + cornerSE);
             consumer.addVertex(wx + 1.0F, wy, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz + 1.0F, wy);
             consumer.addVertex(wx + 1.0F, wy, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz, wy);
+            spaceConsumer.addVertex(wx + 1.0F, wy + cornerNE, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz, wy + cornerNE);
+            spaceConsumer.addVertex(wx + 1.0F, wy + cornerSE, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz + 1.0F, wy + cornerSE);
+            spaceConsumer.addVertex(wx + 1.0F, wy, wz + 1.0F).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz + 1.0F, wy);
+            spaceConsumer.addVertex(wx + 1.0F, wy, wz).setColor(0.0F, 0.0F, 0.0F, sideAlpha).setUv(wz, wy);
         }
         if (renderBottom) {
             consumer.addVertex(wx, wy, wz).setColor(0.0F, 0.0F, 0.0F, bottomAlpha).setUv(wx, wz);

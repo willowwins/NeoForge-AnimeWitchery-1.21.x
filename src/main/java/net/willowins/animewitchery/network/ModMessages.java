@@ -17,5 +17,20 @@ public class ModMessages {
                 ManaSyncPayload.STREAM_CODEC,
                 ManaSyncPayload::handle
         );
+        registrar.playToServer(
+                PocketOptionsRequestPayload.TYPE,
+                PocketOptionsRequestPayload.STREAM_CODEC,
+                PocketOptionsRequestPayload::handle
+        );
+        registrar.playToClient(
+                PocketOptionsPayload.TYPE,
+                PocketOptionsPayload.STREAM_CODEC,
+                PocketOptionsPayload::handle
+        );
+        registrar.playToServer(
+                PocketPlacePayload.TYPE,
+                PocketPlacePayload.STREAM_CODEC,
+                PocketPlacePayload::handle
+        );
     }
 }

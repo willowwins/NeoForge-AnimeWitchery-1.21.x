@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "animewitchery:block/antifountain" },
+    "facing=east":  { "model": "animewitchery:block/antifountain", "y": 90 },
+    "facing=south": { "model": "animewitchery:block/antifountain", "y": 180 },
+    "facing=west":  { "model": "animewitchery:block/antifountain", "y": 270 }
+  }
+}

@@ -1,6 +1,8 @@
 package net.willowins.animewitchery.client;
 
+import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
@@ -35,6 +37,7 @@ public class ClientModEvents {
         event.registerBlockEntityRenderer(ModBlockEntities.STARLIGHT_POOL_BE.get(), StarlightPoolBlockRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.STARLIGHT_INFUSION_ALTAR_BE.get(), StarlightInfusionAltarRenderer::new);
         event.registerBlockEntityRenderer(ModBlockEntities.STARLIGHT_INFUSION_PEDESTAL_BE.get(), StarlightInfusionPedestalRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.DARK_FOUNTAIN_BE.get(), DarkFountainBlockEntityRenderer::new);
 
     }
 
@@ -45,6 +48,11 @@ public class ClientModEvents {
                 VanillaGuiLayers.HOTBAR,
                 ResourceLocation.fromNamespaceAndPath(AnimeWitchery.MOD_ID, "mana_overlay"),
                 overlay::render
+        );
+        event.registerAbove(
+                VanillaGuiLayers.HOTBAR,
+                ResourceLocation.fromNamespaceAndPath(AnimeWitchery.MOD_ID, "antifluid_debug"),
+                AntifluidWorldRenderer::renderDebug
         );
     }
 

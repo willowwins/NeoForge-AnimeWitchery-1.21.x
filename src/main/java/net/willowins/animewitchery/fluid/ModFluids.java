@@ -102,7 +102,7 @@ public class ModFluids {
                         private static final ResourceLocation FLOW = ResourceLocation.fromNamespaceAndPath(AnimeWitchery.MOD_ID, "block/liquified_sculk");
                         @Override public ResourceLocation getStillTexture() { return STILL; }
                         @Override public ResourceLocation getFlowingTexture() { return FLOW; }
-                        @Override public int getTintColor() { return 0xFF0D0D0D; }
+                        @Override public int getTintColor() { return 0xFFFFFFFF; }
                     });
                 }
             });
@@ -214,7 +214,7 @@ public class ModFluids {
                         private static final ResourceLocation FLOW = ResourceLocation.fromNamespaceAndPath(AnimeWitchery.MOD_ID, "block/antifluid_flow");
                         @Override public ResourceLocation getStillTexture() { return STILL; }
                         @Override public ResourceLocation getFlowingTexture() { return FLOW; }
-                        @Override public int getTintColor() { return 0x00000000; }
+                        @Override public int getTintColor() { return 0xFF000000; }
                     });
                 }
             });

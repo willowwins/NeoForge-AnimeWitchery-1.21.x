@@ -1,0 +1,11 @@
+{
+  "type": "animewitchery:pocket",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "structure_overrides": [],
+      "layers": [],
+      "biome": "minecraft:the_void"
+    }
+  }
+}

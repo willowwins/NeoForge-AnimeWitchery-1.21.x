@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "animewitchery:block/dark_pedestal" },
+    "facing=east":  { "model": "animewitchery:block/dark_pedestal", "y": 90 },
+    "facing=south": { "model": "animewitchery:block/dark_pedestal", "y": 180 },
+    "facing=west":  { "model": "animewitchery:block/dark_pedestal", "y": 270 }
+  }
+}

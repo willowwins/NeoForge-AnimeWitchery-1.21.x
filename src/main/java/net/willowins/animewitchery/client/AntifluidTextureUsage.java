@@ -139,7 +139,7 @@ public final class AntifluidTextureUsage {
         }
     }
 
-    public static void drainInto(VertexConsumer consumer, Matrix4f invViewRot, Vec3 camPos) {
+    public static void drainInto(VertexConsumer consumer, Matrix4f invViewRot, Vec3 camPos, boolean texSculk) {
         Vector3f p = new Vector3f();
         float[] firstWorld = null;
         for (float[] quad : CAPTURED) {
@@ -157,15 +157,84 @@ public final class AntifluidTextureUsage {
             }
             if (firstWorld == null) firstWorld = world;
 
-            float alpha = alphaForQuad(world);
+            float alpha = texSculk ? 1.0F : alphaForQuad(world);
+            float[] uv = texSculk ? sculkUvs(world) : worldUvs(world);
 
-            consumer.addVertex(world[0], world[1], world[2]).setColor(0.0F, 0.0F, 0.0F, alpha).setUv(world[0], world[2]);
-            consumer.addVertex(world[3], world[4], world[5]).setColor(0.0F, 0.0F, 0.0F, alpha).setUv(world[3], world[5]);
-            consumer.addVertex(world[6], world[7], world[8]).setColor(0.0F, 0.0F, 0.0F, alpha).setUv(world[6], world[8]);
-            consumer.addVertex(world[9], world[10], world[11]).setColor(0.0F, 0.0F, 0.0F, alpha).setUv(world[9], world[11]);
+            consumer.addVertex(world[0], world[1], world[2]).setColor(1.0F, 1.0F, 1.0F, alpha).setUv(uv[0], uv[1]);
+            consumer.addVertex(world[3], world[4], world[5]).setColor(1.0F, 1.0F, 1.0F, alpha).setUv(uv[2], uv[3]);
+            consumer.addVertex(world[6], world[7], world[8]).setColor(1.0F, 1.0F, 1.0F, alpha).setUv(uv[4], uv[5]);
+            consumer.addVertex(world[9], world[10], world[11]).setColor(1.0F, 1.0F, 1.0F, alpha).setUv(uv[6], uv[7]);
         }
         logDrain(CAPTURED.size(), firstWorld);
         CAPTURED.clear();
+    }
+
+    private static float[] worldUvs(float[] w) {
+        float ax = w[3] - w[0];
+        float ay = w[4] - w[1];
+        float az = w[5] - w[2];
+        float bx = w[6] - w[0];
+        float by = w[7] - w[1];
+        float bz = w[8] - w[2];
+        float nx = ay * bz - az * by;
+        float ny = az * bx - ax * bz;
+        float nz = ax * by - ay * bx;
+        int uAxis;
+        int vAxis;
+        if (Math.abs(nx) >= Math.abs(ny) && Math.abs(nx) >= Math.abs(nz)) {
+            uAxis = 1;
+            vAxis = 2;
+        } else if (Math.abs(ny) >= Math.abs(nz)) {
+            uAxis = 0;
+            vAxis = 2;
+        } else {
+            uAxis = 0;
+            vAxis = 1;
+        }
+        float[] uv = new float[8];
+        for (int i = 0; i < 4; i++) {
+            uv[i * 2] = w[i * 3 + uAxis];
+            uv[i * 2 + 1] = w[i * 3 + vAxis];
+        }
+        return uv;
+    }
+
+    private static float[] sculkUvs(float[] w) {
+        float ax = w[3] - w[0];
+        float ay = w[4] - w[1];
+        float az = w[5] - w[2];
+        float bx = w[6] - w[0];
+        float by = w[7] - w[1];
+        float bz = w[8] - w[2];
+        float nx = ay * bz - az * by;
+        float ny = az * bx - ax * bz;
+        float nz = ax * by - ay * bx;
+        int uAxis;
+        int vAxis;
+        if (Math.abs(nx) >= Math.abs(ny) && Math.abs(nx) >= Math.abs(nz)) {
+            uAxis = 1;
+            vAxis = 2;
+        } else if (Math.abs(ny) >= Math.abs(nz)) {
+            uAxis = 0;
+            vAxis = 2;
+        } else {
+            uAxis = 0;
+            vAxis = 1;
+        }
+        float minU = min(w[uAxis], w[3 + uAxis], w[6 + uAxis], w[9 + uAxis]);
+        float maxU = max(w[uAxis], w[3 + uAxis], w[6 + uAxis], w[9 + uAxis]);
+        float minV = min(w[vAxis], w[3 + vAxis], w[6 + vAxis], w[9 + vAxis]);
+        float maxV = max(w[vAxis], w[3 + vAxis], w[6 + vAxis], w[9 + vAxis]);
+        float spanU = maxU - minU;
+        float spanV = maxV - minV;
+        if (spanU < 1.0E-4F) spanU = 1.0E-4F;
+        if (spanV < 1.0E-4F) spanV = 1.0E-4F;
+        float[] uv = new float[8];
+        for (int i = 0; i < 4; i++) {
+            uv[i * 2] = (w[i * 3 + uAxis] - minU) / spanU;
+            uv[i * 2 + 1] = (w[i * 3 + vAxis] - minV) / spanV;
+        }
+        return uv;
     }
 
     public static void clearCaptured() {
