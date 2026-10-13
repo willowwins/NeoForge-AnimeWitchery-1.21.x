@@ -1,0 +1,30 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "minecraft:gold_block"
+    },
+    {
+      "item": "minecraft:gold_block"
+    },
+    {
+      "item": "minecraft:gold_block"
+    },
+    {
+      "item": "minecraft:gold_block"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    }
+  ],
+  "result": {
+    "item": "minecraft:enchanted_golden_apple",
+    "count": 1
+  },
+  "xp_cost": 45,
+  "processing_time": 600
+}
+

@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_column_horizontal",
+    "textures": {
+        "end": "animewitchery:block/rosewillow_log_top",
+        "side": "animewitchery:block/rosewillow_log_blooming"
+    }
+}

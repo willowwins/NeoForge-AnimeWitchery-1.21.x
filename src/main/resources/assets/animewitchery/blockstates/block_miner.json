@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "animewitchery:block/block_miner" },
+    "facing=south": { "model": "animewitchery:block/block_miner", "y": 180 },
+    "facing=west":  { "model": "animewitchery:block/block_miner", "y":  270},
+    "facing=east":  { "model": "animewitchery:block/block_miner", "y": 90},
+    "facing=up":    { "model": "animewitchery:block/block_miner", "x": 270},
+    "facing=down":  { "model": "animewitchery:block/block_miner", "x": 90 }
+  }
+}

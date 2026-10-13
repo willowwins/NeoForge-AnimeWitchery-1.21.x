@@ -1,0 +1,32 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    {
+      "item": "animewitchery:enchanted_crystal"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "animewitchery:void_essence"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "components": {
+      "minecraft:custom_data": "{StoredEnchantments:[{id:\"animewitchery:excavate_enchant\",lvl:1s}]}"
+    },
+    "id": "minecraft:enchanted_book"
+  },
+  "xp_cost": 25,
+  "processing_time": 600
+}

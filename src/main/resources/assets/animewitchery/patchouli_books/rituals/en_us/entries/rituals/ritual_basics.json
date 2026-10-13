@@ -1,0 +1,27 @@
+{
+  "name": "Ritual Basics",
+  "icon": "animewitchery:magic_chalk",
+  "category": "animewitchery:rituals",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Rituals$() are powerful magical ceremonies. They require careful preparation and specific components."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Drawing Circles",
+      "text": "$(l)Creating Ritual Circles:$()$(br2)1. Craft $(violet)Magic Chalk$()$(br)2. Draw a circle on the ground$(br)3. Place ritual components$(br)4. Activate with appropriate catalyst$(br2)$(violet)Precision is key!$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Barrier Circles",
+      "text": "$(b)Barrier Circles$() create protective zones. Use $(violet)Magic Chalk$() to draw the circle, then place:$(br2)• $(#)Barrier Catalyst$() in center$(br)• $(#)Distance Glyphs$() for range$(br)• $(#)Guardian Statues$() for power$(br2)See $(violet)Barrier System$() entry for details."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Advanced Rituals",
+      "text": "$(l)Ritual Types:$()$(br2)$(b)Binding Spell$()$(br)Binds magic to locations$(br2)$(b)Kamikaze Ritual$()$(br)Powerful one-time effect$(br2)Explore the world to discover more ritual structures!"
+    }
+  ]
+}
+

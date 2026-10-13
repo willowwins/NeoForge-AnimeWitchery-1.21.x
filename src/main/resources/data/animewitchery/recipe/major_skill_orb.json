@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "SLS",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "S": {
+      "item": "animewitchery:stardust"
+    }
+  },
+  "result": {
+    "id": "animewitchery:major_skill_orb",
+    "count": 1
+  }
+}

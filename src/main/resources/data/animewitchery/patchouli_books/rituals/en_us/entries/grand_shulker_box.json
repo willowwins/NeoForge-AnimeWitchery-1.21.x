@@ -1,0 +1,34 @@
+{
+  "name": "Grand Shulker Box",
+  "category": "animewitchery:equipment",
+  "icon": "animewitchery:grand_shulker_box",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(#b38cff)Grand Shulker Box$() is an advanced storage container with extraordinary capacity. It features $(l)54 slots$() (6 rows of 9) and can hold $(l)8 times the normal stack size$() for each item.$(br2)For example: regular items stack to 512 instead of 64, and non-stackable items can stack to 8."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:alchemy/grand_shulker_box",
+      "title": "Crafting",
+      "text": "Craft the Grand Shulker Box in the $(#b38cff)Alchemy Table$() using this recipe."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Storage Features",
+      "text": "$(l)Capacity:$()$(br)• 54 slots (6 rows × 9 columns)$(br)• 8× stack size for all items$(br)• Stacks up to 8 in inventory$(br2)$(l)Special Rules:$()$(br)• Non-enchanted Grand Shulker Boxes $(4)cannot$() be placed inside other Grand Shulker Boxes$(br)• Enchanted ones can be nested"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:alchemy/enchant_grand_shulker",
+      "title": "Inception Recipe",
+      "text": "To enable nesting, enchant your Grand Shulker Box with $(#b38cff)Mending$() using this alchemy recipe. Enchanted boxes can be placed inside other Grand Shulker Boxes."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Tips & Tricks",
+      "text": "$(l)Stack Limits:$()$(br)• Items display their actual count$(br)• Max: 512 for 64-stack items$(br)• Max: 128 for 16-stack items$(br)• Max: 8 for non-stackable items$(br2)$(l)Shift-Click:$()$(br)Fully supports quick-transfer with proper stack limits.$(br2)$(4)Note:$() Old saves may have stacks clamped to previous limits."
+    }
+  ]
+}
+

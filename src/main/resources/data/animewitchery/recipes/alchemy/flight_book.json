@@ -1,0 +1,30 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "animewitchery:air_rune_stone"
+    },
+    {
+      "item": "animewitchery:enchanted_crystal"
+    },
+    {
+      "item": "animewitchery:void_essence"
+    },
+    {
+      "item": "minecraft:feather"
+    }
+  ],
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "count": 1,
+    "nbt": "{StoredEnchantments:[{id:\"animewitchery:flight_enchant\",lvl:1s}]}"
+  },
+  "xp_cost": 30,
+  "processing_time": 800
+}

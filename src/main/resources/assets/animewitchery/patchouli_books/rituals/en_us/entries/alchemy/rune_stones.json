@@ -1,0 +1,57 @@
+{
+  "name": "Rune Stones",
+  "icon": "animewitchery:fire_rune_stone",
+  "category": "animewitchery:alchemy",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Rune Stones$() channel elemental energies. First craft the $(violet)Base Rune Stone$(), then transmute it into elemental variants."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Base Rune Stone Recipe",
+      "text": "$(l)Base Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Stone$(br)• Amethyst Dust$(br)• Bone Dust$(br)• Full Alchemical Catalyst$(br2)$(gold)Cost: 3 XP, 100 ticks$()$(br2)This creates $(l)4 Base Rune Stones$()."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Fire Rune Stone",
+      "text": "$(l)Fire Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Amethyst Dust$(br)• Magma Cream$(br)• Blaze Powder$(br)• Redstone$(br)• Coal$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Water Rune Stone",
+      "text": "$(l)Water Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Amethyst Dust$(br)• Prismarine Crystals$(br)• Blue Dye$(br)• Ice$(br)• Kelp$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Earth Rune Stone",
+      "text": "$(l)Earth Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Amethyst Dust$(br)• Dirt$(br)• Clay Ball$(br)• Brown Dye$(br)• Rooted Dirt$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Air Rune Stone",
+      "text": "$(l)Air Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Amethyst Dust$(br)• Feather$(br)• White Dye$(br)• Light Blue Dye$(br)• Glass$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Light Rune Stone",
+      "text": "$(l)Light Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Amethyst Dust$(br)• Glow Ink Sac$(br)• Glowstone Dust$(br)• Bone Dust$(br)• Blaze Powder$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Darkness Rune Stone",
+      "text": "$(l)Darkness Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Amethyst Dust$(br)• Obsidian$(br)• Black Dye$(br)• Coal$(br)• Ender Pearl$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Life Rune Stone",
+      "text": "$(l)Life Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Amethyst Dust$(br)• Golden Apple$(br)• Emerald$(br)• Green Dye$(br)• Grass Block$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Death Rune Stone",
+      "text": "$(l)Death Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Amethyst Dust$(br)• Rotten Flesh$(br)• Black Dye$(br)• Coal$(br)• Bone$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    }
+  ]
+}
+

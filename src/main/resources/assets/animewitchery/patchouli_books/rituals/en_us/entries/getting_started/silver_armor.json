@@ -1,0 +1,47 @@
+{
+  "name": "Silver Armor & Tools",
+  "icon": "animewitchery:silver_helmet",
+  "category": "animewitchery:getting_started",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Silver Equipment$() is your first step into magical crafting. All silver armor and tools are created using $(violet)Smithing Templates$().$(br2)You'll need:$(br)• Silver Ingots$(br)• Silver Template$(br)• Base item (iron or diamond)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Silver Template",
+      "text": "$(l)Crafting Silver Template:$()$(br2)Combine:$(br)• 4x Silver Ingot$(br)• 1x Diamond$(br2)This template is reusable for all silver smithing recipes!"
+    },
+    {
+      "type": "patchouli:smithing",
+      "recipe": "animewitchery:silver_helmet_smithing",
+      "text": "Upgrade iron helmet to silver helmet at a smithing table."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Silver Armor Set",
+      "text": "$(l)Full Armor Set:$()$(br2)• $(violet)Helmet$() - Iron Helmet base$(br)• $(violet)Chestplate$() - Iron Chestplate base$(br)• $(violet)Leggings$() - Iron Leggings base$(br)• $(violet)Boots$() - Iron Boots base$(br2)Each requires silver template and silver ingots."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Silver Tools",
+      "text": "$(l)Silver Tools:$()$(br2)• $(violet)Silver Pickaxe$() - Diamond Pickaxe base$(br)• $(violet)Needle$() - Iron Sword base$(br2)Silver tools have enhanced durability and efficiency!"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

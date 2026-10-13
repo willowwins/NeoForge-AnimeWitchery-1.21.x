@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "animewitchery:silver_ingot"
+    },
+    "o": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "nnn",
+    " o ",
+    " o "
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:silver_pickaxe"
+  }
+}

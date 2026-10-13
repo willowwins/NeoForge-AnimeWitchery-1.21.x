@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "animewitchery:strawberry"
+    },
+    "o": {
+      "item": "animewitchery:tart_crust"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "non",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:unbaked_strawberry_tart"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "dimensions": {
+    "minecraft:overworld": {
+      "type": "animewitchery:menu_void",
+      "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+          "layers": [],
+          "lakes": false,
+          "features": false,
+          "biome": "minecraft:the_void",
+          "structures": {
+            "structures": {}
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,27 @@
+{
+  "name": "Resonant Tier",
+  "icon": "animewitchery:resonant_catalyst",
+  "category": "animewitchery:alchemy",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Resonant Catalyst$() is the upgraded form of the Alchemical Catalyst. It is used for $(violet)end-game equipment$() and $(violet)powerful artifacts$()."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Resonant Catalyst Recipe",
+      "text": "$(l)Resonant Catalyst Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- 5x Emerald Block$(br)- 5x Full Alchemical Catalyst$(br2)$(gold)Cost: 15 XP, 1000 ticks$()$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create the Resonant Catalyst in the center output slot.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Resonant Armor",
+      "text": "Upgrade Silver Armor to Resonant Armor at the Alchemy Table. Resonant Armor provides powerful magical protections and abilities."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Resonant Helmet Recipe",
+      "text": "$(l)Resonant Helmet Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- Silver Helmet$(br)- 2x Full Resonant Catalyst$(br)- Silver Template$(br)- Netherite Ingot$(br2)$(gold)Cost: 15 XP, 400 ticks$()$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create the Resonant Helmet in the center output slot.$()"
+    }
+  ]
+}
+

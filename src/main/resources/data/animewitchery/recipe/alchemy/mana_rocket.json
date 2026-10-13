@@ -1,0 +1,26 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:firework_rocket"
+    },
+    {
+      "item": "animewitchery:silver_ingot"
+    },
+    {
+      "item": "animewitchery:silver_template"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:alchemical_catalyst"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:mana_rocket"
+  },
+  "xp_cost": 5,
+  "processing_time": 150
+}

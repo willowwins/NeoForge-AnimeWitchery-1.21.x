@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "SES",
+        "SSS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "E": {
+            "item": "animewitchery:torch_flower_essence"
+        }
+    },
+    "result": {
+        "item": "minecraft:torchflower_seeds",
+        "count": 8
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "animewitchery:block/player_use_dispenser",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "animewitchery:block/player_use_dispenser",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "animewitchery:block/player_use_dispenser"
+    },
+    "facing=south": {
+      "model": "animewitchery:block/player_use_dispenser",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "animewitchery:block/player_use_dispenser"
+    },
+    "facing=west": {
+      "model": "animewitchery:block/player_use_dispenser",
+      "y": 270
+    }
+  }
+}

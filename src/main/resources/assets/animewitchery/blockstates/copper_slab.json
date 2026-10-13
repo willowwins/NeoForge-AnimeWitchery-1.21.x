@@ -1,0 +1,7 @@
+﻿{
+  "variants": {
+    "type=bottom": { "model": "animewitchery:block/copper_slab" },
+    "type=double": { "model": "minecraft:block/copper_block" },
+    "type=top": { "model": "animewitchery:block/copper_slab_top" }
+  }
+}

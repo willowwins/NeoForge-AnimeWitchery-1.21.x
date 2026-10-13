@@ -1,0 +1,71 @@
+{
+  "hatsune_miku_lemon": {
+    "subtitle": "sounds.animewitchery.hatsune_miku_lemon",
+    "sounds": [
+      "animewitchery:hatsune_miku_lemon"
+    ]
+  },
+  "laser_charge": {
+    "subtitle": "sounds.animewitchery.laser_charge",
+    "sounds": [
+      "animewitchery:laser_charge"
+    ]
+  },
+  "laser_shoot": {
+    "subtitle": "sounds.animewitchery.laser_shoot",
+    "sounds": [
+      "animewitchery:laser_shoot"
+    ]
+  },
+  "obelisk_activate": {
+    "subtitle": "sounds.animewitchery.obelisk_activate",
+    "sounds": [
+      "animewitchery:obelisk_activate"
+    ]
+  },
+  "obelisk_hum": {
+    "subtitle": "sounds.animewitchery.obelisk_hum",
+    "sounds": [
+      "animewitchery:obelisk_hum"
+    ]
+  },
+  "obelisk_message1": {
+    "subtitle": "sounds.animewitchery.obelisk_message1",
+    "sounds": [
+      "animewitchery:obelisk_message1"
+    ]
+  },
+  "obelisk_message2": {
+    "subtitle": "sounds.animewitchery.obelisk_message2",
+    "sounds": [
+      "animewitchery:obelisk_message2"
+    ]
+  },
+  "obelisk_break_once": {
+    "subtitle": "sounds.animewitchery.obelisk_break_once",
+    "sounds": [
+      "animewitchery:obelisk_break_once"
+    ]
+  },
+  "kamikaze_explosion": {
+    "subtitle": "sounds.animewitchery.kamikaze_explosion",
+    "sounds": [
+      "animewitchery:kamikaze_explosion"
+    ]
+  },
+  "kamikaze_explosion_wind_up": {
+    "subtitle": "sounds.animewitchery.kamikaze_explosion_wind_up",
+    "sounds": [
+      "animewitchery:kamikaze_explosion_wind_up"
+    ]
+  },
+  "monster_statue_ambient": {
+    "subtitle": "subtitles.animewitchery.monster_statue_ambient",
+    "sounds": [
+      {
+        "name": "animewitchery:monster_statue_ambient",
+        "attenuation_distance": 16
+      }
+    ]
+  }
+}

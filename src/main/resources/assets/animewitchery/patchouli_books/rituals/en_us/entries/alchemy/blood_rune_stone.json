@@ -1,0 +1,22 @@
+{
+  "name": "Blood Rune Stone",
+  "icon": "animewitchery:blood_rune_stone",
+  "category": "animewitchery:alchemy",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(#8b0000)Blood Rune Stone$() is a rare rune that combines life and death energies. It requires mastery of both Life and Death rune stones to create."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Alchemy Table Recipe",
+      "text": "$(l)Blood Rune Stone Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Base Rune Stone$(br)• Death Rune Stone$(br)• Life Rune Stone$(br)• Nether Wart$(br)• Fermented Spider Eye$(br)• Ghast Tear$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 30 XP, 1000 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Properties",
+      "text": "The Blood Rune Stone channels life and death duality. Useful for:$(br2)• Advanced ritual configurations$(br)• Powerful magical effects$(br)• Life-draining enchantments$(br)• Regeneration rituals$(br2)$(#888)Requires mastery of both Life and Death rune stones.$()"
+    }
+  ]
+}
+

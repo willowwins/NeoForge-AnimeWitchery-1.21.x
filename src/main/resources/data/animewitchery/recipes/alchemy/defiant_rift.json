@@ -1,0 +1,20 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:keep_inventory_charm"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "animewitchery:mod_totem"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:defiant_rift",
+    "count": 1
+  },
+  "xp_cost": 100,
+  "processing_time": 1200
+}

@@ -1,0 +1,30 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    },
+    {
+      "item": "animewitchery:silver_template"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:fuel_rod",
+    "count": 1
+  },
+  "xp_cost": 30,
+  "processing_time": 1000
+}
+

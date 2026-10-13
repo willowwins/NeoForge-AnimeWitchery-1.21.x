@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "animewitchery:item/fire_res_crystal"
+  }
+}

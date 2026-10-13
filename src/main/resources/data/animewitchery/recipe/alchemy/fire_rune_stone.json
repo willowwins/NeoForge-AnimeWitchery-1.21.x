@@ -1,0 +1,29 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:rune_stone"
+    },
+    {
+      "item": "animewitchery:amethyst_dust"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:coal"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:fire_rune_stone"
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+}

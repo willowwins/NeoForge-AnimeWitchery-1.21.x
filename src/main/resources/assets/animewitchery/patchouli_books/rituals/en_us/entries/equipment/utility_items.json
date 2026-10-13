@@ -1,0 +1,37 @@
+{
+  "name": "Utility Items",
+  "icon": "animewitchery:weatheritem",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Advanced utility items crafted through alchemy. These powerful tools require $(violet)Resonant Catalysts$() and rare materials."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Thunderous Wand",
+      "text": "The $(b)Thunderous Wand$() controls weather patterns using mana.$(br2)$(violet)Ingredients:$()$(br)• Lightning Rod$(br)• Water Bucket$(br)• Powder Snow Bucket$(br)• Air Rune Stone$(br)• Water Rune Stone$(br)• Prismarine Crystals$(br)• Ghast Tear$(br)• Heart of the Sea$(br)• Conduit$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 40 XP, 1600 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Using the Wand",
+      "text": "$(l)Weather Control:$()$(br2)$(violet)Right-Click:$()$(br)• Clear → Rain (1000 mana)$(br)• Rain → Thunder (2000 mana)$(br)• Thunder → Nothing$(br2)$(violet)Shift + Right-Click:$()$(br)• Clear Weather (500 mana)$(br2)All effects last 5 minutes!$(br2)$(#888)Draws mana from player and catalysts in inventory.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Defiant Rift",
+      "text": "The $(b)Defiant Rift$() is a powerful combat tool forged from darkness and death.$(br2)$(violet)Ingredients:$()$(br)• Netherite Sword$(br)• 2x Obelisk Shard$(br)• Wither Skeleton Skull$(br)• Death Rune Stone$(br)• Darkness Rune Stone$(br)• Totem of Undying$(br)• Nether Star$(br)• Blood Rune Stone$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 60 XP, 2400 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Job Application",
+      "text": "The $(b)Job Application$() is a restorative tool combining life and light.$(br2)$(violet)Ingredients:$()$(br)• Diamond$(br)• Emerald$(br)• Golden Apple$(br)• Life Rune Stone$(br)• Light Rune Stone$(br)• Totem of Undying$(br)• Enchanted Golden Apple$(br)• Beacon$(br)• Blood Rune Stone$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 50 XP, 2000 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Enchanted Crystal",
+      "text": "The $(b)Enchanted Crystal$() is used in many advanced recipes.$(br2)$(violet)Ingredients:$()$(br)• Amethyst Shard$(br)• Full Alchemical Catalyst$(br)• Ender Pearl$(br2)$(gold)Cost: 8 XP, 300 ticks$()$(br2)This is a key component for creating advanced items."
+    }
+  ]
+}
+

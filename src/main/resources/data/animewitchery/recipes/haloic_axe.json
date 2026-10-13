@@ -1,0 +1,17 @@
+{
+    "type": "animewitchery:alchemy",
+    "ingredients": [
+        {
+            "item": "minecraft:netherite_axe"
+        },
+        {
+            "item": "animewitchery:haloic_ingot"
+        }
+    ],
+    "result": {
+        "item": "animewitchery:haloic_axe",
+        "count": 1
+    },
+    "xp_cost": 25,
+    "processing_time": 200
+}

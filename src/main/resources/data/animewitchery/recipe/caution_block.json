@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:black_concrete"
+    },
+    "y": {
+      "item": "minecraft:yellow_concrete"
+    }
+  },
+  "pattern": [
+    "yb",
+    "by"
+  ],
+  "result": {
+    "count": 4,
+    "id": "animewitchery:caution_block"
+  }
+}

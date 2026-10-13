@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "p": {
+      "item": "minecraft:diamond_pickaxe"
+    }
+  },
+  "pattern": [
+    "###",
+    "#p#",
+    "#r#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:block_miner"
+  },
+  "show_notification": true
+}

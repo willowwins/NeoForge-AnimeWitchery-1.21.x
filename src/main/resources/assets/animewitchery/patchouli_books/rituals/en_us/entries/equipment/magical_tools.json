@@ -1,0 +1,52 @@
+{
+  "name": "Magical Tools",
+  "icon": "animewitchery:healing_staff",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Magical Tools$() provide unique utilities beyond combat. Each has special abilities!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:healing_staff_craft",
+      "text": "The $(violet)Healing Staff$() heals nearby players and entities."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:chisel",
+      "text": "The $(violet)Chisel$() cycles obelisk textures or breaks them for shards when shift-clicking."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Metal Detector",
+      "text": "$(b)Metal Detector$()$(br2)Detects nearby ores and valuable blocks. Essential for mining!$(br2)$(violet)Right-click to scan for ores in your vicinity.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Compass",
+      "text": "$(l)Obelisk Compass Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Compass$(br)• Echo Shard$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 15 XP, 400 ticks$()$(br2)Points to nearby obelisks!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Chalk Tools",
+      "text": "$(b)Normal Chalk$() - Basic drawing tool$(br2)$(b)Magic Chalk$() - Used to draw barrier circles for rituals$(br2)$(l)Magic Chalk Recipe:$()$(br)• Chalk$(br)• Glow Ink Sac$(br)• Full Alchemical Catalyst$(br2)$(gold)Cost: 5 XP, 200 ticks$()"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

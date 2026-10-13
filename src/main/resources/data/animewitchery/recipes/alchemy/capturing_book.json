@@ -1,0 +1,38 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    {
+      "item": "animewitchery:enchanted_crystal"
+    },
+    {
+      "item": "animewitchery:void_essence"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "nbt": {
+      "StoredEnchantments": [
+        {
+          "id": "animewitchery:capturing",
+          "lvl": 1
+        }
+      ]
+    },
+    "count": 1
+  },
+  "xp_cost": 35,
+  "processing_time": 800
+}
+

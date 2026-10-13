@@ -1,0 +1,85 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    32,
+    32
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        91,
+        0
+      ],
+      "translation": [
+        0,
+        -3.5,
+        1.75
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        91,
+        0
+      ],
+      "translation": [
+        0,
+        -3.5,
+        1.75
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -11,
+        102,
+        5
+      ],
+      "translation": [
+        2,
+        -4.75,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -11,
+        102,
+        5
+      ],
+      "translation": [
+        2,
+        -4.75,
+        0
+      ]
+    },
+    "gui": {
+      "translation": [
+        0,
+        -7.5,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        -9.75,
+        0
+      ],
+      "scale": [
+        0.9,
+        0.9,
+        0.9
+      ]
+    }
+  },
+  "textures": {
+    "particle": "item/sword_texture"
+  }
+}

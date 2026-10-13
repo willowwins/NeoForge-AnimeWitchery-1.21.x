@@ -1,0 +1,10 @@
+{
+    "icon": "minecraft:item/armor_stand",
+    "order": 100,
+    "slots": [
+        "animewitchery:vanity/head",
+        "animewitchery:vanity/chest",
+        "animewitchery:vanity/legs",
+        "animewitchery:vanity/feet"
+    ]
+}

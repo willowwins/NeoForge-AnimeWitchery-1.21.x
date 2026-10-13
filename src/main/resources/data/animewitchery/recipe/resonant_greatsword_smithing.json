@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "animewitchery:silver_template"
+  },
+  "base": {
+    "item": "animewitchery:resonant_sword"
+  },
+  "addition": {
+    "item": "animewitchery:resonant_catalyst"
+  },
+  "result": {
+    "id": "animewitchery:resonant_greatsword"
+  }
+}

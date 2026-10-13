@@ -1,0 +1,44 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "animewitchery:life_rune_stone"
+    },
+    {
+      "item": "animewitchery:light_rune_stone"
+    },
+    {
+      "item": "minecraft:totem_of_undying"
+    },
+    {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    {
+      "item": "minecraft:beacon"
+    },
+    {
+      "item": "animewitchery:blood_rune_stone"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:resonant_catalyst"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:job_application"
+  },
+  "xp_cost": 50,
+  "processing_time": 2000
+}

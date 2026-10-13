@@ -1,0 +1,48 @@
+{
+  "name": "Mod Overview",
+  "icon": "animewitchery:alchemical_catalyst",
+  "category": "animewitchery:getting_started",
+  "priority": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Welcome to $(b)$(violet)Anime Witchery$()!$(br2)This mod adds:$(br)• $(#)Magical alchemy system$()$(br)• $(#)Powerful rituals$()$(br)• $(#)Advanced equipment$()$(br)• $(#)Automation machines$()$(br)• $(#)New crops & food$()$(br)• $(#)Building blocks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Getting Started",
+      "text": "$(l)First Steps:$()$(br2)1. $(violet)Mine Silver Ore$() - Your foundation$(br)2. $(violet)Craft Mortar & Pestle$() - For dusts$(br)3. $(violet)Create Alchemical Catalyst$() - Your first catalyst$(br)4. $(violet)Build Alchemy Table$() - For advanced crafting$(br)5. $(violet)Learn Rune Stones$() - Elemental magic"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Progression Path",
+      "text": "$(l)Suggested Progression:$()$(br2)$(b)Early Game:$()$(br)• Silver equipment$(br)• Basic alchemy$(br)• Dusts and components$(br2)$(b)Mid Game:$()$(br)• Rune stones$(br)• Railgunner armor$(br)• Automation machines"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Progression Path II",
+      "text": "$(b)Late Game:$()$(br)• Resonant Catalyst$(br)• Obelisk equipment$(br)• Advanced rituals$(br)• Barrier systems$(br2)$(b)End Game:$()$(br)• Dimension Hopper$(br)• Utility items$(br)• Full automation"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Book Categories",
+      "text": "$(l)This Book Contains:$()$(br2)• $(violet)Getting Started$() - Basics$(br)• $(violet)Alchemy$() - Recipes & systems$(br)• $(violet)Transmutation$() - Special crafting$(br)• $(violet)Rituals$() - Magical ceremonies$(br)• $(violet)Equipment$() - Armor & tools$(br)• $(violet)Automation$() - Machines$(br)• $(violet)Farming$() - Crops & food$(br)• $(violet)Building$() - Blocks"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

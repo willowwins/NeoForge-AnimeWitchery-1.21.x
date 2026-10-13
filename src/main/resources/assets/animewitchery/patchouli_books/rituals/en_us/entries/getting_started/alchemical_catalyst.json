@@ -1,0 +1,22 @@
+{
+  "name": "Alchemical Catalyst",
+  "icon": "animewitchery:alchemical_catalyst",
+  "category": "animewitchery:getting_started",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(b)Alchemical Catalyst$() is the cornerstone of magical crafting. It stores $(violet)10,000 mana$() and is required for most advanced recipes.$(br2)To create one:$(br)• Get a $(#)Blaze Sack$() (craft from 9 blaze powder)$(br)• Find an $(#)Amethyst Cluster$()$(br)• Right-click the cluster with the Blaze Sack"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:blaze_powder_bag_craft",
+      "text": "Craft 9 blaze powder into a Blaze Sack."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Transmutation",
+      "text": "$(l)Amethyst Cluster Transmutation:$()$(br2)• Hold a $(#)Blaze Sack$() in your hand$(br)• Right-click an $(#)Amethyst Cluster$()$(br)• The cluster is consumed$(br)• Receive 1 $(violet)Alchemical Catalyst$()$(br2)The catalyst can be recharged by right-clicking it while holding ender pearls or echo shards."
+    }
+  ]
+}
+

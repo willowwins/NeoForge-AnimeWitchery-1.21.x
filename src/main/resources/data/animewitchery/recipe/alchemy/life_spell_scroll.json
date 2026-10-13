@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "animewitchery:life_rune_stone"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:golden_carrot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:life_spell_scroll"
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+}

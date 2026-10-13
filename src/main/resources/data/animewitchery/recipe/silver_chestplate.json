@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "d": {
+      "item": "minecraft:diamond_chestplate"
+    },
+    "n": {
+      "item": "animewitchery:silver_ingot"
+    }
+  },
+  "pattern": [
+    "n n",
+    "ndn",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:silver_chestplate"
+  }
+}

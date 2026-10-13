@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "animewitchery:silver_ingot"
+  },
+  "base": {
+    "item": "animewitchery:silver_sword"
+  },
+  "result": {
+    "id": "animewitchery:needle"
+  },
+  "template": {
+    "item": "animewitchery:silver_template"
+  }
+}

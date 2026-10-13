@@ -1,0 +1,52 @@
+{
+  "name": "Special Blocks",
+  "icon": "animewitchery:decorative_fountain",
+  "category": "animewitchery:building",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Special Blocks$() add unique functionality and decoration to your builds!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:decorative_fountain_craft",
+      "text": "$(violet)Decorative Fountain$()$(br)A beautiful water feature for your builds."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:charcoal_block_craft",
+      "text": "$(violet)Charcoal Block$()$(br)Store charcoal compactly. Craft from 9 charcoal."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Particle Blocks",
+      "text": "$(l)Particle Block Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Glass$(br)• Glowstone Dust$(br)• Redstone$(br)• Full Alchemical Catalyst$(br2)$(gold)Cost: 5 XP, 200 ticks$()$(br2)Emits decorative particles!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Particle Sink",
+      "text": "$(l)Particle Sink Block Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Obsidian$(br)• Black Dye$(br)• Ender Pearl$(br)• Full Alchemical Catalyst$(br2)$(gold)Cost: 5 XP, 200 ticks$()$(br2)Absorbs nearby particles."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Other Blocks",
+      "text": "$(b)Sound Blocks$()$(br)Play custom sounds$(br2)$(b)Pillar$()$(br)Decorative structural pillar$(br2)$(b)Plate Block$()$(br)Flat decorative surface$(br2)$(b)Float Block$()$(br)Gravity-defying block"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

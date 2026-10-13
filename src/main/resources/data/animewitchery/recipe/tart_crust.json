@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "minecraft:wheat"
+    },
+    "o": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "non",
+    "nnn"
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:tart_crust"
+  }
+}

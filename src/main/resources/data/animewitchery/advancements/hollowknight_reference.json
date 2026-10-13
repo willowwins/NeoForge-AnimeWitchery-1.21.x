@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+            "item": "animewitchery:needle"
+        },
+        "title": {
+            "translate": "advancements.animewitchery.hollowknight.title"
+        },
+        "description": {
+            "translate": "advancements.animewitchery.hollowknight.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "animewitchery:root",
+    "criteria": {
+        "needle": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "animewitchery:needle"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "needle"
+        ]
+    ]
+}

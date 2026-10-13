@@ -1,0 +1,57 @@
+{
+  "name": "Crops & Food",
+  "icon": "animewitchery:lemon",
+  "category": "animewitchery:farming",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)New Crops$() add variety to your farming! Grow $(violet)Strawberries$() and $(violet)Lemons$() to create delicious tarts."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Growing Crops",
+      "text": "$(b)Strawberries$()$(br)Plant strawberry seeds on farmland. Break mature plants for strawberries and more seeds.$(br2)$(b)Lemons$()$(br)Plant lemon seeds on farmland. Break mature plants for lemons and more seeds."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:tart_crust",
+      "text": "Craft $(violet)Tart Crust$() from wheat as the base for tarts."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:unbaked_lemon_tart",
+      "text": "Combine lemon, sugar, and tart crust for $(violet)Unbaked Lemon Tart$()."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "animewitchery:lemon_tart_from_smelting_unbaked_lemon_tart",
+      "text": "Bake in a furnace to create $(violet)Lemon Tart$()! Restores hunger and saturation."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:unbaked_strawberry_tart",
+      "text": "Combine strawberry, sugar, and tart crust for $(violet)Unbaked Strawberry Tart$()."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "animewitchery:strawberry_tart_from_smelting_unbaked_strawberry_tart",
+      "text": "Bake in a furnace to create $(violet)Strawberry Tart$()! Restores hunger and saturation."
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

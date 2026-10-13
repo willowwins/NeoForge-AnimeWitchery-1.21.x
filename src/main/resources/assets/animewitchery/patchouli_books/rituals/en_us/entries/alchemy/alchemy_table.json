@@ -1,0 +1,42 @@
+{
+  "name": "The Alchemy Table",
+  "icon": "animewitchery:alchemy_table",
+  "category": "animewitchery:alchemy",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(b)Alchemy Table$() is the heart of magical crafting. It transforms materials using mana and experience.$(br2)$(violet)Essential for all advanced recipes!$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "How It Works",
+      "text": "$(l)Using the Alchemy Table:$()$(br2)1. Place ingredients in the $(violet)10 circular slots$()$(br)2. Output appears in the $(violet)center slot$()$(br)3. Requires $(#)XP levels$() and $(#)processing time$()$(br)4. Most recipes need a $(violet)catalyst$() (Alchemical or Resonant)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Slot Layout",
+      "text": "$(l)Alchemy Table Layout:$()$(br2)• $(violet)10 Input Slots$() arranged in a circle$(br)• $(violet)1 Output Slot$() in the center$(br)• Ingredients must have correct $(#)item$() and $(#)NBT data$()$(br)• Catalysts need full mana (10,000)"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Crafting Tips",
+      "text": "$(l)Alchemy Tips:$()$(br2)• Keep spare charged catalysts ready$(br)• Higher XP recipes = better rewards$(br)• Processing time varies by recipe$(br)• Some recipes require specific NBT data$(br)• Check recipe book for details!"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

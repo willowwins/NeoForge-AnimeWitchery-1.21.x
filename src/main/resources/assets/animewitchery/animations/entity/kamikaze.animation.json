@@ -1,0 +1,128 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idle": {
+			"loop": true,
+			"animation_length": 8,
+			"bones": {
+				"middle": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, -45, 0]
+						},
+						"2.0": {
+							"vector": [0, -90, 0]
+						},
+						"3.0": {
+							"vector": [0, -135, 0]
+						},
+						"4.0": {
+							"vector": [0, -180, 0]
+						},
+						"5.0": {
+							"vector": [0, -222.5, 0]
+						},
+						"6.0": {
+							"vector": [0, -268.33, 0]
+						},
+						"7.0": {
+							"vector": [0, -313.33, 0]
+						},
+						"8.0": {
+							"vector": [0, -358.33, 0]
+						}
+					}
+				},
+				"top": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 45, 0]
+						},
+						"2.0": {
+							"vector": [0, 90, 0]
+						},
+						"3.0": {
+							"vector": [0, 135, 0]
+						},
+						"4.0": {
+							"vector": [0, 180, 0]
+						},
+						"5.0": {
+							"vector": [0, 220, 0]
+						},
+						"6.0": {
+							"vector": [0, 270, 0]
+						},
+						"7.0": {
+							"vector": [0, 315, 0]
+						},
+						"8.0": {
+							"vector": [0, 360, 0]
+						}
+					}
+				}
+			}
+		},
+		"fire": {
+			"animation_length": 2,
+			"bones": {
+				"top": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 45, 0]
+						},
+						"2.0": {
+							"vector": [0, 90, 0]
+						}
+					}
+				},
+				"middle": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, -45, 0]
+						},
+						"2.0": {
+							"vector": [0, -90, 0]
+						}
+					}
+				},
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"2.0": {
+							"vector": [0, 360, 0]
+						}
+					},
+					"scale": {
+						"0.0": {
+							"vector": [1, 0, 1]
+						},
+						"0.5": {
+							"vector": [10, -5, 10],
+							"easing": "easeInOutQuint"
+						},
+						"1.0": {
+							"vector": [10, -350, 10],
+							"easing": "easeInOutExpo"
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

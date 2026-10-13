@@ -1,0 +1,111 @@
+{
+  "name": "Spell System",
+  "icon": "animewitchery:wand",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(violet)Spell System$() is a powerful magic framework with $(b)Wands$(), $(b)Spellbooks$(), and $(b)Trigger Blocks$()!$(br2)Store multiple configurations, export them as $(gold)Spellbook Pages$(), and enjoy devastating status effects!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Magic Wand",
+      "text": "$(l)Alchemy Recipe:$()$(br)• Stick$(br)• Silver Ingot$(br)• Enchanted Crystal$(br)• Void Essence$(br)• Ender Pearl$(br)• Blaze Powder$(br2)$(gold)Cost: 15 XP, 400 ticks$()$(br2)Foundation of spell casting! Wand name changes color based on encoded spell."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Spell Scrolls",
+      "text": "$(b)Crafted via Alchemy:$()$(br)• Paper$(br)• Rune Stone (spell type)$(br)• 2 thematic ingredients$(br2)$(gold)Cost: 5 XP, 200 ticks$()$(br2)$(violet)8 spell types available!$()$(br)Stack up to 16, color-coded by element."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Encoding Spells",
+      "text": "$(b)To encode:$()$(br2)1. Hold $(violet)Wand$() in main hand$(br)2. Hold $(violet)Spell Scroll$() in off-hand$(br)3. Right-click$(br2)Scroll consumed, wand glows with spell color!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "🔥 Fire Blast",
+      "text": "$(#FF6B6B)Element: Fire$()$(br)$(gold)Mana: 500$()$(br2)$(b)Effects:$()$(br)• 20-block beam$(br)• 6 damage$(br)• $(#FF4500)Sets enemies on FIRE for 5 seconds!$()$(br2)Perfect for burning through groups of enemies!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "💧 Water Shield",
+      "text": "$(#4ECDC4)Element: Water$()$(br)$(gold)Mana: 300$()$(br2)$(b)Effects:$()$(br)• Protective water barrier$(br)• $(#ADD8E6)Resistance I (10s)$()$(br)• $(#FFA500)Fire Resistance (10s)$()$(br)• $(#00BFFF)Extinguishes you!$()$(br2)Ultimate defense spell!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "🌍 Earth Spike",
+      "text": "$(#8B4513)Element: Earth$()$(br)$(gold)Mana: 500$()$(br2)$(b)Effects:$()$(br)• 20-block beam$(br)• 7.2 damage$(br)• $(#A0522D)Slowness II (3s)$()$(br2)Roots enemies in place with crushing force!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "💨 Wind Gust",
+      "text": "$(#E0E0E0)Element: Air$()$(br)$(gold)Mana: 300$()$(br2)$(b)Effects:$()$(br)• 20-block beam$(br)• $(#87CEEB)Massive knockback!$()$(br)• Launches enemies away$(br2)Great for crowd control and cliff tactics!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "💚 Healing Wave",
+      "text": "$(#90EE90)Element: Life$()$(br)$(gold)Mana: 800$()$(br2)$(b)Effects:$()$(br)• Heals 4 HP$(br)• $(#32CD32)Regeneration (5s)$()$(br)• $(#FFD700)Removes:$() Poison, Wither, Slowness, Weakness, Blindness$(br2)Ultimate support spell!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "💀 Wither Touch",
+      "text": "$(#8B008B)Element: Death$()$(br)$(gold)Mana: 500$()$(br2)$(b)Effects:$()$(br)• 20-block beam$(br)• 4.8 damage$(br)• $(#3D0D3D)Wither II (5s)$()$(br2)Drains life with dark magic!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "☀️ Light Burst",
+      "text": "$(#FFD700)Element: Light$()$(br)$(gold)Mana: 500$()$(br2)$(b)Effects:$()$(br)• 20-block beam$(br)• 6 damage ($(#FFD700)12 vs undead!$())$(br)• $(#FFFFE0)Glowing (5s)$()$(br2)Holy beam devastating to undead!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "🌑 Shadow Bind",
+      "text": "$(#4B0082)Element: Darkness$()$(br)$(gold)Mana: 500$()$(br2)$(b)Effects:$()$(br)• 20-block beam$(br)• 4.2 damage$(br)• $(#000000)Blindness (4s)$()$(br)• $(#696969)Slowness III (4s)$()$(br)• $(#A9A9A9)Weakness (4s)$()$(br2)Complete debilitation!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Spell Trigger Block",
+      "text": "$(l)Alchemy Recipe:$()$(br)• Stone$(br)• Silver Ingot$(br)• Enchanted Crystal$(br)• Redstone$(br)• Lapis Lazuli$(br)• Ender Pearl$(br)• Blaze Powder$(br2)$(gold)Cost: 20 XP, 500 ticks$()$(br2)Pressure plate that casts spells!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Using Triggers",
+      "text": "$(b)Encoding:$()$(br)Right-click with encoded wand$(br2)$(b)Activation:$()$(br)Walk over it to cast spell!$(br2)$(violet)NEW:$() Also accepts $(gold)Spellbook Pages$() for multi-spell configurations!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "📖 Spellbook System",
+      "text": "$(gold)Store up to 10 named spell configurations!$()$(br2)$(l)Alchemy Recipe:$()$(br)• Book$(br)• 2x Silver Ingot$(br)• Enchanted Crystal$(br)• Void Essence$(br)• Ender Eye$(br)• Nether Star$(br)• Dragon Breath$(br2)$(gold)Cost: 30 XP, 800 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Spellbook Controls",
+      "text": "$(violet)Left-Click:$() Cycle saved configurations$(br2)$(violet)Right-Click:$() Cast active configuration$(br2)$(violet)Shift + Right-Click:$() Open GUI$(br2)$(violet)With Page in Off-hand:$() Import configuration!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Multi-Configuration",
+      "text": "$(b)Each configuration stores:$()$(br)• Custom name$(br)• Up to 9 spells$(br)• Casting pattern$(br)• Cast delay$(br2)$(gold)Switch between 10 different setups on the fly!$()$(br2)Perfect for different situations!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "📄 Spellbook Pages",
+      "text": "$(gold)NEW: Physical spell configurations!$()$(br2)$(b)Export$() from GUI to create item$(br)$(b)Import$() into other spellbooks$(br)$(b)Trade$() with other players$(br)$(b)Use$() in Trigger Blocks$(br2)$(violet)Stack up to 16!$()$(br)Tooltip shows full spell list."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Casting Patterns",
+      "text": "$(violet)Beam (100 mana):$()$(br)Sequential casting$(br2)$(violet)Circle (300 mana):$()$(br)360° around you$(br2)$(violet)Cone (200 mana):$()$(br)45° spread$(br2)$(violet)Burst (500 mana):$()$(br)All spells instantly!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Smart Mana System",
+      "text": "$(b)Spellbooks are efficient:$()$(br2)• Each spell costs $(gold)50% less$() mana$(br)• Pattern overhead added$(br)• $(red)Multiple spells scale exponentially!$()$(br2)$(violet)Scaling Formula:$()$(br)Each additional spell increases cost by $(gold)40%$()$(br2)$(violet)Examples:$()$(br)1 spell: Base cost$(br)2 spells: +40% total$(br)3 spells: +96% total$(br)4 spells: +174% total$(br2)$(gold)Balance risk vs reward!$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Advanced Tactics",
+      "text": "$(b)Spell Combos:$()$(br)• Water Shield → Fire Blast$(br)• Shadow Bind → Any damage spell$(br)• Earth Spike → Melee finish$(br2)$(b)Use Pages for:$()$(br)• Boss fight loadouts$(br)• PvP configurations$(br)• Automated defenses in Triggers"
+    }
+  ]
+}

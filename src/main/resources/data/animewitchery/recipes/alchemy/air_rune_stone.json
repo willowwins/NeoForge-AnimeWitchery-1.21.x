@@ -1,0 +1,29 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:rune_stone"
+    },
+    {
+      "item": "animewitchery:amethyst_dust"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:white_dye"
+    },
+    {
+      "item": "minecraft:light_blue_dye"
+    },
+    {
+      "item": "minecraft:glass"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:air_rune_stone",
+    "count": 1
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+} 

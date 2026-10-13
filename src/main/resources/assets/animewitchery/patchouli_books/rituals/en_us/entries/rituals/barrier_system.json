@@ -1,0 +1,22 @@
+{
+  "name": "Barrier System",
+  "icon": "animewitchery:barrier_circle",
+  "category": "animewitchery:rituals",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Barrier Rituals$() create protected zones that:$(br)- $(#4ecdc4)Push out unauthorized players$()$(br)- $(#4ecdc4)Prevent block breaking$()$(br)- $(#4ecdc4)Prevent block interaction$()$(br)- $(#4ecdc4)Extend from bedrock to build height$()$(br)- $(#4ecdc4)Can cover up to 200x200 blocks$()$(br2)Distance glyphs can be placed up to $(l)100 blocks$() from the circle in each cardinal direction."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Allowlist Management",
+      "text": "$(b)Add a Player:$()$(br)1. Rename paper to their username$(br)2. Right-click the Barrier Circle$(br)3. They are granted passage$(br2)$(b)Remove a Player:$()$(br)1. Rename paper to $(l)\"username\"$() (with quotes)$(br)2. Right-click the Barrier Circle$(br)3. Their passage is revoked$(br2)$(#888)Unauthorized players CAN interact with the circle itself to be added.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Protection Features",
+      "text": "$(l)Unauthorized players cannot:$()$(br)- Enter the barrier (pushed back)$(br)- Break any blocks inside$(br)- Open chests or containers$(br)- Use doors, buttons, levers$(br)- Interact with any blocks$(br2)$(l)Authorized players have:$()$(br)- Full access to everything$(br)- Ability to add/remove others$(br)- Complete build rights"
+    }
+  ]
+}
+

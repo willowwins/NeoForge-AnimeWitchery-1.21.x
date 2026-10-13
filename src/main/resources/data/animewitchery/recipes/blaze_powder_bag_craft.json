@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "minecraft:blaze_powder"
+    },
+    "o": {
+      "item": "minecraft:bundle"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "non",
+    "nnn"
+  ],
+  "result": {
+    "item": "animewitchery:blaze_powder_bag"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "planks",
+    "ingredients": [
+        {
+            "item": "animewitchery:rosewillow_log"
+        }
+    ],
+    "result": {
+        "item": "animewitchery:rosewillow_planks",
+        "count": 4
+    }
+}

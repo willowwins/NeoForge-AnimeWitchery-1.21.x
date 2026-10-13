@@ -1,0 +1,23 @@
+{
+  "name": "Enchanted Crystal",
+  "category": "animewitchery:alchemy",
+  "icon": "animewitchery:enchanted_crystal",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(#b38cff)Enchanted Crystal$() is a fundamental component in many advanced alchemy recipes. It combines the dimensional properties of ender pearls with the crystalline structure of amethyst, infused with concentrated mana."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:alchemy/enchanted_crystal",
+      "title": "Crafting",
+      "text": "Craft in the $(#b38cff)Alchemy Table$() using an Amethyst Shard, Alchemical Catalyst (with 10,000 stored mana), and an Ender Pearl."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Uses",
+      "text": "$(l)Recipe Ingredient For:$()$(br)• Grand Shulker Box Inception$(br)• Advanced enchantments$(br)• High-tier equipment$(br)• Dimensional items$(br2)$(4)Tip:$() Always keep a few Enchanted Crystals in stock - they're required for many end-game recipes!"
+    }
+  ]
+}
+

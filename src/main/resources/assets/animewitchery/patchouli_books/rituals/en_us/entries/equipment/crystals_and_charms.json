@@ -1,0 +1,27 @@
+{
+  "name": "Crystals & Charms",
+  "icon": "animewitchery:fire_res_crystal",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Crystals and Charms$() grant special abilities when carried. Keep them in your inventory for passive effects!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Fire Resistance Crystal",
+      "text": "$(b)Fire Resistance Crystal$()$(br2)Grants immunity to fire and lava damage while in your inventory.$(br2)$(violet)Essential for Nether exploration!$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Speed Crystal",
+      "text": "$(b)Speed Crystal$()$(br2)Increases your movement speed while carried.$(br2)$(violet)Perfect for long journeys and quick escapes!$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Repair Charm",
+      "text": "$(l)Repair Charm Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Totem of Undying$(br)• 2x Full Resonant Catalyst$(br)• Silver Template$(br)• Netherite Ingot$(br)• Diamond$(br2)$(gold)Cost: 30 XP, 800 ticks$()$(br2)Automatically repairs equipped items over time!"
+    }
+  ]
+}
+

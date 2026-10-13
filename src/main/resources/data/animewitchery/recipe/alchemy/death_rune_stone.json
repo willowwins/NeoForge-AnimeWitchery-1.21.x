@@ -1,0 +1,29 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:rune_stone"
+    },
+    {
+      "item": "animewitchery:amethyst_dust"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:death_rune_stone"
+  },
+  "xp_cost": 8,
+  "processing_time": 300
+}

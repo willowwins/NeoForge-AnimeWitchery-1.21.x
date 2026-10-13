@@ -1,0 +1,41 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald_block"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:emerald_block"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:emerald_block"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:emerald_block"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:emerald_block"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:resonant_catalyst",
+    "count": 1
+  },
+  "xp_cost": 15,
+  "processing_time": 1000
+} 

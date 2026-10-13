@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "animewitchery:block/lemon_crop_stage0"
+  }
+}

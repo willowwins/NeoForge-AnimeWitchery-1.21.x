@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "animewitchery:silver_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "result": {
+    "item": "animewitchery:railgunner_chestplate"
+  },
+  "template": {
+    "item": "animewitchery:silver_template"
+  }
+}

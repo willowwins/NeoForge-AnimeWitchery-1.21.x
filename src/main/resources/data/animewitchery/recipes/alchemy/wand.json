@@ -1,0 +1,29 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "animewitchery:silver_ingot"
+    },
+    {
+      "item": "animewitchery:enchanted_crystal"
+    },
+    {
+      "item": "animewitchery:void_essence"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:wand",
+    "count": 1
+  },
+  "xp_cost": 15,
+  "processing_time": 400
+}

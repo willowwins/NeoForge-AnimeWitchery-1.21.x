@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "MISC",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_berries"
+    }
+  ],
+  "result": {
+    "item": "minecraft:glow_ink_sac"
+  }
+}

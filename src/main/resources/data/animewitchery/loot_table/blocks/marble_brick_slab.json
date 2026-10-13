@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "animewitchery:marble_brick_slab"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 2,
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "animewitchery:marble_brick_slab",
+              "properties": {
+                "type": "double"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

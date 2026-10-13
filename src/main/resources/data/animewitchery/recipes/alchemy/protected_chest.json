@@ -1,0 +1,27 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "animewitchery:enchanted_crystal"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "animewitchery:barrier_catalyst"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:protected_chest",
+    "count": 1
+  },
+  "xp_cost": 12,
+  "processing_time": 600
+}
+

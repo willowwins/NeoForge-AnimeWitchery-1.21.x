@@ -1,0 +1,17 @@
+{
+  "name": "Getting This Book",
+  "icon": "animewitchery:rituals_book",
+  "category": "animewitchery:getting_started",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Welcome to $(violet)Anime Witchery$()! This grimoire contains all the knowledge you'll need.$(br2)To craft another copy:$(br)• 1 Book$(br)• 1 Raw Silver$(br2)Combine in a crafting table (shapeless).$(br2)Also available in creative inventory under Tools & Utilities."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:rituals_book",
+      "text": "Craft the Grimoire of the Four Quarters"
+    }
+  ]
+}
+

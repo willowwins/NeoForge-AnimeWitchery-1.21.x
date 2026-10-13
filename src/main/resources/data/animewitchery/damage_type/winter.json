@@ -1,0 +1,11 @@
+{
+  "message_id": "winter",
+  "exhaustion": 0.0,
+  "scaling": "never",
+  "effects": "freezing",
+  "death_message_type": "default",
+  "bypasses_armor": true,
+  "bypasses_resistance": true,
+  "bypasses_enchantments": true
+}
+

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "animewitchery:silver_ingot"
+  },
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "result": {
+    "item": "animewitchery:silver_helmet"
+  },
+  "template": {
+    "item": "animewitchery:silver_template"
+  }
+}

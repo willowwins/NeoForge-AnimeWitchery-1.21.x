@@ -1,0 +1,42 @@
+{
+  "name": "Fuel & Energy",
+  "icon": "animewitchery:fuel_rod",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Energy Systems$() power advanced equipment. Manage your fuel carefully!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Fuel Rod",
+      "text": "$(l)Fuel Rod Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Iron Ingot$(br)• Redstone Block$(br)• Blaze Rod$(br)• Coal Block$(br)• Full Alchemical Catalyst$(br2)$(gold)Cost: 10 XP, 600 ticks$()$(br2)Powers various machines and devices."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Overheated Fuel Rod",
+      "text": "$(b)Overheated Fuel Rod$()$(br2)A depleted fuel rod. Created when a fuel rod runs out of energy.$(br2)$(violet)Can be recycled or disposed of safely.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Mana Rocket",
+      "text": "$(l)Mana Rocket Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Firework Rocket$(br)• Silver Ingot$(br)• Silver Template$(br)• Full Alchemical Catalyst$(br2)$(gold)Cost: 5 XP, 150 ticks$()$(br2)A magical explosive with unique properties!"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

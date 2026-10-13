@@ -1,0 +1,7 @@
+﻿{
+  "variants": {
+    "type=bottom": { "model": "animewitchery:block/iron_slab" },
+    "type=double": { "model": "minecraft:block/iron_block" },
+    "type=top": { "model": "animewitchery:block/iron_slab_top" }
+  }
+}

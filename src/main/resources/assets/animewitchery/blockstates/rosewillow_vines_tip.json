@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "berries=false": {
+            "model": "animewitchery:block/rosewillow_vines_tip"
+        },
+        "berries=true": {
+            "model": "animewitchery:block/rosewillow_vines_tip_blooming"
+        }
+    }
+}

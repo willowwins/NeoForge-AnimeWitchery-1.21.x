@@ -1,0 +1,57 @@
+{
+  "name": "Automation Machines",
+  "icon": "animewitchery:auto_crafter",
+  "category": "animewitchery:automation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Automation Machines$() help streamline your workflows. Place them strategically to automate tasks!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:crafter_craft",
+      "text": "$(violet)Auto Crafter$()$(br)Automatically crafts items from input inventory."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:breaker_craft",
+      "text": "$(violet)Block Miner$()$(br)Automatically breaks blocks in front of it."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:growth_accelerator_craft",
+      "text": "$(violet)Growth Accelerator$()$(br)Speeds up crop and plant growth nearby."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:placer_craft",
+      "text": "$(violet)Block Placer$()$(br)Automatically places blocks from its inventory."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:interactor_craft",
+      "text": "$(violet)Interactor$()$(br)Automatically interacts with blocks (right-click actions)."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Tips",
+      "text": "$(l)Automation Tips:$()$(br2)• Chain machines together for complex automation$(br)• Use hoppers to transfer items$(br)• Power with redstone for control$(br)• Combine with growth accelerators for efficient farms!"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

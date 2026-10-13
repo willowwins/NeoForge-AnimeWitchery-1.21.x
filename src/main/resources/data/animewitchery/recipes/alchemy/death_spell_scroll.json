@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "animewitchery:death_rune_stone"
+    },
+    {
+      "item": "minecraft:wither_rose"
+    },
+    {
+      "item": "minecraft:bone"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:death_spell_scroll",
+    "count": 1
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+}

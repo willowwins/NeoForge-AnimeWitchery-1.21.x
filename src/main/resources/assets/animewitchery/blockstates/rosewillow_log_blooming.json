@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=x": {
+            "model": "animewitchery:block/rosewillow_log_blooming_horizontal",
+            "x": 90,
+            "y": 90
+        },
+        "axis=y": {
+            "model": "animewitchery:block/rosewillow_log_blooming"
+        },
+        "axis=z": {
+            "model": "animewitchery:block/rosewillow_log_blooming_horizontal",
+            "x": 90
+        }
+    }
+}

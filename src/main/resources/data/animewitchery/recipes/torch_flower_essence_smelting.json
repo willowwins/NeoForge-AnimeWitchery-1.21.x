@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "minecraft:torchflower"
+    },
+    "result": "animewitchery:torch_flower_essence",
+    "experience": 0.35,
+    "cookingtime": 200
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blaze_powder": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blaze_powder"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_bundle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bundle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "animewitchery:blaze_powder_bag"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blaze_powder",
+      "has_bundle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "animewitchery:blaze_powder_bag"
+    ]
+  }
+}

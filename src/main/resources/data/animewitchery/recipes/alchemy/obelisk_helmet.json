@@ -1,0 +1,33 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_helmet"
+    },
+    {
+      "item": "animewitchery:obelisk_shard"
+    },
+    {
+      "item": "animewitchery:obelisk_shard"
+    },
+    {
+      "item": "animewitchery:silver_template"
+    },
+    {
+      "item": "minecraft:crying_obsidian"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    }
+  ],
+  "result": {
+    "item": "animewitchery:obelisk_helmet",
+    "count": 1
+  },
+  "xp_cost": 20,
+  "processing_time": 600
+}
+

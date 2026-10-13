@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:chalk"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:glow_ink_sac"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:magic_chalk"
+  },
+  "xp_cost": 3,
+  "processing_time": 100
+}

@@ -1,0 +1,26 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:stone_pressure_plate"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:chain"
+    },
+    {
+      "item": "minecraft:cobweb"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:binding_spell"
+  },
+  "xp_cost": 10,
+  "processing_time": 300
+}

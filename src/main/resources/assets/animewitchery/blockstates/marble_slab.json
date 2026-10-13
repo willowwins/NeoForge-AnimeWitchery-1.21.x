@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "animewitchery:block/marble_slab"
+    },
+    "type=double": {
+      "model": "animewitchery:block/marble"
+    },
+    "type=top": {
+      "model": "animewitchery:block/marble_slab_top"
+    }
+  }
+}

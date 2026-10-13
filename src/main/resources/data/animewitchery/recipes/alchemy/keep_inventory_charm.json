@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:totem_of_undying"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "animewitchery:void_essence"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:keep_inventory_charm",
+    "count": 1
+  },
+  "xp_cost": 30,
+  "processing_time": 600
+}

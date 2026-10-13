@@ -1,0 +1,27 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:reinforced_deepslate"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:observer"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:particle_sink_block",
+    "count": 1
+  },
+  "xp_cost": 20,
+  "processing_time": 600
+}
+

@@ -1,0 +1,32 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:silver_hoe"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "animewitchery:silver_template"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:resonant_hoe"
+  },
+  "xp_cost": 15,
+  "processing_time": 400
+}

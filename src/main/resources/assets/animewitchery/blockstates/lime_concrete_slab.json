@@ -1,0 +1,7 @@
+﻿{
+  "variants": {
+    "type=bottom": { "model": "animewitchery:block/lime_concrete_slab" },
+    "type=double": { "model": "minecraft:block/lime_concrete" },
+    "type=top": { "model": "animewitchery:block/lime_concrete_slab_top" }
+  }
+}

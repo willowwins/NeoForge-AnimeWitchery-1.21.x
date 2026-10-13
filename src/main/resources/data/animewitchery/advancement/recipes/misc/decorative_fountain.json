@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chiseled_stone_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:chiseled_stone_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stone_brick_slab": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone_brick_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stone_brick_wall": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stone_brick_wall"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "animewitchery:decorative_fountain"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_water_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:water_bucket"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_water_bucket",
+      "has_stone_brick_slab",
+      "has_stone_brick_wall",
+      "has_chiseled_stone_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "animewitchery:decorative_fountain"
+    ]
+  }
+}

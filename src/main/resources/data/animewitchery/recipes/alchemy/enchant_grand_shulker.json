@@ -1,0 +1,28 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:grand_shulker_box"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "animewitchery:void_essence"
+    },
+    {
+      "item": "animewitchery:enchanted_crystal"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:grand_shulker_box",
+    "count": 1,
+    "nbt": "{Enchantments:[{id:\"minecraft:mending\",lvl:1s}]}"
+  },
+  "xp_cost": 15,
+  "processing_time": 400
+}
+

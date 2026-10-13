@@ -1,0 +1,52 @@
+{
+  "name": "Railgunner Armor",
+  "icon": "animewitchery:railgunner_helmet",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Railgunner Armor$() is advanced combat armor. Each piece is upgraded from $(violet)Silver Armor$() using smithing.$(br2)Provides enhanced protection and special abilities!"
+    },
+    {
+      "type": "patchouli:smithing",
+      "recipe": "animewitchery:railgunner_helmet_smithing",
+      "text": "Upgrade silver helmet to railgunner helmet."
+    },
+    {
+      "type": "patchouli:smithing",
+      "recipe": "animewitchery:railgunner_chestplate_smithing",
+      "text": "Upgrade silver chestplate to railgunner chestplate."
+    },
+    {
+      "type": "patchouli:smithing",
+      "recipe": "animewitchery:railgunner_leggings_smithing",
+      "text": "Upgrade silver leggings to railgunner leggings."
+    },
+    {
+      "type": "patchouli:smithing",
+      "recipe": "animewitchery:railgunner_boots_smithing",
+      "text": "Upgrade silver boots to railgunner boots."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Full Set",
+      "text": "$(l)Complete Railgunner Set:$()$(br2)Wearing the full set grants special combat bonuses. Perfect for aggressive playstyles!$(br2)$(violet)Pairs well with the Railgun weapon!$()"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+{
+  "name": "Amethyst Transmutations",
+  "icon": "minecraft:amethyst_cluster",
+  "category": "animewitchery:transmutation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Amethyst Clusters$() can be transmuted into powerful items through specific combinations:$(br2)$(violet)Alchemical Catalyst:$()$(br)Blaze Sack + Amethyst Cluster$(br2)$(violet)Staff Head:$()$(br)Crying Obsidian + Chiseled Quartz Block + Amethyst Cluster (hold both items)$(br2)$(violet)Silver Pendant:$()$(br)Silver Spool + Healing Staff + Amethyst Cluster"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "How to Transmute",
+      "text": "$(l)To perform a transmutation:$()$(br)1. Hold the required item(s) in your hands$(br)2. Right-click an Amethyst Cluster$(br)3. The cluster will be consumed$(br)4. The transmuted item will drop$(br2)$(#888)Note: The Interactor block can automate Blaze Sack → Alchemical Catalyst transmutations.$()"
+    }
+  ]
+}
+

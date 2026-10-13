@@ -1,0 +1,13 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "animewitchery:item/oathbreaker_base",
+	"textures": {
+		"0": "animewitchery:item/oathbreaker",
+		"particle": "animewitchery:item/oathbreaker"
+	},
+	"overrides": [
+		{"predicate": {"animewitchery:active_state": 1}, "model": "animewitchery:item/oathbreaker_active_base"}
+	],
+	"display": {}
+}

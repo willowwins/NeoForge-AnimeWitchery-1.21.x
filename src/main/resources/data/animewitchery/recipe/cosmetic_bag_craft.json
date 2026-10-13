@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "i i",
+    "rrr"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_nugget"
+    },
+    "r": {
+      "item": "minecraft:red_wool"
+    }
+  },
+  "result": {
+    "id": "animewitchery:cosmetic_bag",
+    "count": 1
+  }
+}

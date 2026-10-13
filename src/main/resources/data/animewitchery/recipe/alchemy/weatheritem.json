@@ -1,0 +1,44 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:lightning_rod"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:powder_snow_bucket"
+    },
+    {
+      "item": "animewitchery:air_rune_stone"
+    },
+    {
+      "item": "animewitchery:water_rune_stone"
+    },
+    {
+      "item": "minecraft:prismarine_crystals"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    {
+      "item": "minecraft:conduit"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:resonant_catalyst"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:weatheritem"
+  },
+  "xp_cost": 40,
+  "processing_time": 1600
+}

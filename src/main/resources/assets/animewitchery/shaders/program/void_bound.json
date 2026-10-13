@@ -1,0 +1,21 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "srcalpha",
+    "dstrgb": "1-srcalpha"
+  },
+  "vertex": "void_bound",
+  "fragment": "void_bound",
+  "attributes": [ "Position" ],
+  "samplers": [
+    { "name": "DiffuseSampler" },
+    { "name": "DiffuseDepthSampler" }
+  ],
+  "uniforms": [
+    { "name": "uTime", "type": "float" },
+    { "name": "uVoidPhase", "type": "float" },
+    { "name": "uTexelSize", "type": "vec2" },
+    { "name": "uPlayerPos", "type": "vec3" },
+    { "name": "uCameraPos", "type": "vec3" }
+  ]
+}

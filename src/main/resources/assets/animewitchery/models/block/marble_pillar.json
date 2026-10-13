@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "animewitchery:block/marble_pillar_top",
+    "side": "animewitchery:block/marble_pillar_side"
+  }
+}

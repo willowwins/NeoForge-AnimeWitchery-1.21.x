@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "animewitchery:silver_ore",
+    "animewitchery:deepslate_silver_ore",
+    "animewitchery:deepslate_scheelite_ore",
+    "#minecraft:gold_ores",
+    "#minecraft:emerald_ores",
+    "#minecraft:iron_ores",
+    "#minecraft:diamond_ores",
+    "#minecraft:lapis_ores",
+    "#minecraft:coal_ores",
+    "#minecraft:copper_ores",
+    "#minecraft:redstone_ores"
+  ]
+}

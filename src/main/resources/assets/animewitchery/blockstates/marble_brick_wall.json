@@ -1,0 +1,92 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_post"
+      }
+    },
+    {
+      "when": {
+        "north": "low"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_side_low",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "north": "tall"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_side_tall",
+        "y": 0,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "low"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_side_low",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "east": "tall"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_side_tall",
+        "y": 90,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "low"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_side_low",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "south": "tall"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_side_tall",
+        "y": 180,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "low"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_side_low",
+        "y": 270,
+        "uvlock": true
+      }
+    },
+    {
+      "when": {
+        "west": "tall"
+      },
+      "apply": {
+        "model": "animewitchery:block/marble_brick_wall_side_tall",
+        "y": 270,
+        "uvlock": true
+      }
+    }
+  ]
+}

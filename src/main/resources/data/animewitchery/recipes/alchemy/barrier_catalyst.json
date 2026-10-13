@@ -1,0 +1,33 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:enchanted_crystal"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "item": "animewitchery:amethyst_dust"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:barrier_catalyst",
+    "count": 1
+  },
+  "xp_cost": 25,
+  "processing_time": 800
+}
+

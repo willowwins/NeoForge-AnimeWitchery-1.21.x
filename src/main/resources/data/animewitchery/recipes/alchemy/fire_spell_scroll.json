@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "animewitchery:fire_rune_stone"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:fire_spell_scroll",
+    "count": 1
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+}

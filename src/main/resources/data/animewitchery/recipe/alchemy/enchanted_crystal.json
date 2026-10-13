@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:enchanted_crystal"
+  },
+  "xp_cost": 8,
+  "processing_time": 300
+}

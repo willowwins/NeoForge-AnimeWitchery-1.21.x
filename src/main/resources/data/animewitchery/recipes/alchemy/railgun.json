@@ -1,0 +1,36 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:fuel_rod"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:lodestone"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    },
+    {
+      "item": "animewitchery:silver_template"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:railgun",
+    "count": 1
+  },
+  "xp_cost": 35,
+  "processing_time": 1200
+}
+

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ice_spikes",
+    "minecraft:snowy_taiga",
+    "minecraft:grove",
+    "minecraft:snowy_slopes",
+    "minecraft:jagged_peaks",
+    "minecraft:frozen_peaks",
+    "minecraft:end_midlands",
+    "minecraft:end_highlands",
+    "minecraft:end_barrens",
+    "minecraft:small_end_islands",
+    "animewitchery:paradise_lost"
+  ]
+}

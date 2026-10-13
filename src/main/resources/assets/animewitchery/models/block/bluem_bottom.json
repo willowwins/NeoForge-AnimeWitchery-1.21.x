@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "animewitchery:block/bluem_bottom"
+  }
+}

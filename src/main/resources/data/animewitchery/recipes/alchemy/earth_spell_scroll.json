@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "animewitchery:earth_rune_stone"
+    },
+    {
+      "item": "minecraft:moss_block"
+    },
+    {
+      "item": "minecraft:dirt"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:earth_spell_scroll",
+    "count": 1
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+}

@@ -1,0 +1,32 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "minecraft:echo_shard"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "minecraft:experience_bottle"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "animewitchery:repair_essence"
+  },
+  "xp_cost": 20,
+  "processing_time": 600
+}

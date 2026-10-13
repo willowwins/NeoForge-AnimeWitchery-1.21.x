@@ -1,0 +1,23 @@
+{
+  "name": "Special Items",
+  "icon": "animewitchery:mana_rocket",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Mana Rocket Recipe",
+      "text": "$(l)Mana Rocket Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- Firework Rocket$(br)- Silver Ingot$(br)- Silver Template$(br)- Full Alchemical Catalyst$(br2)$(gold)Cost: 5 XP, 150 ticks$()$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create the Mana Rocket in the center output slot.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Repair Charm Recipe",
+      "text": "$(l)Repair Charm Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- Totem of Undying$(br)- 2x Full Resonant Catalyst$(br)- Silver Template$(br)- Netherite Ingot$(br)- Diamond$(br2)$(gold)Cost: 30 XP, 800 ticks$()$(br2)Automatically repairs equipped items over time.$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create the Repair Charm in the center output slot.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Tools",
+      "text": "$(b)Chisel:$()$(br)Obsidian + Stick$(br)Used to cycle obelisk textures or shift-click to break them for shards.$(br2)$(b)Magic Chalk:$()$(br)Chalk + Full Alchemical Catalyst + Glow Ink Sac$(br)Used to draw barrier circles.$(br2)$(b)Obelisk Compass:$()$(br)Compass + Echo Shard + Full Resonant Catalyst"
+    }
+  ]
+}
+

@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "animewitchery:air_rune_stone"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:air_spell_scroll",
+    "count": 1
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+}

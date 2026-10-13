@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {"item": "minecraft:totem_of_undying"},
+    "r": {"item": "minecraft:paper"}
+  },
+  "pattern": [
+    "rrr",
+    "r#r",
+    "rrr"
+  ],
+  "result": {
+    "count": 1,
+    "item": "animewitchery:job_application"
+  },
+  "show_notification": true
+}

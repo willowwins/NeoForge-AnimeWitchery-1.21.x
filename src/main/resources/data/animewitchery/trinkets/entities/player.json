@@ -1,0 +1,12 @@
+{
+    "entities": [
+        "minecraft:player"
+    ],
+    "slots": [
+        "animewitchery:vanity/head",
+        "animewitchery:vanity/chest",
+        "animewitchery:vanity/legs",
+        "animewitchery:vanity/feet",
+        "animewitchery:hand/ring"
+    ]
+}

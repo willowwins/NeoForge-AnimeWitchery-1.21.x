@@ -1,0 +1,17 @@
+{
+  "name": "Ore Multiplication",
+  "icon": "minecraft:diamond_ore",
+  "category": "animewitchery:transmutation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Advanced Alchemists$() can multiply precious ores through transmutation:$(br2)$(violet)Diamond Multiplication:$()$(br)Diamond Ore + Alchemical Catalyst + 8 Charcoal = $(l)8 Diamonds$()$(br2)$(violet)Gold from Iron:$()$(br)Deepslate Gold Ore + Alchemical Catalyst + 8 Raw Iron = $(l)8 Raw Gold$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "More Transmutations",
+      "text": "$(violet)Iron from Copper:$()$(br)Deepslate Iron Ore + Alchemical Catalyst + 8 Raw Copper = $(l)8 Raw Iron$()$(br2)$(violet)Ore Conversion:$()$(br)Deepslate Diamond Ore + Alchemical Catalyst + Stone = Diamond Ore (easier to mine)$(br2)$(violet)Gilded Blackstone:$()$(br)Iron Nugget + Gilded Blackstone = Gold Nugget"
+    }
+  ]
+}
+

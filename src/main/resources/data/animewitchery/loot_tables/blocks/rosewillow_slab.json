@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:explosion_decay"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:block_state_property",
+                                    "block": "animewitchery:rosewillow_slab",
+                                    "properties": {
+                                        "type": "double"
+                                    }
+                                }
+                            ],
+                            "count": 2,
+                            "add": false
+                        }
+                    ],
+                    "name": "animewitchery:rosewillow_slab"
+                }
+            ]
+        }
+    ]
+}

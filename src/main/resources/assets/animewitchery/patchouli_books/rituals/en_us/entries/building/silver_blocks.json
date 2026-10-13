@@ -1,0 +1,77 @@
+{
+  "name": "Silver Building Blocks",
+  "icon": "animewitchery:silver_block",
+  "category": "animewitchery:building",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Silver Blocks$() provide beautiful building materials. All standard variants are available!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_block",
+      "text": "Craft 9 silver ingots into a $(violet)Silver Block$(). Can be reversed."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_stairs",
+      "text": "$(violet)Silver Stairs$() for vertical building."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_slab",
+      "text": "$(violet)Silver Slabs$() for compact building."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_fence",
+      "text": "$(violet)Silver Fence$() for boundaries and decoration."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_fence_gate",
+      "text": "$(violet)Silver Fence Gate$() for entry points."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_wall",
+      "text": "$(violet)Silver Wall$() connects to adjacent walls."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_door",
+      "text": "$(violet)Silver Door$() for grand entrances."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_trapdoor",
+      "text": "$(violet)Silver Trapdoor$() for hidden passages."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_button_from_silvernugget",
+      "text": "$(violet)Silver Button$() for redstone circuits."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:silver_pressure_plate",
+      "text": "$(violet)Silver Pressure Plate$() for detection."
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

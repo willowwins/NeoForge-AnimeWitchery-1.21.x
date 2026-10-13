@@ -1,0 +1,44 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:shulker_box"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    },
+    {
+      "item": "minecraft:shulker_shell"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:grand_shulker_box",
+    "count": 1
+  },
+  "xp_cost": 15,
+  "processing_time": 120
+}

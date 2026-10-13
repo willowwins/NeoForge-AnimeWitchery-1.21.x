@@ -1,0 +1,29 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:rune_stone"
+    },
+    {
+      "item": "animewitchery:amethyst_dust"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:green_dye"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:life_rune_stone"
+  },
+  "xp_cost": 8,
+  "processing_time": 300
+}

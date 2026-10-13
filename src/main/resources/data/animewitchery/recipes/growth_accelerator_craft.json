@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {"item": "minecraft:composter"},
+    "s": {"item": "minecraft:smoker"},
+    "r": {"item": "minecraft:bone_meal"}
+  },
+  "pattern": [
+    "rsr",
+    "r#r",
+    "rrr"
+  ],
+  "result": {
+    "count": 1,
+    "item": "animewitchery:growth_accelerator"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "M",
+    "B"
+  ],
+  "key": {
+    "M": {
+      "item": "animewitchery:mortar_and_pestle"
+    },
+    "B": {
+      "item": "minecraft:bone"
+    }
+  },
+  "result": {
+    "item": "animewitchery:bone_dust",
+    "count": 2
+  }
+} 

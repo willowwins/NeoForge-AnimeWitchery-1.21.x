@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {"item": "minecraft:chest"},
+    "r": {"item": "minecraft:cobblestone"}
+  },
+  "pattern": [
+    "rrr",
+    "r#r",
+    "rrr"
+  ],
+  "result": {
+    "count": 1,
+    "item": "animewitchery:interactor"
+  },
+  "show_notification": true
+}

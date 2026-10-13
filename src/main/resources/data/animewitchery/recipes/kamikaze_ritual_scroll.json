@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PBP",
+    "BDB",
+    "PBP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "B": {
+      "item": "animewitchery:blood_rune_stone"
+    },
+    "D": {
+      "item": "minecraft:dragon_breath"
+    }
+  },
+  "result": {
+    "item": "animewitchery:kamikaze_ritual_scroll",
+    "count": 1
+  }
+}

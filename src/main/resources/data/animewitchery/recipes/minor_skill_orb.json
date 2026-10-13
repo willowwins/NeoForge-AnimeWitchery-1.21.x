@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "SAS",
+    " C "
+  ],
+  "key": {
+    "A": { "item": "minecraft:amethyst_shard" },
+    "C": { "item": "minecraft:copper_ingot" },
+    "S": { "item": "animewitchery:stardust" }
+  },
+  "result": {
+    "id": "animewitchery:minor_skill_orb",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/outer_stairs",
+    "textures": {
+        "bottom": "animewitchery:block/rosewillow_planks",
+        "top": "animewitchery:block/rosewillow_planks",
+        "side": "animewitchery:block/rosewillow_planks"
+    }
+}

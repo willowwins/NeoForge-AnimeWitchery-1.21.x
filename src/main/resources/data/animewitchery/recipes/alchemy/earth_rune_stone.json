@@ -1,0 +1,29 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:rune_stone"
+    },
+    {
+      "item": "animewitchery:amethyst_dust"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "item": "minecraft:rooted_dirt"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:earth_rune_stone",
+    "count": 1
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+} 

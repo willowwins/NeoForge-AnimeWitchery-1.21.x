@@ -1,0 +1,22 @@
+{
+  "name": "Repair Essence",
+  "icon": "animewitchery:repair_essence",
+  "category": "animewitchery:rituals",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(violet)Repair Essence$() is used to restore the durability of active barrier rituals. When a barrier absorbs damage from explosions or entity impacts, its durability decreases. Repair Essence can restore it."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Repair Essence Recipe",
+      "text": "$(l)Repair Essence Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- 2x Glowstone Dust$(br)- Echo Shard$(br)- Full Resonant Catalyst$(br)- Amethyst Shard$(br)- Experience Bottle$(br2)$(gold)Cost: 20 XP, 600 ticks$()$(br)Yields: $(l)4 Repair Essence$()$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create 4 Repair Essence in the center output slot.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Usage",
+      "text": "$(b)Repair Items:$()$(br)Hold Repair Essence in one hand and a damaged item in the other. Right-click to repair $(l)2000 durability$().$(br2)$(b)Repair Barriers:$()$(br)Right-click a $(violet)Barrier Circle$() with Repair Essence to restore barrier durability.$(br2)$(#888)Yields 4 per craft - very efficient for maintaining equipment and barriers.$()"
+    }
+  ]
+}
+

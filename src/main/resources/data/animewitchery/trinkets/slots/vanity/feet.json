@@ -1,0 +1,9 @@
+{
+    "icon": "minecraft:item/empty_armor_slot_boots",
+    "quick_move_predicates": [
+        "trinkets:none"
+    ],
+    "validator_predicates": [
+        "trinkets:tag"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "parent": "animewitchery:item/weatheritem_base",
+    "overrides": [
+        {
+            "predicate": {
+                "animewitchery:mode": 0.0
+            },
+            "model": "animewitchery:item/weatheritem_sunny"
+        },
+        {
+            "predicate": {
+                "animewitchery:mode": 0.25
+            },
+            "model": "animewitchery:item/weatheritem_rain"
+        },
+        {
+            "predicate": {
+                "animewitchery:mode": 0.75
+            },
+            "model": "animewitchery:item/weatheritem_thunder"
+        }
+    ]
+}

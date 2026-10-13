@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "animewitchery:darkness_rune_stone"
+    },
+    {
+      "item": "minecraft:ink_sac"
+    },
+    {
+      "item": "minecraft:sculk"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:darkness_spell_scroll"
+  },
+  "xp_cost": 5,
+  "processing_time": 200
+}

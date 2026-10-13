@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SBS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:shulker_shell"
+    },
+    "B": {
+      "item": "minecraft:shulker_box"
+    }
+  },
+  "result": {
+    "item": "animewitchery:grand_shulker_box"
+  }
+}

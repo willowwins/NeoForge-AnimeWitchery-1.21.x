@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "animewitchery:silver_ingot"
+        },
+        "title": {
+            "translate": "advancements.animewitchery.root.title"
+        },
+        "description": {
+            "translate": "advancements.animewitchery.root.description"
+        },
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "tick"
+        ]
+    ]
+}

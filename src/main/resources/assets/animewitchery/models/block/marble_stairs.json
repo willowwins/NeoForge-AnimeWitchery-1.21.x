@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "animewitchery:block/marble",
+    "side": "animewitchery:block/marble",
+    "top": "animewitchery:block/marble"
+  }
+}

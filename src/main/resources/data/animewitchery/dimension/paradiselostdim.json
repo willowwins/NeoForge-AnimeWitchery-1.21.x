@@ -1,0 +1,11 @@
+{
+  "type": "animewitchery:paradiselostdim_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "animewitchery:paradise_lost"
+    },
+    "settings": "animewitchery:paradise_lost_overworld_then_islands"
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "replace": false,
+    "values": [
+    "animewitchery:protected_chest",
+    "animewitchery:charcoal_block",
+    "animewitchery:effigy_fountain",
+    "animewitchery:active_effigy_fountain",
+    "animewitchery:silver_block",
+    "animewitchery:silver_ore",
+    "animewitchery:deepslate_silver_ore",
+    "minecraft:reinforced_deepslate",
+    "animewitchery:silver_button",
+    "animewitchery:silver_trapdoor",
+    "animewitchery:silver_door",
+    "animewitchery:silver_fence",
+    "animewitchery:silver_fence_gate",
+    "animewitchery:silver_wall",
+    "animewitchery:silver_stairs",
+    "animewitchery:alchemy_table",
+    "animewitchery:particle_block",
+    "animewitchery:particle_sink_block",
+    "animewitchery:block_placer",
+    "animewitchery:block_miner",
+    "animewitchery:interactor",
+    "animewitchery:silver_slab",
+    "animewitchery:obelisk"
+    ]
+}

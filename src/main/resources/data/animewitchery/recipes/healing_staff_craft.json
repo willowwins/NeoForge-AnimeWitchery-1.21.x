@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "animewitchery:staff_head"
+    },
+    "o": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  n",
+    " o ",
+    "o  "
+  ],
+  "result": {
+    "item": "animewitchery:healing_staff"
+  },
+  "show_notification": true
+}

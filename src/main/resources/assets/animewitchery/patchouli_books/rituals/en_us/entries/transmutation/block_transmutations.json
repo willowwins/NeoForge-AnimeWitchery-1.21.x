@@ -1,0 +1,22 @@
+{
+  "name": "Block Transmutations",
+  "icon": "minecraft:chiseled_stone_bricks",
+  "category": "animewitchery:transmutation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Chiseled Stone Bricks$() can be transformed into various magical blocks:$(br2)$(violet)Alchemy Table:$()$(br)Alchemical Catalyst + Chiseled Stone Bricks$(br2)$(b)Sculk Catalyst$() transformation:$(br)Alchemical Catalyst + Sculk Catalyst = $(violet)Deep Dark Deep Dish$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Alchemy Table Recipes",
+      "text": "$(l)Particle Block Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- Reinforced Deepslate$(br)- Full Alchemical Catalyst$(br)- Silver Template$(br2)$(gold)Cost: 10 XP, 300 ticks$()$(br2)$(l)Particle Sink Block Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- Reinforced Deepslate$(br)- Full Resonant Catalyst$(br)- Silver Template$(br2)$(gold)Cost: 15 XP, 400 ticks$()$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "More Transmutations",
+      "text": "$(b)Stone Pressure Plate$() (via alchemy):$(br)- Binding Spell$(br2)$(b)Glass Block$():$(br)Diamond + Silver + Glass = Respawn Beacon$(br2)$(#888)These recipes use the alchemy table's circular slot arrangement for processing.$()"
+    }
+  ]
+}
+

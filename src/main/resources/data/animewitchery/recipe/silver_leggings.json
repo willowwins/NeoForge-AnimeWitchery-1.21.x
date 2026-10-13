@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "d": {
+      "item": "minecraft:diamond_leggings"
+    },
+    "n": {
+      "item": "animewitchery:silver_ingot"
+    }
+  },
+  "pattern": [
+    "ndn",
+    "n n",
+    "n n"
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:silver_leggings"
+  }
+}

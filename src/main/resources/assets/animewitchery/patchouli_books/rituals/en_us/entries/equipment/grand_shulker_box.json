@@ -1,0 +1,27 @@
+{
+  "name": "Grand Shulker Box",
+  "icon": "animewitchery:grand_shulker_box",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(violet)Grand Shulker Box$() is an upgraded shulker box with $(l)double chest capacity$() (54 slots).$(br2)$(#888)Max stack size: 1$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Alchemy Table Recipe",
+      "text": "$(l)Grand Shulker Box Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Shulker Box$(br)• 8x Shulker Shell$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 15 XP, 120 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Storage Capacity",
+      "text": "$(l)Storage Features:$()$(br2)• $(violet)54 slots$() (double chest size)$(br)• Preserves inventory when broken$(br)• Animated opening/closing$(br2)$(#888)Unlike normal shulker boxes, this has double the storage capacity.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Limitations",
+      "text": "$(l)Limitations:$()$(br2)• Cannot be dyed (single variant)$(br)• Stacks to 1 only$(br2)$(#888)The increased capacity makes up for these limitations.$()"
+    }
+  ]
+}
+

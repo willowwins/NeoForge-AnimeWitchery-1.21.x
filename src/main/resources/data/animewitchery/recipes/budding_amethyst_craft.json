@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "minecraft:amethyst_block"
+    },
+    "o": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "nnn",
+    "non",
+    "nnn"
+  ],
+  "result": {
+    "item": "minecraft:budding_amethyst"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,36 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:totem_of_undying"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    },
+    {
+      "item": "animewitchery:silver_template"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:creeping_prevailance",
+    "count": 1
+  },
+  "xp_cost": 30,
+  "processing_time": 800
+}
+

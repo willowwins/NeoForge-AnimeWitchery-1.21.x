@@ -1,0 +1,21 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:silver_helmet"
+    },
+    {
+      "item": "animewitchery:alchemical_catalyst"
+    },
+    {
+      "item": "animewitchery:silver_template"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:fulfilling_tiara",
+    "count": 1
+  },
+  "xp_cost": 40,
+  "processing_time": 800
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "Void Wisps",
+  "category": "animewitchery:alchemy",
+  "icon": "animewitchery:void_wisp_spawn_egg",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(#b38cff)Void Wisps$() are ethereal entities that dwell in the deepest voids. They drop $(l)Void Essence$(), a crucial ingredient for many advanced alchemy recipes.$(br2)$(4)Natural Spawning:$()$(br)Very rare - only in specific conditions (near bedrock in Overworld Y -64 to -50, or in the Nether at Y 0-15 or Y 120-127)."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:alchemy/void_wisp_spawn_egg",
+      "title": "Spawn Egg Recipe",
+      "text": "Create Void Wisp Spawn Eggs in the $(#b38cff)Alchemy Table$() to summon them on demand. Much easier than waiting for natural spawns!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Using Spawn Eggs",
+      "text": "$(l)How to Use:$()$(br)• Right-click on a block to spawn a Void Wisp$(br)• Best used in enclosed areas$(br)• Wisps are hostile and will attack$(br)• Kill them to collect Void Essence$(br2)$(l)Void Essence Uses:$()$(br)• Enchanted Crystal crafting$(br)• Grand Shulker Box inception$(br)• Various alchemy recipes"
+    }
+  ]
+}
+

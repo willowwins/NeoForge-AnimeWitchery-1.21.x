@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lemon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "animewitchery:lemon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_tart_crust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "animewitchery:tart_crust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "animewitchery:unbaked_lemon_tart"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lemon",
+      "has_tart_crust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "animewitchery:unbaked_lemon_tart"
+    ]
+  }
+}

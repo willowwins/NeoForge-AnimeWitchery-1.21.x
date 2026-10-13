@@ -1,0 +1,29 @@
+{
+  "id": "animewitchery:rituals",
+  "name": "Grimoire of the Four Quarters",
+  "landing_text": "Within these vellum leaves are set the elder canons of circle and stone: the carving of signs upon earth, the waking of wardens at the utmost quarters, and the bright ascent of power into the firmament. Herein lies the knowledge of barrier and blessing, of poison and regeneration, of square and circle, of strength and duration - all bound by the sacred geometry of the obelisk variants.",
+  "version": 2,
+  "use_resource_pack": true,
+  "creative_tab": "minecraft:tools_and_utilities",
+  "model": "patchouli:book_purple",
+  "macros": {
+    "$(gold)": "$(#d9b36c)",
+    "$(violet)": "$(#b38cff)",
+    "$(dim)": "$(#888)",
+    "$(i)": "$(o)",
+    "$(b)": "$(l)",
+    "$(ritual)": "$(violet)$(b)",
+    "$(obelisk)": "$(gold)$(b)",
+    "$(effect)": "$(#ff6b6b)$(b)",
+    "$(barrier)": "$(#4ecdc4)$(b)"
+  },
+  "categories": [
+    "animewitchery:getting_started",
+    "animewitchery:alchemy",
+    "animewitchery:transmutation",
+    "animewitchery:rituals",
+    "animewitchery:equipment"
+  ]
+}
+
+

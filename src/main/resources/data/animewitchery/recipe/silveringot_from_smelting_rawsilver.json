@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "silver",
+  "ingredient": {
+    "item": "animewitchery:raw_silver"
+  },
+  "result": {
+    "id": "animewitchery:silver_ingot"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "animewitchery:block/silver_door_bottom",
+    "top": "animewitchery:block/silver_door_top"
+  }
+}

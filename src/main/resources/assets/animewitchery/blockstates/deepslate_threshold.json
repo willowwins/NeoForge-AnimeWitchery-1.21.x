@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "animewitchery:block/deepslate_threshold"
+        },
+        "facing=east": {
+            "model": "animewitchery:block/deepslate_threshold",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "animewitchery:block/deepslate_threshold",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "animewitchery:block/deepslate_threshold",
+            "y": 270
+        }
+    }
+}

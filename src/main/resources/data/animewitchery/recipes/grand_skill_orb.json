@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "SES",
+    " D "
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "E": { "item": "minecraft:emerald" },
+    "S": { "item": "animewitchery:stardust" }
+  },
+  "result": {
+    "id": "animewitchery:grand_skill_orb",
+    "count": 1
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_staff_head": {
+      "conditions": {
+        "items": [
+          {
+            "items": "animewitchery:staff_head"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "animewitchery:healing_staff"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_staff_head",
+      "has_stick"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "animewitchery:healing_staff"
+    ]
+  }
+}

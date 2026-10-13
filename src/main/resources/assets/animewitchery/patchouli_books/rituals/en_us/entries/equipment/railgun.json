@@ -1,0 +1,22 @@
+{
+  "name": "Railgun & Fuel Rod",
+  "icon": "animewitchery:railgun",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(violet)Railgun$() is a devastating ranged weapon powered by a $(#)Fuel Rod$().$(br2)$(#888)The fuel rod is an extremely powerful energy source.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Fuel Rod Recipe",
+      "text": "$(l)Fuel Rod Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- 2x Netherite Block$(br)- Nether Star$(br)- Full Resonant Catalyst$(br)- Silver Template$(br2)$(gold)Cost: 30 XP, 1000 ticks$()$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create the Fuel Rod in the center output slot.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Railgun Recipe",
+      "text": "$(l)Railgun Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- Fuel Rod$(br)- Netherite Block$(br)- Lodestone$(br)- 2x Full Resonant Catalyst$(br)- Silver Template$(br2)$(gold)Cost: 35 XP, 1200 ticks$()$(br2)The Railgun fires devastating projectiles with incredible range and power. Handle with extreme caution.$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create the Railgun in the center output slot.$()"
+    }
+  ]
+}
+

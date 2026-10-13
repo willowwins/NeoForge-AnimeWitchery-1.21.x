@@ -1,0 +1,24 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:fulfilling_tiara"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result": {
+    "item": "animewitchery:resonant_tiara",
+    "count": 1
+  },
+  "xp_cost": 60,
+  "processing_time": 1000
+}
+

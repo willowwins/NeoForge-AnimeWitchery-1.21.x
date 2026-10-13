@@ -1,0 +1,26 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:stone"
+    },
+    {
+      "item": "animewitchery:amethyst_dust"
+    },
+    {
+      "item": "animewitchery:bone_dust"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:alchemical_catalyst"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "animewitchery:rune_stone"
+  },
+  "xp_cost": 3,
+  "processing_time": 100
+}

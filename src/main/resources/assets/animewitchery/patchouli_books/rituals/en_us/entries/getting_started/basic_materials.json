@@ -1,0 +1,22 @@
+{
+  "name": "Basic Materials",
+  "icon": "animewitchery:silver_ingot",
+  "category": "animewitchery:getting_started",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Silver$() is the foundation of this mod. Mine $(#)Silver Ore$() in the overworld or deepslate layers to obtain $(#)Raw Silver$(). Smelt it into $(#)Silver Ingots$() for crafting.$(br2)$(b)Mortar and Pestle$() - Craft with stone and a stick. Used to grind materials into dusts.$(br2)$(b)Bone Dust$() - Grind bones in the mortar.$(br)$(b)Amethyst Dust$() - Grind amethyst shards in the mortar."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:mortar_and_pestle",
+      "text": "Craft the mortar and pestle to begin grinding materials."
+    },
+    {
+      "type": "smelting",
+      "recipe": "animewitchery:silver_ingot_from_smelting_rawsilver",
+      "text": "Smelt raw silver into ingots."
+    }
+  ]
+}
+

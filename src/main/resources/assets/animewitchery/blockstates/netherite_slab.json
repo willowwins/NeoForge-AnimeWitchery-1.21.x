@@ -1,0 +1,7 @@
+﻿{
+  "variants": {
+    "type=bottom": { "model": "animewitchery:block/netherite_slab" },
+    "type=double": { "model": "minecraft:block/netherite_block" },
+    "type=top": { "model": "animewitchery:block/netherite_slab_top" }
+  }
+}

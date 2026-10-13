@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "minecraft:campfire"
+    },
+    "i": {
+      "item": "animewitchery:silver_ingot"
+    },
+    "s": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    " s ",
+    "ici",
+    " s "
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:transmutation_pyre_block"
+  }
+}
