@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_scheelite_crystal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "animewitchery:scheelite_crystal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "animewitchery:scheelite_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_scheelite_crystal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "animewitchery:scheelite_block"
+    ]
+  }
+}

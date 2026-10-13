@@ -1,0 +1,22 @@
+{
+  "name": "Kinetic Breaker",
+  "icon": "animewitchery:kinetic_breaker",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(violet)Kinetic Breaker$() is a multi-tool combining mining and combat capabilities. It's effective as both a $(#)level 5 pickaxe$() and an $(#)axe$()."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Kinetic Breaker Recipe",
+      "text": "$(l)Kinetic Breaker Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- Silver Pickaxe$(br)- Needle$(br)- 2x Full Resonant Catalyst$(br)- Silver Template$(br)- Netherite Ingot$(br2)$(gold)Cost: 20 XP, 600 ticks$()$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create the Kinetic Breaker in the center output slot.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Abilities",
+      "text": "$(l)Mining:$()$(br)- Level 5 pickaxe effectiveness$(br)- Fast mining speed$(br)- Effective on pickaxe AND axe blocks$(br2)$(l)Combat:$()$(br)- High damage$(br)- While gliding: Grants Resistance V for 1 second on hit$(br2)$(l)Utility:$()$(br)- Right-click logs to strip them$(br)- 3000 durability"
+    }
+  ]
+}
+

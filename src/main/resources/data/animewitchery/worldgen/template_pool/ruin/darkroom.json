@@ -1,0 +1,15 @@
+{
+  "name": "animewitchery:ruin/darkroom",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "animewitchery:ruin/rooms/darkroom",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      }
+    }
+  ]
+}

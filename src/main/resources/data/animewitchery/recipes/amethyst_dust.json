@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "M",
+    "A"
+  ],
+  "key": {
+    "M": {
+      "item": "animewitchery:mortar_and_pestle"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "animewitchery:amethyst_dust",
+    "count": 2
+  }
+} 

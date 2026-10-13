@@ -1,0 +1,33 @@
+{
+    "display": {
+        "icon": {
+            "item": "animewitchery:silver_helmet"
+        },
+        "title": {
+            "translate": "advancements.animewitchery.pacifism.title"
+        },
+        "description": {
+            "translate": "advancements.animewitchery.pacifism.description"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "animewitchery:root",
+    "criteria": {
+        "pacifism": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "animewitchery:pacifism": {}
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "pacifism"
+        ]
+    ]
+}

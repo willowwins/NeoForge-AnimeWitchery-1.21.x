@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "animewitchery:scheelite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "animewitchery:scheelite_crystal"
+  }
+}

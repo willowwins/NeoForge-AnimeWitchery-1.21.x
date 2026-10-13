@@ -1,0 +1,16 @@
+{
+    "type": "animewitchery:pocket_type",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "layers": [
+                {
+                    "block": "minecraft:air",
+                    "height": 1
+                }
+            ],
+            "structure_overrides": "minecraft:stronghold",
+            "biome": "minecraft:the_void"
+        }
+    }
+}

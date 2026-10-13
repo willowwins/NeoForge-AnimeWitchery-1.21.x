@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {"item": "minecraft:nether_star"}
+  },
+  "pattern": [
+    "   ",
+    " # ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "item": "animewitchery:nbt_preserving_tool"
+  },
+  "show_notification": true
+}

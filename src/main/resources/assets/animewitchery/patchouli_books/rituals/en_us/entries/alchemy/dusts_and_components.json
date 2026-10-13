@@ -1,0 +1,47 @@
+{
+  "name": "Dusts & Components",
+  "icon": "animewitchery:amethyst_dust",
+  "category": "animewitchery:alchemy",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Dusts$() are essential alchemy components. They're created using the $(violet)Mortar and Pestle$()."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:bone_dust",
+      "text": "Grind bones into $(violet)Bone Dust$() using the mortar and pestle."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:amethyst_dust",
+      "text": "Grind amethyst shards into $(violet)Amethyst Dust$() using the mortar and pestle."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Other Components",
+      "text": "$(b)Silver Template$()$(br)Reusable smithing template$(br2)$(b)Blaze Sack$()$(br)Craft from 9 blaze powder$(br)Used to create Alchemical Catalyst$(br2)$(b)Obelisk Shard$()$(br)Obtained by shift-clicking obelisks with a chisel"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Void Essence",
+      "text": "$(b)Void Essence$()$(br2)A rare material obtained from the void. Used in advanced alchemy recipes.$(br2)$(violet)Dropped by Void Wisps or found in special locations.$()"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

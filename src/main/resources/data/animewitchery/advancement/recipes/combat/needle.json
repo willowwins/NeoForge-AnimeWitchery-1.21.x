@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherite_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_silveringot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "animewitchery:silver_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_silvernugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "animewitchery:silvernugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "animewitchery:needle"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_silveringot",
+      "has_silvernugget",
+      "has_netherite_sword"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "animewitchery:needle"
+    ]
+  }
+}

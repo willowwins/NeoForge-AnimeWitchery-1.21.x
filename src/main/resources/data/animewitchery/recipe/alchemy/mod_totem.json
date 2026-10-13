@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:totem_of_undying"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "animewitchery:silver_template"
+    },
+    {
+      "item": "animewitchery:silver_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:mod_totem"
+  },
+  "xp_cost": 50,
+  "processing_time": 1000
+}

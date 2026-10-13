@@ -1,0 +1,38 @@
+{
+  "name": "Protected Chest",
+  "category": "animewitchery:equipment",
+  "icon": "animewitchery:protected_chest",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(#b38cff)Protected Chest$() is a secure storage container that can only be accessed by its owner and authorized players. It uses the same permission system as the Barrier Spell, making it perfect for multiplayer servers or shared bases."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "animewitchery:alchemy/protected_chest",
+      "title": "Crafting",
+      "text": "Craft in the $(#b38cff)Alchemy Table$() using a chest, iron, enchanted crystal, obsidian, and barrier catalyst."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Ownership",
+      "text": "$(l)When Placed:$()$(br)The player who places the chest becomes the $(#d9b36c)owner$(). Only the owner can:$(br)• Break the chest$(br)• Manage permissions$(br)• Add/remove authorized players$(br2)$(4)Note:$() Even in creative mode, only the owner can break it!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Managing Permissions",
+      "text": "$(l)Adding Players:$()$(br)1. Rename a paper with a player's name$(br)2. Right-click the chest with the paper$(br)3. That player can now access the chest$(br2)$(l)Removing Players:$()$(br)1. Hold the named paper$(br)2. $(#4ecdc4)Shift + Right-click$() the chest$(br)3. That player loses access"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Access Control",
+      "text": "$(l)Who Can Access:$()$(br)• The owner (always)$(br)• Authorized players (added via named paper)$(br2)$(l)Who Cannot Access:$()$(br)• Unauthorized players$(br)• Players removed from the list$(br2)Unauthorized players will see: $(4)\"This chest is protected!\"$() when trying to open it."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Tips & Security",
+      "text": "$(l)Security Tips:$()$(br)• Use exact player names$(br)• Names are case-sensitive$(br)• Remove players when they leave$(br)• Owner permissions cannot be transferred$(br2)$(l)Storage:$()$(br)• 27 slots (3 rows × 9 columns)$(br)• Normal stack sizes$(br)• Drops items when broken by owner"
+    }
+  ]
+}
+

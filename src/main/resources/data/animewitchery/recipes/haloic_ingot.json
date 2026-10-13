@@ -1,0 +1,37 @@
+{
+    "type": "animewitchery:alchemy",
+    "ingredients": [
+        {
+            "item": "animewitchery:haloic_scrap"
+        },
+        {
+            "item": "animewitchery:haloic_scrap"
+        },
+        {
+            "item": "animewitchery:haloic_scrap"
+        },
+        {
+            "item": "animewitchery:haloic_scrap"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        {
+            "item": "minecraft:gold_ingot"
+        },
+        {
+            "item": "animewitchery:resonant_catalyst"
+        }
+    ],
+    "result": {
+        "item": "animewitchery:haloic_ingot"
+    },
+    "xp_cost": 10,
+    "processing_time": 200
+}

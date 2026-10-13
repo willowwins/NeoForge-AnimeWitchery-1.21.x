@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "n": {
+      "item": "animewitchery:silver_ingot"
+    },
+    "o": {
+      "item": "animewitchery:silvernugget"
+    },
+    "s": {
+      "item": "minecraft:netherite_sword"
+    }
+  },
+  "pattern": [
+    "  n",
+    "os ",
+    "oo "
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:needle"
+  }
+}

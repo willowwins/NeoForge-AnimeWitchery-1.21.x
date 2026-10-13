@@ -1,0 +1,52 @@
+{
+  "name": "Resonant Armor",
+  "icon": "animewitchery:resonant_helmet",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Resonant Armor$() is the pinnacle of magical protection. Each piece requires $(violet)Resonant Catalysts$() and is crafted at the $(#)Alchemy Table$()."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Resonant Helmet",
+      "text": "$(l)Resonant Helmet Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Silver Helmet$(br)• 2x Full Resonant Catalyst$(br)• Silver Template$(br)• Netherite Ingot$(br2)$(gold)Cost: 15 XP, 400 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Resonant Chestplate",
+      "text": "$(l)Resonant Chestplate Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Silver Chestplate$(br)• 2x Full Resonant Catalyst$(br)• Silver Template$(br)• Netherite Ingot$(br2)$(gold)Cost: 15 XP, 400 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Resonant Leggings",
+      "text": "$(l)Resonant Leggings Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Silver Leggings$(br)• 2x Full Resonant Catalyst$(br)• Silver Template$(br)• Netherite Ingot$(br2)$(gold)Cost: 15 XP, 400 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Resonant Boots",
+      "text": "$(l)Resonant Boots Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Silver Boots$(br)• 2x Full Resonant Catalyst$(br)• Silver Template$(br)• Netherite Ingot$(br2)$(gold)Cost: 15 XP, 400 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Full Set Bonus",
+      "text": "$(l)Complete Resonant Set:$()$(br2)The full set provides:$(br)• Magical protection$(br)• Special abilities$(br)• Enhanced durability$(br2)$(violet)The ultimate endgame armor!$()"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

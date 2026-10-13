@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "animewitchery:block/rosewillow_slab"
+    },
+    "type=double": {
+      "model": "animewitchery:block/rosewillow_planks"
+    },
+    "type=top": {
+      "model": "animewitchery:block/rosewillow_slab_top"
+    }
+  }
+}

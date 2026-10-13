@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "animewitchery:silver_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "result": {
+    "item": "animewitchery:railgunner_boots"
+  },
+  "template": {
+    "item": "animewitchery:silver_template"
+  }
+}

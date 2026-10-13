@@ -1,0 +1,36 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:rune_stone"
+    },
+    {
+      "item": "animewitchery:death_rune_stone"
+    },
+    {
+      "item": "animewitchery:life_rune_stone"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "minecraft:ghast_tear"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst",
+      "nbt": {
+        "StoredMana": 10000
+      }
+    }
+  ],
+  "result": {
+    "item": "animewitchery:blood_rune_stone",
+    "count": 1
+  },
+  "xp_cost": 30,
+  "processing_time": 1000
+}
+

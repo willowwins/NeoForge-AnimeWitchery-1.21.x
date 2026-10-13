@@ -1,0 +1,35 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:silver_pickaxe"
+    },
+    {
+      "item": "animewitchery:needle"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "components": {
+        "animewitchery:stored_mana": 10000
+      },
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "animewitchery:silver_template"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:kinetic_breaker"
+  },
+  "xp_cost": 20,
+  "processing_time": 600
+}

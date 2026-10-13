@@ -1,0 +1,22 @@
+{
+  "name": "Barrier Catalyst",
+  "icon": "animewitchery:barrier_catalyst",
+  "category": "animewitchery:rituals",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The $(violet)Barrier Catalyst$() is used to define the type of barrier circle you wish to create. It channels powerful protective energies."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Barrier Catalyst Recipe",
+      "text": "$(l)Barrier Catalyst Recipe:$()$(br2)$(violet)Ingredients (arranged in circular slots):$()$(br)- Enchanted Crystal$(br)- Obsidian$(br)- Ender Pearl$(br)- Full Resonant Catalyst$(br)- Echo Shard$(br)- Amethyst Dust$(br2)$(gold)Cost: 25 XP, 800 ticks$()$(br2)$(#888)The ingredients are placed in the circular slots around the center output slot of the Alchemy Table. The table will process the ingredients and create the Barrier Catalyst in the center output slot.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Usage",
+      "text": "To use the Barrier Catalyst:$(br2)1. Draw a barrier circle with $(#)Magic Chalk$()$(br)2. Right-click the circle with the $(violet)Barrier Catalyst$()$(br)3. The circle will be $(#)defined$() with barrier properties$(br)4. Continue the ritual by placing obelisks and activating with a full Alchemical Catalyst$(br2)The barrier will protect an area from unauthorized entry."
+    }
+  ]
+}
+

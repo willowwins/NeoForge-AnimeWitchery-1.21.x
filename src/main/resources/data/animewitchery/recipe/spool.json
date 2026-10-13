@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "n": {
+      "item": "minecraft:spruce_slab"
+    },
+    "o": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "nnn",
+    " o ",
+    "nnn"
+  ],
+  "result": {
+    "count": 9,
+    "id": "animewitchery:spool"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:echo_shard"
+  },
+  "base": {
+    "item": "animewitchery:crystalline_spatial_fold"
+  },
+  "result": {
+    "id": "animewitchery:domain_spark"
+  },
+  "template": {
+    "item": "animewitchery:silver_template"
+  }
+}

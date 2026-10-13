@@ -1,0 +1,23 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "animewitchery:resonant_catalyst"
+    },
+    {
+      "item": "animewitchery:silver_pendant"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:latent_mana_pendant"
+  },
+  "xp_cost": 75,
+  "processing_time": 1200
+}

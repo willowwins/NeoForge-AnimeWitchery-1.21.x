@@ -1,0 +1,46 @@
+{
+  "name": "Obelisk Equipment",
+  "icon": "animewitchery:obelisk_sword",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Obelisk Equipment$() is forged from ancient obelisk fragments. Get $(violet)Obelisk Shards$() by shift-clicking an Obelisk with a $(#)Chisel$() (Obsidian + Stick).$(br2)Each piece requires:$(br)• Netherite Gear$(br)• 2x Obelisk Shard$(br)• Silver Template$(br)• Crying Obsidian$(br)• Full Resonant Catalyst"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Sword",
+      "text": "The $(violet)Obelisk Sword$() is a powerful ancient weapon."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Sword Recipe",
+      "text": "$(l)Obelisk Sword Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Netherite Sword$(br)• 2x Obelisk Shard$(br)• Silver Template$(br)• Crying Obsidian$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 25 XP, 800 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Armor",
+      "text": "All armor pieces follow the same pattern. The full set grants powerful defensive abilities."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Helmet Recipe",
+      "text": "$(l)Obelisk Helmet Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Netherite Helmet$(br)• 2x Obelisk Shard$(br)• Silver Template$(br)• Crying Obsidian$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 20 XP, 600 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Chestplate Recipe",
+      "text": "$(l)Obelisk Chestplate Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Netherite Chestplate$(br)• 2x Obelisk Shard$(br)• Silver Template$(br)• Crying Obsidian$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 20 XP, 600 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Leggings Recipe",
+      "text": "$(l)Obelisk Leggings Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Netherite Leggings$(br)• 2x Obelisk Shard$(br)• Silver Template$(br)• Crying Obsidian$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 20 XP, 600 ticks$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Boots Recipe",
+      "text": "$(l)Obelisk Boots Recipe:$()$(br2)$(violet)Ingredients:$()$(br)• Netherite Boots$(br)• 2x Obelisk Shard$(br)• Silver Template$(br)• Crying Obsidian$(br)• Full Resonant Catalyst$(br2)$(gold)Cost: 20 XP, 600 ticks$()"
+    }
+  ]
+}

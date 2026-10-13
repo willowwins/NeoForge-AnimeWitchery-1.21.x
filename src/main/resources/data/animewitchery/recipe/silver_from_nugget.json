@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "templates",
+  "key": {
+    "#": {
+      "item": "animewitchery:silvernugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "id": "animewitchery:silver_ingot"
+  },
+  "show_notification": true
+}

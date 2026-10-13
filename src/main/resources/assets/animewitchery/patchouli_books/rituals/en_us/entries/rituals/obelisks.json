@@ -1,0 +1,42 @@
+{
+  "name": "Obelisks",
+  "icon": "animewitchery:obelisk",
+  "category": "animewitchery:rituals",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Obelisks$() are powerful ritual structures that generate naturally in the world. They contain ancient magic and can be harvested for shards."
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Finding Obelisks",
+      "text": "$(l)Locating Obelisks:$()$(br2)• Search for tall stone pillars in the world$(br)• Use an $(violet)Obelisk Compass$() to locate them$(br)• They appear in various biomes$(br)• $(#)Boss Obelisks$() are larger and more powerful"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Harvesting Shards",
+      "text": "$(l)Getting Obelisk Shards:$()$(br2)1. Craft a $(violet)Chisel$() (Obsidian + Stick)$(br)2. Shift-click the obelisk$(br)3. Collect $(violet)Obelisk Shards$()$(br2)Shards are used in advanced equipment recipes!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Obelisk Types",
+      "text": "$(l)Obelisk Variants:$()$(br2)$(b)Normal Obelisk$()$(br)Standard ritual structure$(br2)$(b)Active Obelisk$()$(br)Powers active rituals$(br2)$(b)Boss Obelisk$()$(br)Powerful variant with unique properties"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

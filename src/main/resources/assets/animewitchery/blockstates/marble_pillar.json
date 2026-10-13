@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "animewitchery:block/marble_pillar"
+    },
+    "axis=z": {
+      "model": "animewitchery:block/marble_pillar",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "animewitchery:block/marble_pillar",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

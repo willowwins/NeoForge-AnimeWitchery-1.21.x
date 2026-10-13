@@ -1,0 +1,22 @@
+{
+  "name": "Teleportation Items",
+  "icon": "animewitchery:respawn_beacon",
+  "category": "animewitchery:equipment",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(b)Teleportation Items$() let you travel instantly across vast distances. Use them wisely!"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Respawn Mirror",
+      "text": "$(b)Respawn Mirror$()$(br2)Sets your respawn point to a specific location. Right-click to activate.$(br2)$(violet)Never lose your way home again!$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "Silver Effigy",
+      "text": "$(b)Silver Effigy$()$(br2)A powerful protective totem. When held, it can save you from death with special effects.$(br2)$(violet)A second chance at life!$()"
+    }
+  ]
+}
+

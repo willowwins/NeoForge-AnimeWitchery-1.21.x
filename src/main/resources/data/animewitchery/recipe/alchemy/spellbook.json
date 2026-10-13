@@ -1,0 +1,35 @@
+{
+  "type": "animewitchery:alchemy",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "animewitchery:silver_ingot"
+    },
+    {
+      "item": "animewitchery:silver_ingot"
+    },
+    {
+      "item": "animewitchery:enchanted_crystal"
+    },
+    {
+      "item": "animewitchery:void_essence"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "animewitchery:spellbook"
+  },
+  "xp_cost": 30,
+  "processing_time": 800
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "animewitchery:block/dark_log_top",
+    "side": "animewitchery:block/dark_log_side"
+  }
+}
