@@ -3,7 +3,7 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 4,
+      "weight": 8,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "animewitchery:ruin/hallways/hall_ew",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "weight": 4,
+      "weight": 8,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "animewitchery:ruin/hallways/hall_ns",
@@ -57,16 +57,7 @@
       }
     },
     {
-      "weight": 2,
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "animewitchery:ruin/hallways/room_empty",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      }
-    },
-    {
-      "weight": 1,
+      "weight": 3,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "animewitchery:ruin/hallways/staircase_ns",
@@ -75,10 +66,19 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 3,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "animewitchery:ruin/hallways/staircase_we",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "animewitchery:ruin/rooms/tree_room",
         "processors": "minecraft:empty",
         "projection": "rigid"
       }

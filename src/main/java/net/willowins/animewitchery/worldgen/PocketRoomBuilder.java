@@ -22,9 +22,27 @@ public final class PocketRoomBuilder {
         return floor.is(ModBlocks.RUIN_FLOOR.get());
     }
 
+    public static boolean isAreaEmpty(ServerLevel pocketLevel, BlockPos origin) {
+        for (int x = -WALL_XZ; x <= WALL_XZ; x++) {
+            for (int z = -WALL_XZ; z <= WALL_XZ; z++) {
+                for (int y = 0; y <= CEILING_Y; y++) {
+                    BlockPos pos = origin.offset(x, y, z);
+                    if (!pocketLevel.getBlockState(pos).isAir()) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
     public static void build(ServerLevel pocketLevel, PocketRegistry.PocketEntry entry) {
         BlockPos origin = entry.pocketOrigin();
         if (isBuilt(pocketLevel, origin)) {
+            return;
+        }
+        // Don't build if there's already a structure (jigsaw-generated hub) in the area
+        if (!isAreaEmpty(pocketLevel, origin)) {
             return;
         }
 

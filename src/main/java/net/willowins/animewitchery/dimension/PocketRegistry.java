@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.saveddata.SavedData;
 import net.minecraft.util.datafix.DataFixTypes;
 
@@ -30,6 +31,13 @@ public class PocketRegistry extends SavedData {
             ResourceKey<Level> fountainDimension,
             BlockPos fountainPos,
             BlockPos pocketOrigin) {
+
+        public boolean hubPlaced(ServerLevel pocketLevel) {
+            if (pocketLevel == null) return false;
+            BlockState floor = pocketLevel.getBlockState(pocketOrigin);
+            return floor.is(net.willowins.animewitchery.block.ModBlocks.DARK_FOUNTAIN.get())
+                    || floor.is(net.willowins.animewitchery.block.ModBlocks.RUIN_FLOOR.get());
+        }
     }
 
     public static PocketRegistry load(CompoundTag tag, HolderLookup.Provider registries) {
@@ -81,6 +89,10 @@ public class PocketRegistry extends SavedData {
 
     public Optional<PocketEntry> get(int index) {
         return Optional.ofNullable(entries.get(index));
+    }
+
+    public java.util.Collection<PocketEntry> allEntries() {
+        return entries.values();
     }
 
     @Override

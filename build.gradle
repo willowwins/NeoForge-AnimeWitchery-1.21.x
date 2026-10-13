@@ -34,6 +34,19 @@ repositories {
             includeGroup("me.djtheredstoner")
         }
     }
+    maven {
+        // Repository for GeckoLib
+        url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+    maven {
+        // Repository for Curios API
+        name = "Curios"
+        url = uri("https://maven.theillusivec4.top/")
+    }
+    
     // Add here additional repositories if required by some of the dependencies below.
 }
 
@@ -124,6 +137,11 @@ configurations {
 
 dependencies {
      runtimeOnly("me.djtheredstoner:DevAuth-neoforge:1.2.1")
+    // GeckoLib - animation renderer for armor/items/entities
+    implementation("software.bernie.geckolib:geckolib-neoforge-1.21.1:4.8.3")
+    // Curios API - accessory/equipment slots (replaces Fabric's Trinkets)
+    compileOnly "top.theillusivec4.curios:curios-neoforge:9.2.2+1.21.1"
+    localRuntime "top.theillusivec4.curios:curios-neoforge:9.2.2+1.21.1"
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"

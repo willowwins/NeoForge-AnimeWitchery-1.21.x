@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "template": {
-    "item": "animewitchery:silver_smithing_template"
+    "item": "animewitchery:silver_template"
   },
   "base": {
     "item": "animewitchery:wand"

@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.willowins.animewitchery.block.ModBlocks;
 import net.willowins.animewitchery.dimension.PocketDimensions;
 import net.willowins.animewitchery.dimension.PocketRegistry;
-import net.willowins.animewitchery.worldgen.PocketRoomBuilder;
+import net.willowins.animewitchery.worldgen.PocketExpansionPlacer;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
@@ -82,7 +82,12 @@ public class AntifountainBlockEntity extends BlockEntity {
         ServerLevel pocketLevel = PocketDimensions.getServerPocket(serverLevel);
         try {
             if (pocketLevel != null) {
-                PocketRoomBuilder.build(pocketLevel, maybe.get());
+                boolean hubPlaced = PocketExpansionPlacer.placeHub(pocketLevel, maybe.get());
+                if (!hubPlaced) {
+                    LOGGER.error("Antifountain {}: darkworld hub was not placed for pocketIndex={}", worldPosition, pocketIndex);
+                }
+            } else {
+                LOGGER.error("Antifountain {}: pocket dimension is not available; cannot place hub", worldPosition);
             }
         } catch (Exception e) {
             LOGGER.error("Antifountain {}: pocket build failed, overworld veils still fill", worldPosition, e);

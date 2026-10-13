@@ -12,6 +12,10 @@ public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
             DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, "animewitchery");
 
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<AlchemyTableBlockEntity>> ALCHEMY_TABLE_BE =
+            BLOCK_ENTITIES.register("alchemy_table", () -> BlockEntityType.Builder.of(
+                    AlchemyTableBlockEntity::new, ModBlocks.ALCHEMY_TABLE.get()).build(null));
+
     // 2. Register your Starlight Pool Block Entity
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<StarlighPoolBlockEntity>> STARLIGHT_POOL_BE =
             BLOCK_ENTITIES.register("starlight_pool", () ->
@@ -68,6 +72,14 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(
                             DarkFountainBlockEntity::new,
                             ModBlocks.DARK_FOUNTAIN.get()
+                    ).build(null)
+            );
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DarkPedestalBlockEntity>> DARK_PEDESTAL_BE =
+            BLOCK_ENTITIES.register("dark_pedestal", () ->
+                    BlockEntityType.Builder.of(
+                            DarkPedestalBlockEntity::new,
+                            ModBlocks.DARK_PEDESTAL.get()
                     ).build(null)
             );
 

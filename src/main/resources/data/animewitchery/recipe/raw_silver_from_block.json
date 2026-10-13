@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item":"animewitchery:raw_silver_block"
+      "item": "animewitchery:raw_silver_block"
     }
   ],
-  "result":{
-  "count": 9,
+  "result": {
+    "count": 9,
     "id": "animewitchery:raw_silver"
-}
+  }
 }

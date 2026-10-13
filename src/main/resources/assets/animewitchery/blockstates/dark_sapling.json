@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "stage=0": {
+      "model": "animewitchery:block/dark_sapling"
+    },
+    "stage=1": {
+      "model": "animewitchery:block/dark_sapling"
+    }
+  }
+}

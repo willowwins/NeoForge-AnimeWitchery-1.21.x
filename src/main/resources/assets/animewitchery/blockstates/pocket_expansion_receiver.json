@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "animewitchery:block/pocket_expansion_receiver" },
+    "facing=east":  { "model": "animewitchery:block/pocket_expansion_receiver", "y": 90 },
+    "facing=south": { "model": "animewitchery:block/pocket_expansion_receiver", "y": 180 },
+    "facing=west":  { "model": "animewitchery:block/pocket_expansion_receiver", "y": 270 }
+  }
+}

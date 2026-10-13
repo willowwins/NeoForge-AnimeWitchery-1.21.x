@@ -2,17 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "L": {
+    "n": {
       "item": "minecraft:leather"
     },
-    "S": {
+    "o": {
       "item": "minecraft:string"
     }
   },
   "pattern": [
-    " S ",
-    "L  ",
-    "   "
+    "  o",
+    " n "
   ],
   "result": {
     "count": 1,

@@ -4,7 +4,9 @@
     "item": "minecraft:lantern"
   },
   "ingredients": [
-    { "item": "animewitchery:stardrop" }
+    {
+      "item": "animewitchery:stardrop"
+    }
   ],
   "result": {
     "count": 4,

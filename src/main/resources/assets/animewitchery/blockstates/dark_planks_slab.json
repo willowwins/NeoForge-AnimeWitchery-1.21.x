@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "animewitchery:block/dark_planks_slab"
+    },
+    "type=double": {
+      "model": "animewitchery:block/dark_planks"
+    },
+    "type=top": {
+      "model": "animewitchery:block/dark_planks_slab_top"
+    }
+  }
+}

@@ -2,7 +2,7 @@
   "type": "animewitchery:blocktransmutation",
   "block": "minecraft:amethyst_cluster",
   "mainhand": {
-    "item": "animewitchery:blaze_powder_sack"
+    "item": "animewitchery:blaze_powder_bag"
   },
   "result": {
     "count": 1,

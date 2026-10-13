@@ -5,13 +5,34 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
-import net.willowins.animewitchery.ManaData;
-import net.willowins.animewitchery.ModAttachments;
 import net.willowins.animewitchery.item.ModItems;
+import top.theillusivec4.curios.api.CuriosApi;
 
 public class ManaOverlay {
+
+    private static boolean isHudBauble(ItemStack stack) {
+        return stack.is(ModItems.HUD.get()) || stack.is(ModItems.HUD_ALT_1.get());
+    }
+
+    private static boolean hasHudEquipped(Player player) {
+        if (isHudBauble(player.getItemBySlot(EquipmentSlot.HEAD))) {
+            return true;
+        }
+        return CuriosApi.getCuriosInventory(player)
+                .flatMap(handler -> handler.getStacksHandler("head"))
+                .map(handler -> {
+                    for (int i = 0; i < handler.getSlots(); i++) {
+                        if (isHudBauble(handler.getStacks().getStackInSlot(i))) {
+                            return true;
+                        }
+                    }
+                    return false;
+                })
+                .orElse(false);
+    }
 
     public void render(GuiGraphics guiGraphics, DeltaTracker deltaTracker) {
         Minecraft mc = Minecraft.getInstance();
@@ -20,30 +41,14 @@ public class ManaOverlay {
             return;
         }
 
-        // Check if player has Alchemical Catalyst or Resonant Catalyst in inventory or offhand
-        boolean hasCatalyst = false;
-        for (ItemStack stack : player.getInventory().items) {
-            if (!stack.isEmpty() && (stack.is(ModItems.ALCHEMICAL_CATALYST.get()) || stack.is(ModItems.RESONANT_CATALYST.get()))) {
-                hasCatalyst = true;
-                break;
-            }
-        }
-        if (!hasCatalyst) {
-            for (ItemStack stack : player.getInventory().offhand) {
-                if (!stack.isEmpty() && (stack.is(ModItems.ALCHEMICAL_CATALYST.get()) || stack.is(ModItems.RESONANT_CATALYST.get()))) {
-                    hasCatalyst = true;
-                    break;
-                }
-            }
-        }
-
-        if (!hasCatalyst) {
+        // Only show the mana HUD when the HUD bauble is equipped to the head curio slot
+        // or the helmet slot (not while just carried in the inventory)
+        if (!hasHudEquipped(player)) {
             return;
         }
 
-        ManaData manaData = player.getData(ModAttachments.MANA);
-        int currentMana = manaData.current();
-        int maxMana = manaData.max();
+        int currentMana = net.willowins.animewitchery.mana.PlayerMana.getMana(player);
+        int maxMana = net.willowins.animewitchery.mana.PlayerMana.getMaxMana(player);
 
         int screenWidth = guiGraphics.guiWidth();
         int screenHeight = guiGraphics.guiHeight();

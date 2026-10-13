@@ -9,6 +9,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.willowins.animewitchery.block.ModBlocks;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -89,6 +90,44 @@ public final class PocketDimensions {
 
     public static void teleportTo(ServerPlayer player, ServerLevel targetLevel, BlockPos pos) {
         player.teleportTo(targetLevel, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, player.getYRot(), player.getXRot());
+    }
+
+    /**
+     * Where to drop a player entering the pocket: on the dark-flagstone hub floor,
+     * searching outward from the fountain for the nearest standing cell.
+     */
+    public static BlockPos computePocketSpawn(ServerLevel pocketLevel, PocketRegistry.PocketEntry entry) {
+        BlockPos origin = entry.pocketOrigin();
+        for (int r = 0; r <= 10; r++) {
+            for (int dx = -r; dx <= r; dx++) {
+                for (int dz = -r; dz <= r; dz++) {
+                    if (Math.max(Math.abs(dx), Math.abs(dz)) != r) {
+                        continue;
+                    }
+                    BlockPos stand = findFlagstoneStand(pocketLevel, origin, dx, dz);
+                    if (stand != null) {
+                        return stand;
+                    }
+                }
+            }
+        }
+        return origin.offset(0, 8, 1);
+    }
+
+    private static BlockPos findFlagstoneStand(ServerLevel level, BlockPos origin, int dx, int dz) {
+        int x = origin.getX() + dx;
+        int z = origin.getZ() + dz;
+        for (int y = origin.getY(); y <= origin.getY() + 12; y++) {
+            BlockState floor = level.getBlockState(new BlockPos(x, y, z));
+            if (!floor.is(ModBlocks.DARK_FLAGSTONE.get()) && !floor.is(net.minecraft.world.level.block.Blocks.END_STONE)) {
+                continue;
+            }
+            if (level.getBlockState(new BlockPos(x, y + 1, z)).isAir()
+                    && level.getBlockState(new BlockPos(x, y + 2, z)).isAir()) {
+                return new BlockPos(x, y + 1, z);
+            }
+        }
+        return null;
     }
 
     public static ServerLevel getServerPocket(ServerLevel anyServerLevel) {

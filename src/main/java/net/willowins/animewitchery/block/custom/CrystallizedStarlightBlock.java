@@ -8,7 +8,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class CrystallizedStarlightBlock extends Block {
-    private static final VoxelShape SHAPE = Block.box(0, 0, 0, 16, 2, 16);
+    private static final VoxelShape SHAPE = Block.box(1, 1, 1, 15, 2, 15);
 
     public CrystallizedStarlightBlock(Properties properties) {
         super(properties);

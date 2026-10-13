@@ -3,9 +3,7 @@
   "base": {
     "item": "minecraft:iron_ingot"
   },
-  "ingredients": [
-
-  ],
+  "ingredients": [],
   "result": {
     "count": 1,
     "id": "animewitchery:silver_ingot"
@@ -14,5 +12,5 @@
     "fluid": "animewitchery:starlight"
   },
   "fluidCost": 10,
-  "duration":1
+  "duration": 1
 }

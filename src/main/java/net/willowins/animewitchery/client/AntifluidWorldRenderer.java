@@ -3,16 +3,12 @@ package net.willowins.animewitchery.client;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
 import net.minecraft.client.Camera;
-import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
@@ -26,6 +22,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RenderLevelStageEvent;
 import net.willowins.animewitchery.AnimeWitchery;
 import net.willowins.animewitchery.block.ModBlocks;
+import net.willowins.animewitchery.block.custom.StarlightPoolBlock;
 import net.willowins.animewitchery.block.entity.StarlighPoolBlockEntity;
 import net.willowins.animewitchery.fluid.ModFluids;
 import org.joml.Matrix4f;
@@ -37,20 +34,9 @@ public class AntifluidWorldRenderer {
 
     private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger("AntifluidWorldRenderer");
     private static int lastFoundPools;
-    private static int lastFoundVeils;
 
     public static int[] getLastCounts() {
-        return new int[]{lastFoundPools, lastFoundVeils};
-    }
-
-    public static void renderDebug(GuiGraphics guiGraphics, DeltaTracker deltaTracker) {
-        Minecraft mc = Minecraft.getInstance();
-        if (mc.player == null || mc.options.hideGui) return;
-        int[] counts = getLastCounts();
-        Vec3 cam = mc.gameRenderer.getMainCamera().getPosition();
-        String msg = String.format("AF pools=%d  veils=%d  cam=(%.1f,%.1f,%.1f)",
-                counts[0], counts[1], cam.x, cam.y, cam.z);
-        guiGraphics.drawString(mc.font, msg, 4, 4, 0xFFFFFFFF, true);
+        return new int[]{lastFoundPools};
     }
 
     @SubscribeEvent
@@ -92,7 +78,7 @@ public class AntifluidWorldRenderer {
         BufferBuilder worldBb = new BufferBuilder(worldBuffer, VertexFormat.Mode.QUADS, DefaultVertexFormat.POSITION_TEX_COLOR);
         int found = buildGeometry(worldBb, depthBb, level, camPos, frustum, hrange, yrange);
         if (level.getGameTime() % 100L == 0L) {
-            LOGGER.info("AF render scan: pools={} veils={} found={}", lastFoundPools, lastFoundVeils, found);
+            LOGGER.info("AF render scan: pools={} found={}", lastFoundPools, found);
         }
         MeshData depthMesh = depthBb.build();
         MeshData worldMesh = worldBb.build();
@@ -116,15 +102,15 @@ public class AntifluidWorldRenderer {
 
         setFrameUniforms(camPos);
 
-        if (worldMesh != null) {
-            RenderSystem.setShader(AntifluidShaders.ANTIFLUID_SHADER_SUPPLIER);
+        if (worldMesh != null && AntifluidShaders.antifluidPortalShader != null) {
+            RenderSystem.setShader(() -> AntifluidShaders.antifluidPortalShader);
             BufferUploader.drawWithShader(worldMesh);
         }
 
-        if (depthMesh != null) {
+        if (depthMesh != null && AntifluidShaders.antifluidSpaceShader != null) {
             RenderSystem.depthMask(false);
             RenderSystem.blendFunc(GL11.GL_ONE, GL11.GL_ONE);
-            RenderSystem.setShader(AntifluidShaders.ANTIFLUID_SPACE_SUPPLIER);
+            RenderSystem.setShader(() -> AntifluidShaders.antifluidSpaceShader);
             BufferUploader.drawWithShader(depthMesh);
             RenderSystem.blendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
             RenderSystem.depthMask(true);
@@ -146,36 +132,31 @@ public class AntifluidWorldRenderer {
         int oz = (int) camPos.z;
         int found = 0;
         int foundPools = 0;
-        int foundVeils = 0;
 
+        BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos();
+        BlockPos.MutableBlockPos probe = new BlockPos.MutableBlockPos();
         for (int y = -yrange; y <= yrange; y++) {
             for (int x = -hrange; x <= hrange; x++) {
                 for (int z = -hrange; z <= hrange; z++) {
-                    BlockPos pos = new BlockPos(ox + x, oy + y, oz + z);
+                    pos.set(ox + x, oy + y, oz + z);
                     if (!frustum.isVisible(new AABB(pos))) continue;
 
                     BlockState blockState = level.getBlockState(pos);
-                    if (blockState.is(ModBlocks.POCKET_VEIL.get())) {
-                        buildVeilCube(portalConsumer, spaceConsumer, pos);
+                    if (blockState.is(ModBlocks.POCKET_VEIL.get())
+                            || blockState.is(ModBlocks.POCKET_RETURN.get())) {
+                        buildVeilCube(portalConsumer, spaceConsumer, level, pos, probe);
                         found++;
-                        foundVeils++;
                         continue;
                     }
-                    if (blockState.is(ModBlocks.POCKET_RETURN.get())) {
-                        buildReturnRift(portalConsumer, spaceConsumer, pos);
-                        found++;
-                        foundVeils++;
-                        continue;
-                    }
-
-                    BlockEntity be = level.getBlockEntity(pos);
-                    if (be instanceof StarlighPoolBlockEntity pool) {
-                        if (pool.fluidTank.getFluidAmount() > 0) {
-                            Fluid stored = pool.fluidTank.getFluid().getFluid();
-                            if (isAntifluid(stored)) {
-                                buildPoolSurface(portalConsumer, spaceConsumer, level, pos, pool);
-                                found++;
-                                foundPools++;
+                    if (blockState.getBlock() instanceof StarlightPoolBlock) {
+                        if (level.getBlockEntity(pos) instanceof StarlighPoolBlockEntity pool) {
+                            if (pool.fluidTank.getFluidAmount() > 0) {
+                                Fluid stored = pool.fluidTank.getFluid().getFluid();
+                                if (isAntifluid(stored)) {
+                                    buildPoolSurface(portalConsumer, spaceConsumer, level, pos, pool);
+                                    found++;
+                                    foundPools++;
+                                }
                             }
                         }
                         continue;
@@ -191,7 +172,6 @@ public class AntifluidWorldRenderer {
             }
         }
         lastFoundPools = foundPools;
-        lastFoundVeils = foundVeils;
         return found;
     }
 
@@ -334,36 +314,50 @@ public class AntifluidWorldRenderer {
         consumer.addVertex(x3, y3, z3).setColor(0.0F, 0.0F, 0.0F, alpha).setUv(x3, z3);
     }
 
-    private static void buildVeilCube(VertexConsumer consumer, VertexConsumer spaceConsumer, BlockPos pos) {
-        float inset = 0.0F;
+    private static boolean veilFaceOccluded(BlockPos.MutableBlockPos probe, ClientLevel level, BlockPos pos,
+                                            int dx, int dy, int dz) {
+        probe.set(pos.getX() + dx, pos.getY() + dy, pos.getZ() + dz);
+        BlockState neighbor = level.getBlockState(probe);
+        return neighbor.is(ModBlocks.POCKET_VEIL.get()) || neighbor.is(ModBlocks.POCKET_RETURN.get());
+    }
+
+    private static void buildVeilCube(VertexConsumer consumer, VertexConsumer spaceConsumer,
+                                      ClientLevel level, BlockPos pos, BlockPos.MutableBlockPos probe) {
         float wx = pos.getX();
         float wy = pos.getY();
         float wz = pos.getZ();
-        float minX = wx + inset;
-        float maxX = wx + 1.0F - inset;
-        float minY = wy + inset;
-        float maxY = wy + 1.0F - inset;
-        float minZ = wz + inset;
-        float maxZ = wz + 1.0F - inset;
+        float minX = wx;
+        float maxX = wx + 1.0F;
+        float minY = wy;
+        float maxY = wy + 1.0F;
+        float minZ = wz;
+        float maxZ = wz + 1.0F;
         float alpha = 1.0F;
 
-        emitVoidQuad(consumer, minX, minY, minZ, maxX, minY, minZ, maxX, maxY, minZ, minX, maxY, minZ, alpha);
-        emitVoidQuad(consumer, maxX, minY, maxZ, minX, minY, maxZ, minX, maxY, maxZ, maxX, maxY, maxZ, alpha);
-        emitVoidQuad(consumer, maxX, minY, minZ, minX, minY, minZ, minX, minY, maxZ, maxX, minY, maxZ, alpha);
-        emitVoidQuad(consumer, minX, maxY, minZ, maxX, maxY, minZ, maxX, maxY, maxZ, minX, maxY, maxZ, alpha);
-        emitVoidQuad(consumer, minX, minY, maxZ, minX, minY, minZ, minX, maxY, minZ, minX, maxY, maxZ, alpha);
-        emitVoidQuad(consumer, maxX, minY, minZ, maxX, minY, maxZ, maxX, maxY, maxZ, maxX, maxY, minZ, alpha);
-
-        emitVoidQuad(spaceConsumer, minX, minY, minZ, maxX, minY, minZ, maxX, maxY, minZ, minX, maxY, minZ, alpha);
-        emitVoidQuad(spaceConsumer, maxX, minY, maxZ, minX, minY, maxZ, minX, maxY, maxZ, maxX, maxY, maxZ, alpha);
-        emitVoidQuad(spaceConsumer, maxX, minY, minZ, minX, minY, minZ, minX, minY, maxZ, maxX, minY, maxZ, alpha);
-        emitVoidQuad(spaceConsumer, minX, maxY, minZ, maxX, maxY, minZ, maxX, maxY, maxZ, minX, maxY, maxZ, alpha);
-        emitVoidQuad(spaceConsumer, minX, minY, maxZ, minX, minY, minZ, minX, maxY, minZ, minX, maxY, maxZ, alpha);
-        emitVoidQuad(spaceConsumer, maxX, minY, minZ, maxX, minY, maxZ, maxX, maxY, maxZ, maxX, maxY, minZ, alpha);
-    }
-
-    private static void buildReturnRift(VertexConsumer consumer, VertexConsumer spaceConsumer, BlockPos pos) {
-        buildVeilCube(consumer, spaceConsumer, pos);
+        if (!veilFaceOccluded(probe, level, pos, 0, 0, -1)) {
+            emitVoidQuad(consumer, minX, minY, minZ, maxX, minY, minZ, maxX, maxY, minZ, minX, maxY, minZ, alpha);
+            emitVoidQuad(spaceConsumer, minX, minY, minZ, maxX, minY, minZ, maxX, maxY, minZ, minX, maxY, minZ, alpha);
+        }
+        if (!veilFaceOccluded(probe, level, pos, 0, 0, 1)) {
+            emitVoidQuad(consumer, maxX, minY, maxZ, minX, minY, maxZ, minX, maxY, maxZ, maxX, maxY, maxZ, alpha);
+            emitVoidQuad(spaceConsumer, maxX, minY, maxZ, minX, minY, maxZ, minX, maxY, maxZ, maxX, maxY, maxZ, alpha);
+        }
+        if (!veilFaceOccluded(probe, level, pos, 0, -1, 0)) {
+            emitVoidQuad(consumer, maxX, minY, minZ, minX, minY, minZ, minX, minY, maxZ, maxX, minY, maxZ, alpha);
+            emitVoidQuad(spaceConsumer, maxX, minY, minZ, minX, minY, minZ, minX, minY, maxZ, maxX, minY, maxZ, alpha);
+        }
+        if (!veilFaceOccluded(probe, level, pos, 0, 1, 0)) {
+            emitVoidQuad(consumer, minX, maxY, minZ, maxX, maxY, minZ, maxX, maxY, maxZ, minX, maxY, maxZ, alpha);
+            emitVoidQuad(spaceConsumer, minX, maxY, minZ, maxX, maxY, minZ, maxX, maxY, maxZ, minX, maxY, maxZ, alpha);
+        }
+        if (!veilFaceOccluded(probe, level, pos, -1, 0, 0)) {
+            emitVoidQuad(consumer, minX, minY, maxZ, minX, minY, minZ, minX, maxY, minZ, minX, maxY, maxZ, alpha);
+            emitVoidQuad(spaceConsumer, minX, minY, maxZ, minX, minY, minZ, minX, maxY, minZ, minX, maxY, maxZ, alpha);
+        }
+        if (!veilFaceOccluded(probe, level, pos, 1, 0, 0)) {
+            emitVoidQuad(consumer, maxX, minY, minZ, maxX, minY, maxZ, maxX, maxY, maxZ, maxX, maxY, minZ, alpha);
+            emitVoidQuad(spaceConsumer, maxX, minY, minZ, maxX, minY, maxZ, maxX, maxY, maxZ, maxX, maxY, minZ, alpha);
+        }
     }
 
     private static boolean occludesFace(ClientLevel level, BlockPos occluderPos, BlockState occluder,

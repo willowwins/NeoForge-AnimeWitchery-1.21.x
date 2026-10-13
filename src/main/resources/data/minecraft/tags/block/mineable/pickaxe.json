@@ -1,11 +1,37 @@
 {
-  "replace": false,
   "values": [
+    "animewitchery:charcoal_block",
+    "animewitchery:effigy_fountain",
+    "animewitchery:active_effigy_fountain",
     "animewitchery:silver_block",
+    "animewitchery:scheelite_block",
+    "animewitchery:deepslate_scheelite_ore",
     "animewitchery:silver_ore",
     "animewitchery:deepslate_silver_ore",
-    "animewitchery:luna_crystal",
-    "animewitchery:raw_silver_block"
-
+    "minecraft:reinforced_deepslate",
+    "animewitchery:silver_button",
+    "animewitchery:silver_trapdoor",
+    "animewitchery:silver_door",
+    "animewitchery:netherite_door",
+    "animewitchery:silver_fence",
+    "animewitchery:silver_fence_gate",
+    "animewitchery:silver_wall",
+    "animewitchery:silver_stairs",
+    "animewitchery:silver_stairs",
+    "animewitchery:silver_slab",
+    "animewitchery:marble",
+    "animewitchery:marble_stairs",
+    "animewitchery:marble_slab",
+    "animewitchery:marble_wall",
+    "animewitchery:polished_marble",
+    "animewitchery:polished_marble_stairs",
+    "animewitchery:polished_marble_slab",
+    "animewitchery:polished_marble_wall",
+    "animewitchery:marble_bricks",
+    "animewitchery:marble_brick_stairs",
+    "animewitchery:marble_brick_slab",
+    "animewitchery:marble_brick_wall",
+    "animewitchery:marble_pillar",
+    "animewitchery:block_miner"
   ]
 }

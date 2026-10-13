@@ -1,10 +1,18 @@
 {
-  "replace": false,
   "values": [
     "animewitchery:silver_block",
+    "animewitchery:scheelite_block",
+    "animewitchery:deepslate_scheelite_ore",
     "animewitchery:silver_ore",
     "animewitchery:deepslate_silver_ore",
-    "animewitchery:raw_silver_block"
-
+    "animewitchery:silver_button",
+    "animewitchery:silver_trapdoor",
+    "animewitchery:silver_door",
+    "animewitchery:silver_fence",
+    "animewitchery:silver_fence_gate",
+    "animewitchery:silver_wall",
+    "animewitchery:silver_stairs",
+    "animewitchery:silver_slab",
+    "animewitchery:block_miner"
   ]
 }

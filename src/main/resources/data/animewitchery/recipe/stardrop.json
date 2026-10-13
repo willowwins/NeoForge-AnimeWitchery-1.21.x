@@ -4,12 +4,18 @@
     "item": "animewitchery:diamond_shard"
   },
   "ingredients": [
-    { "item": "animewitchery:starlight_dust"},
-    { "item": "animewitchery:starlight_dust"},
-    { "item": "animewitchery:starlight_dust"},
-    { "item": "animewitchery:starlight_dust"}
-
-
+    {
+      "item": "animewitchery:starlight_dust"
+    },
+    {
+      "item": "animewitchery:starlight_dust"
+    },
+    {
+      "item": "animewitchery:starlight_dust"
+    },
+    {
+      "item": "animewitchery:starlight_dust"
+    }
   ],
   "result": {
     "count": 1,
@@ -19,5 +25,5 @@
     "fluid": "animewitchery:starlight"
   },
   "fluidCost": 10000,
-  "duration":1
+  "duration": 1
 }

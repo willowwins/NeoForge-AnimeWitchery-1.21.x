@@ -1,71 +1,798 @@
 {
-  "itemtab.anime_witchery_combat": "Anime Witchery Combat",
   "itemtab.anime_witchery_basic": "Anime Witchery",
-
-  "block.animewitchery.silver_block": "Block of Silver",
-  "block.animewitchery.raw_silver_block": "Block of Raw Silver",
-  "block.animewitchery.silver_ore": "Silver Ore",
-  "block.animewitchery.luna_crystal": "Luna Crystal",
-  "block.animewitchery.stardrop_lantern": "Stardrop Lantern",
-  "block.animewitchery.starlight_pool": "StarLight pool",
-  "block.animewitchery.deepslate_silver_ore": "DeepSlate Silver Ore",
-  "block.animewitchery.starlight": "Starlight",
-  "block.animewitchery.diamond_shard": "Diamond Shard",
-  "block.animewitchery.starlight_infusion_pedestal": "Starlight Infusion Pedestal",
-  "block.animewitchery.starlight_infusion_altar": "Starlight Infusion Altar",
+  "itemtab.anime_witchery_combat": "Anime Witchery Combat",
+  "modmenu.descriptionTranslation.animewitchery": "A Minecraft mod created with Korrivo Mod Studio."
+,
+  "item.animewitchery.air_rune_stone": "Air Rune Stone"
+,
+  "item.animewitchery.hud": "Hud"
+,
+  "item.animewitchery.hud_alt_1": "Hud (Scouter)"
+,
+  "item.animewitchery.air_spell_scroll": "Air Spell Scroll"
+,
+  "item.animewitchery.alchemical_catalyst": "Alchemical Catalyst"
+,
+  "item.animewitchery.alchemist_boots": "Alchemist Boots"
+,
+  "item.animewitchery.alchemist_hood": "Alchemist Hood"
+,
+  "item.animewitchery.alchemist_leggings": "Alchemist Leggings"
+,
+  "item.animewitchery.amethyst_dust": "Amethyst Dust"
+,
+  "item.animewitchery.ascendant_skill_orb": "Ascendant Skill Orb"
+,
+  "item.animewitchery.assassin_boots": "Assassin Boots"
+,
+  "item.animewitchery.assassin_chestplate": "Assassin Chestplate"
+,
+  "item.animewitchery.assassin_dagger": "Assassin Dagger"
+,
+  "item.animewitchery.assassin_hood": "Assassin Hood"
+,
+  "item.animewitchery.assassin_leggings": "Assassin Leggings"
+,
+  "item.animewitchery.barrier_catalyst": "Barrier Catalyst"
+,
+  "item.animewitchery.blaze_powder_bag": "Blaze Powder Bag"
+,
+  "item.animewitchery.blood_rune_stone": "Blood Rune Stone"
+,
+  "item.animewitchery.bloodletter": "Bloodletter"
+,
+  "item.animewitchery.bone_dust": "Bone Dust"
+,
+  "item.animewitchery.bullet": "Bullet"
+,
+  "item.animewitchery.butcher_apron": "Butcher Apron"
+,
+  "item.animewitchery.butcher_boots": "Butcher Boots"
+,
+  "item.animewitchery.butcher_helmet": "Butcher Helmet"
+,
+  "item.animewitchery.butcher_knife": "Butcher Knife"
+,
+  "item.animewitchery.butcher_leggings": "Butcher Leggings"
+,
+  "item.animewitchery.cat_ears": "Cat Ears"
+,
+  "item.animewitchery.chalk": "Chalk"
+,
+  "item.animewitchery.chaps": "Chaps"
+,
+  "item.animewitchery.chipped_dice": "Chipped Dice"
+,
+  "item.animewitchery.chisel": "Chisel"
+,
+  "item.animewitchery.copper_scythe": "Copper Scythe"
+,
+  "item.animewitchery.copper_warhammer": "Copper Warhammer"
+,
+  "item.animewitchery.cosmetic_bag": "Cosmetic Bag"
+,
+  "item.animewitchery.cotton_gown": "Cotton Gown"
+,
+  "item.animewitchery.cowboy_hat": "Cowboy Hat"
+,
+  "item.animewitchery.creeping_prevailance": "Repair Charm"
+,
+  "item.animewitchery.crown": "Crown"
+,
+  "item.animewitchery.crystalline_spatial_fold": "Crystalline Spatial Fold"
+,
+  "item.animewitchery.darkness_rune_stone": "Darkness Rune Stone"
+,
+  "item.animewitchery.darkness_spell_scroll": "Darkness Spell Scroll"
+,
+  "item.animewitchery.death_rune_stone": "Death Rune Stone"
+,
+  "item.animewitchery.death_spell_scroll": "Death Spell Scroll"
+,
+  "item.animewitchery.deathbringer_boots": "Deathbringer Boots"
+,
+  "item.animewitchery.deathbringer_hood": "Deathbringer Hood"
+,
+  "item.animewitchery.deathbringer_leggings": "Deathbringer Leggings"
+,
+  "item.animewitchery.deathbringer_robes": "Deathbringer Robes"
+,
+  "item.animewitchery.deathbringer_scythe": "Deathbringer"
+,
+  "item.animewitchery.deck_of_cards": "Deck Of Cards"
+,
+  "item.animewitchery.deep_dark_deep_dish": "Deep Dark Deep Dish"
+,
+  "item.animewitchery.defiant_rift": "Defiant Rift"
+,
+  "item.animewitchery.diamond_scythe": "Diamond Scythe"
+,
+  "item.animewitchery.dimension": "Dimension Swapper"
+,
+  "item.animewitchery.divining_rod": "Divining Rod"
+,
+  "item.animewitchery.domain_spark": "Domain Spark"
+,
+  "item.animewitchery.druid_boots": "Druid Boots"
+,
+  "item.animewitchery.druid_hood": "Druid Hood"
+,
+  "item.animewitchery.druid_leggings": "Druid Leggings"
+,
+  "item.animewitchery.earth_rune_stone": "Earth Rune Stone"
+,
+  "item.animewitchery.earth_spell_scroll": "Earth Spell Scroll"
+,
+  "item.animewitchery.emergency_recall": "Emergency Recall"
+,
+  "item.animewitchery.empty_flask": "Empty Flask"
+,
+  "item.animewitchery.enchanted_crystal": "Enchanted Crystal"
+,
+  "item.animewitchery.farmer_boots": "Farmer Boots"
+,
+  "item.animewitchery.farmer_leggings": "Farmer Leggings"
+,
+  "item.animewitchery.farmer_overalls": "Farmer Overalls"
+,
+  "item.animewitchery.farming_hoe": "Farming Hoe"
+,
+  "item.animewitchery.femboy_hoodie": "Femboy Hoodie"
+,
+  "item.animewitchery.fire_res_crystal": "Fire Resistance Crystal"
+,
+  "item.animewitchery.fire_rune_stone": "Fire Rune Stone"
+,
+  "item.animewitchery.fire_spell_scroll": "Fire Spell Scroll"
+,
+  "item.animewitchery.fuel_rod": "Fuel Rod"
+,
+  "item.animewitchery.fulfilling_tiara": "Fulfilling Tiara"
+,
+  "item.animewitchery.gambler_pants": "Gambler Pants"
+,
+  "item.animewitchery.gambler_shoes": "Gambler Shoes"
+,
+  "item.animewitchery.gambler_visor": "Gambler Visor"
+,
+  "item.animewitchery.grand_skill_orb": "Grand Skill Orb"
+,
+  "item.animewitchery.great_hammer": "Great Hammer"
+,
+  "item.animewitchery.gunslinger_boots": "Gunslinger Boots"
+,
+  "item.animewitchery.gunslinger_vest": "Gunslinger Vest"
+,
+  "item.animewitchery.haloic_axe": "Haloic Axe"
+,
+  "item.animewitchery.haloic_boots": "Haloic Boots"
+,
+  "item.animewitchery.haloic_chestplate": "Haloic Chestplate"
+,
+  "item.animewitchery.haloic_helmet": "Haloic Helmet"
+,
+  "item.animewitchery.haloic_hoe": "Haloic Hoe"
+,
+  "item.animewitchery.haloic_ingot": "Haloic Ingot"
+,
+  "item.animewitchery.haloic_leggings": "Haloic Leggings"
+,
+  "item.animewitchery.haloic_pickaxe": "Haloic Pickaxe"
+,
+  "item.animewitchery.haloic_scrap": "Haloic Scrap"
+,
+  "item.animewitchery.haloic_shovel": "Haloic Shovel"
+,
+  "item.animewitchery.haloic_sword": "Haloic Sword"
+,
+  "item.animewitchery.healing_staff": "Healing Staff"
+,
+  "item.animewitchery.heavy_mace": "Heavy Mace"
+,
+  "item.animewitchery.heavy_plate_boots": "Heavy Plate Boots"
+,
+  "item.animewitchery.heavy_plate_chestplate": "Heavy Plate Chestplate"
+,
+  "item.animewitchery.heavy_plate_helmet": "Heavy Plate Helmet"
+,
+  "item.animewitchery.heavy_plate_leggings": "Heavy Plate Leggings"
+,
+  "item.animewitchery.hoarder_boots": "Hoarder Boots"
+,
+  "item.animewitchery.hoarder_chestplate": "Hoarder Chestplate"
+,
+  "item.animewitchery.hoarder_helmet": "Hoarder Helmet"
+,
+  "item.animewitchery.hoarder_leggings": "Hoarder Leggings"
+,
+  "item.animewitchery.hooded_cape": "Hooded Cape"
+,
+  "item.animewitchery.iron_scythe": "Iron Scythe"
+,
+  "item.animewitchery.iron_shackle": "Iron Shackle"
+,
+  "item.animewitchery.job_application": "Job Application"
+,
+  "item.animewitchery.kamikaze_ritual_scroll": "Kamikaze Ritual Scroll"
+,
+  "item.animewitchery.keep_inventory_charm": "Keep Inventory Charm"
+,
+  "item.animewitchery.key": "Key"
+,
+  "item.animewitchery.kinetic_breaker": "Kinetic Breaker"
+,
+  "item.animewitchery.latent_mana_pendant": "Latent Mana Pendant"
+,
+  "item.animewitchery.lemon": "Lemon"
+,
+  "item.animewitchery.lemon_seeds": "Lemon Seeds"
+,
+  "item.animewitchery.lemon_tart": "Lemon Tart"
+,
+  "item.animewitchery.life_rune_stone": "Life Rune Stone"
+,
+  "item.animewitchery.life_spell_scroll": "Life Spell Scroll"
+,
+  "item.animewitchery.light_rune_stone": "Light Rune Stone"
+,
+  "item.animewitchery.light_spell_scroll": "Light Spell Scroll"
+,
+  "item.animewitchery.longsword": "Longsword"
+,
+  "item.animewitchery.mage_boots": "Mage Boots"
+,
+  "item.animewitchery.mage_hat": "Mage Hat"
+,
+  "item.animewitchery.mage_leggings": "Mage Leggings"
+,
+  "item.animewitchery.mage_robes": "Mage Robes"
+,
+  "item.animewitchery.mage_staff": "Mage Staff"
+,
+  "item.animewitchery.magic_chalk": "Magic Chalk"
+,
+  "item.animewitchery.major_skill_orb": "Major Skill Orb"
+,
+  "item.animewitchery.mana_rocket": "Mana Rocket"
+,
+  "item.animewitchery.master_key": "Master Key"
+,
+  "item.animewitchery.metal_detector": "Metal Detector"
+,
+  "item.animewitchery.minor_skill_orb": "Minor Skill Orb"
+,
+  "item.animewitchery.mod_totem": "Ether Totem"
+,
+  "item.animewitchery.monk_boots": "Monk Boots"
+,
+  "item.animewitchery.monk_head": "Monk Head"
+,
+  "item.animewitchery.monk_leggings": "Monk Leggings"
+,
+  "item.animewitchery.mortar_and_pestle": "Mortar and Pestle"
+,
+  "item.animewitchery.nature_staff": "Nature Staff"
+,
+  "item.animewitchery.nbt_preserving_tool": "NBT Preserving Tool"
+,
+  "item.animewitchery.needle": "Needle"
+,
+  "item.animewitchery.netherite_scythe": "Netherite Scythe"
+,
+  "item.animewitchery.oathbreaker": "Oathbreaker"
+,
+  "item.animewitchery.obelisk_boots": "Obelisk Boots"
+,
+  "item.animewitchery.obelisk_chestplate": "Obelisk Chestplate"
+,
+  "item.animewitchery.obelisk_helmet": "Obelisk Helmet"
+,
+  "item.animewitchery.obelisk_leggings": "Obelisk Leggings"
+,
+  "item.animewitchery.obelisk_pickaxe": "Obelisk Pickaxe"
+,
+  "item.animewitchery.obelisk_shard": "Obelisk Shard"
+,
+  "item.animewitchery.obelisk_sword": "Obelisk Sword"
+,
+  "item.animewitchery.overheated_fuel_rod": "Overheated Fuel Rod"
+,
+  "item.animewitchery.paladin_boots": "Paladin Boots"
+,
+  "item.animewitchery.paladin_chestplate": "Paladin Chestplate"
+,
+  "item.animewitchery.paladin_helmet": "Paladin Helmet"
+,
+  "item.animewitchery.paladin_leggings": "Paladin Leggings"
+,
+  "item.animewitchery.plate_boots": "Plate Boots"
+,
+  "item.animewitchery.plate_chestplate": "Plate Chestplate"
+,
+  "item.animewitchery.plate_leggings": "Plate Leggings"
+,
+  "item.animewitchery.platform_boots": "Platform Boots"
+,
+  "item.animewitchery.potion_flask": "Potion Flask"
+,
+  "item.animewitchery.prospector_boots": "Prospector Boots"
+,
+  "item.animewitchery.prospector_hat": "Prospector Hat"
+,
+  "item.animewitchery.prospector_leggings": "Prospector Leggings"
+,
+  "item.animewitchery.prospector_shovel": "Prospector Shovel"
+,
+  "item.animewitchery.prospector_tunic": "Prospector Tunic"
+,
+  "item.animewitchery.railgun": "Railgun"
+,
+  "item.animewitchery.railgunner_boots": "Railgunner Boots"
+,
+  "item.animewitchery.railgunner_chestplate": "Railgunner Chestplate"
+,
+  "item.animewitchery.railgunner_helmet": "Railgunner Helmet"
+,
+  "item.animewitchery.railgunner_leggings": "Railgunner Leggings"
+,
+  "item.animewitchery.rawsilver": "Raw Silver"
+,
+  "item.animewitchery.redstone_transmitter": "Redstone Transmitter"
+,
+  "item.animewitchery.redstone_transmitter_button": "Redstone Transmitter Button"
+,
+  "item.animewitchery.repair_essence": "Repair Essence"
+,
+  "item.animewitchery.resonant_axe": "Resonant Axe"
+,
+  "item.animewitchery.resonant_boots": "Resonant Boots"
+,
+  "item.animewitchery.resonant_catalyst": "Resonant Catalyst"
+,
+  "item.animewitchery.resonant_chestplate": "Resonant Chestplate"
+,
+  "item.animewitchery.resonant_focus": "Resonant Focus"
+,
+  "item.animewitchery.resonant_greatsword": "Resonant Greatsword"
+,
+  "item.animewitchery.resonant_helmet": "Resonant Helmet"
+,
+  "item.animewitchery.resonant_hoe": "Resonant Hoe"
+,
+  "item.animewitchery.resonant_leggings": "Resonant Leggings"
+,
+  "item.animewitchery.resonant_pickaxe": "Resonant Pickaxe"
+,
+  "item.animewitchery.resonant_shield": "Resonant Shield"
+,
+  "item.animewitchery.resonant_shield_3d": "Resonant Shield 3D"
+,
+  "item.animewitchery.resonant_shovel": "Resonant Shovel"
+,
+  "item.animewitchery.resonant_spark": "Resonant Spark"
+,
+  "item.animewitchery.resonant_sword": "Resonant Sword"
+,
+  "item.animewitchery.resonant_tiara": "Resonant Tiara"
+,
+  "item.animewitchery.respawn_beacon": "Respawn Beacon"
+,
+  "item.animewitchery.revolver": "Revolver"
+,
+  "item.animewitchery.rituals_book": "Grimoire of Quarters"
+,
+  "item.animewitchery.rosewillow_blossom": "Rosewillow Blossom"
+,
+  "item.animewitchery.rosewillow_vines": "Rosewillow Vines"
+,
+  "item.animewitchery.rune_stone": "Rune Stone"
+,
+  "item.animewitchery.sanguine_boots": "Sanguine Boots"
+,
+  "item.animewitchery.sanguine_hood": "Sanguine Hood"
+,
+  "item.animewitchery.sanguine_leggings": "Sanguine Leggings"
+,
+  "item.animewitchery.silver_axe": "Silver Axe"
+,
+  "item.animewitchery.silver_boots": "Silver Boots"
+,
+  "item.animewitchery.silver_chestplate": "Silver Chestplate"
+,
+  "item.animewitchery.silver_helmet": "Silver Helmet"
+,
+  "item.animewitchery.silver_hoe": "Silver Hoe"
+,
+  "item.animewitchery.silver_leggings": "Silver Leggings"
+,
+  "item.animewitchery.silver_pendant": "Silver Pendant"
+,
+  "item.animewitchery.silver_pickaxe": "Silver Pickaxe"
+,
+  "item.animewitchery.silver_shovel": "Silver Shovel"
+,
+  "item.animewitchery.silver_sword": "Silver Sword"
+,
+  "item.animewitchery.silver_template": "Silver Template"
+,
+  "item.animewitchery.silveringot": "Silver Ingot"
+,
+  "item.animewitchery.silvernugget": "Silver Nugget"
+,
+  "item.animewitchery.silverspool": "Silver Spool"
+,
+  "item.animewitchery.soiled_jacket": "Soiled Jacket"
+,
+  "item.animewitchery.soul": "Soul"
+,
+  "item.animewitchery.soul_jar": "Soul Jar"
+,
+  "container.animewitchery.soul_jar": "Soul Jar"
+,
+  "item.animewitchery.soul_scythe": "Soul Scythe"
+,
+  "item.animewitchery.sparse_tunic": "Sparse Tunic"
+,
+  "item.animewitchery.speed_crystal": "Speed Crystal"
+,
+  "item.animewitchery.spellbook": "Spellbook"
+,
+  "item.animewitchery.spellbook_page": "Spellbook Page"
+,
+  "item.animewitchery.spool": "Spool"
+,
+  "item.animewitchery.staff_head": "Staff Head"
+,
+  "item.animewitchery.stained_robes": "Stained Robes"
+,
+  "item.animewitchery.star_shard": "Star Shard"
+,
+  "item.animewitchery.star_tear": "Star Tear"
+,
+  "item.animewitchery.stardust": "Stardust"
+,
+  "item.animewitchery.starlight_bucket": "Starlight Bucket"
+,
+  "item.animewitchery.stone_scythe": "Stone Scythe"
+,
+  "item.animewitchery.straw_hat": "Straw Hat"
+,
+  "item.animewitchery.strawberry": "Strawberry"
+,
+  "item.animewitchery.strawberry_seeds": "Strawberry Seeds"
+,
+  "item.animewitchery.strawberry_tart": "Strawberry Tart"
+,
+  "item.animewitchery.stuffed_animal": "Stuffed Animal"
+,
+  "item.animewitchery.summoner_boots": "Summoner Boots"
+,
+  "item.animewitchery.summoner_hood": "Summoner Hood"
+,
+  "item.animewitchery.summoner_leggings": "Summoner Leggings"
+,
+  "item.animewitchery.summoner_robes": "Summoner Robes"
+,
+  "item.animewitchery.summoner_staff": "Summoner Staff"
+,
+  "item.animewitchery.sword_of_midas": "Sword Of Midas"
+,
+  "item.animewitchery.tart_crust": "Tart Crust"
+,
+  "item.animewitchery.thigh_highs": "Thigh Highs"
+,
+  "item.animewitchery.torch_flower_essence": "Torch Flower Essence"
+,
+  "item.animewitchery.unbaked_lemon_tart": "Unbaked Lemon Tart"
+,
+  "item.animewitchery.unbaked_strawberry_tart": "Unbaked Strawberry Tart"
+,
+  "item.animewitchery.void_essence": "Void Essence"
+,
+  "item.animewitchery.void_wisp_spawn_egg": "Void Wisp Spawn Egg"
+,
+  "item.animewitchery.wand": "Magic Wand"
+,
+  "item.animewitchery.water_rune_stone": "Water Rune Stone"
+,
+  "item.animewitchery.water_spell_scroll": "Water Spell Scroll"
+,
+  "item.animewitchery.weatheritem": "Weather Changer"
+,
+  "item.animewitchery.wooden_scythe": "Wooden Scythe"
+,
+  "block.animewitchery.active_binding_spell": "Active Binding Spell"
+,
+  "block.animewitchery.active_effigy_fountain": "Active Effigy Fountain"
+,
+  "block.animewitchery.active_obelisk": "Active Obelisk"
+,
+  "block.animewitchery.alchemical_catalyst_block": "Block of Alchemical catalyst"
+,
+  "block.animewitchery.alchemical_enchanter": "Alchemical Enchanter"
+,
+  "block.animewitchery.alchemy_table": "Alchemy Table"
+,
+  "block.animewitchery.auto_crafter": "Auto Crafter"
+,
+  "block.animewitchery.barrier_circle": "Barrier Circle"
+,
+  "block.animewitchery.barrier_distance_glyph": "Barrier Distance Glyph"
+,
+  "block.animewitchery.binding_spell": "Binding Spell"
+,
+  "block.animewitchery.black_concrete_slab": "Black Concrete Slab"
+,
+  "block.animewitchery.black_concrete_stairs": "Black Concrete Stairs"
+,
+  "block.animewitchery.block_miner": "Block Miner"
+,
+  "block.animewitchery.block_placer": "Block Placer"
+,
+  "block.animewitchery.blue_concrete_slab": "Blue Concrete Slab"
+,
+  "block.animewitchery.blue_concrete_stairs": "Blue Concrete Stairs"
+,
+  "block.animewitchery.boss_obelisk": "Boss Obelisk"
+,
+  "block.animewitchery.brown_concrete_slab": "Brown Concrete Slab"
+,
+  "block.animewitchery.brown_concrete_stairs": "Brown Concrete Stairs"
+,
+  "block.animewitchery.caution_block": "Caution Block"
+,
+  "block.animewitchery.caution_block_slab": "Caution Block Slab"
+,
+  "block.animewitchery.caution_block_stairs": "Caution Block Stairs"
+,
+  "block.animewitchery.charcoal_block": "Charcoal Block"
+,
+  "block.animewitchery.copper_slab": "Copper Slab"
+,
+  "block.animewitchery.copper_stairs": "Copper Stairs"
+,
+  "block.animewitchery.cyan_concrete_slab": "Cyan Concrete Slab"
+,
+  "block.animewitchery.cyan_concrete_stairs": "Cyan Concrete Stairs"
+,
+  "block.animewitchery.decorative_fountain": "Decorative Fountain"
+,
+  "block.animewitchery.deepslate_silver_ore": "Deepslate Silver Ore"
+,
+  "block.animewitchery.deepslate_threshold": "Deepslate Threshold"
+,
+  "block.animewitchery.diamond_slab": "Diamond Slab"
+,
+  "block.animewitchery.diamond_stairs": "Diamond Stairs"
+,
+  "block.animewitchery.effigy_fountain": "Effigy Fountain"
+,
+  "block.animewitchery.enemy_landing_platform": "Enemy Landing Platform"
+,
+  "block.animewitchery.float_block": "Float Block"
+,
+  "block.animewitchery.gacha_altar": "Gacha Altar"
+,
+  "block.animewitchery.gold_slab": "Gold Slab"
+,
+  "block.animewitchery.gold_stairs": "Gold Stairs"
+,
+  "block.animewitchery.gray_concrete_slab": "Gray Concrete Slab"
+,
+  "block.animewitchery.gray_concrete_stairs": "Gray Concrete Stairs"
+,
+  "block.animewitchery.green_concrete_slab": "Green Concrete Slab"
+,
+  "block.animewitchery.green_concrete_stairs": "Green Concrete Stairs"
+,
+  "block.animewitchery.growth_accelerator": "Growth Accelerator"
+,
+  "block.animewitchery.guardian_statue": "Guardian Statue"
+,
+  "block.animewitchery.interactor": "Interactor"
+,
+  "block.animewitchery.iron_slab": "Iron Slab"
+,
+  "block.animewitchery.iron_stairs": "Iron Stairs"
+,
+  "block.animewitchery.landing_platform": "Landing Platform"
+,
+  "block.animewitchery.large_rosewillow_blossom": "Large Rosewillow Blossom"
+,
+  "block.animewitchery.light_blue_concrete_slab": "Light Blue Concrete Slab"
+,
+  "block.animewitchery.light_blue_concrete_stairs": "Light Blue Concrete Stairs"
+,
+  "block.animewitchery.light_gray_concrete_slab": "Light Gray Concrete Slab"
+,
+  "block.animewitchery.light_gray_concrete_stairs": "Light Gray Concrete Stairs"
+,
+  "block.animewitchery.lime_concrete_slab": "Lime Concrete Slab"
+,
+  "block.animewitchery.lime_concrete_stairs": "Lime Concrete Stairs"
+,
+  "block.animewitchery.magenta_concrete_slab": "Magenta Concrete Slab"
+,
+  "block.animewitchery.magenta_concrete_stairs": "Magenta Concrete Stairs"
+,
+  "block.animewitchery.monster_statue": "Monster Statue"
+,
+  "block.animewitchery.netherite_slab": "Netherite Slab"
+,
+  "block.animewitchery.netherite_stairs": "Netherite Stairs"
+,
+  "block.animewitchery.obelisk": "Obelisk"
+,
+  "block.animewitchery.orange_concrete_slab": "Orange Concrete Slab"
+,
+  "block.animewitchery.orange_concrete_stairs": "Orange Concrete Stairs"
+,
+  "block.animewitchery.particle_block": "Particle Block"
+,
+  "block.animewitchery.particle_sink_block": "Particle Sink Block"
+,
+  "block.animewitchery.pillar": "Pillar"
+,
+  "block.animewitchery.pink_concrete_slab": "Pink Concrete Slab"
+,
+  "block.animewitchery.pink_concrete_stairs": "Pink Concrete Stairs"
+,
+  "block.animewitchery.plate": "Plate"
+,
+  "block.animewitchery.purple_concrete_slab": "Purple Concrete Slab"
+,
+  "block.animewitchery.purple_concrete_stairs": "Purple Concrete Stairs"
+,
+  "block.animewitchery.red_concrete_slab": "Red Concrete Slab"
+,
+  "block.animewitchery.red_concrete_stairs": "Red Concrete Stairs"
+,
+  "block.animewitchery.redstone_receiver": "Redstone Receiver"
+,
+  "block.animewitchery.redstone_toggle_receiver": "Redstone Toggle Receiver"
+,
+  "block.animewitchery.redstone_transmitter_button": "Redstone Transmitter Button"
+,
+  "block.animewitchery.resonant_catalyst_block": "Resonant Catalyst Block"
+,
+  "block.animewitchery.rosewillow_bulb": "Rosewillow Bulb"
+,
+  "block.animewitchery.rosewillow_fence": "Rosewillow Fence"
+,
+  "block.animewitchery.rosewillow_fence_gate": "Rosewillow Fence Gate"
+,
+  "block.animewitchery.rosewillow_leaves": "Rosewillow Leaves"
+,
+  "block.animewitchery.rosewillow_log": "Rosewillow Log"
+,
+  "block.animewitchery.rosewillow_log_blooming": "Blooming Rosewillow Log"
+,
+  "block.animewitchery.rosewillow_planks": "Rosewillow Planks"
+,
+  "block.animewitchery.rosewillow_roots": "Rosewillow Roots"
+,
+  "block.animewitchery.rosewillow_sapling": "Rosewillow Sapling"
+,
+  "block.animewitchery.rosewillow_slab": "Rosewillow Slab"
+,
+  "block.animewitchery.rosewillow_stairs": "Rosewillow Stairs"
+,
+  "block.animewitchery.server_button": "Server Button"
+,
+  "block.animewitchery.shimmering_farmland": "Shimmering Farmland"
+,
+  "block.animewitchery.silver_block": "Silver Block"
+,
+  "block.animewitchery.silver_button": "Silver Button"
+,
+  "block.animewitchery.silver_door": "Silver Door"
+,
+  "block.animewitchery.silver_fence": "Silver Fence"
+,
+  "block.animewitchery.silver_fence_gate": "Silver Fence Gate"
+,
+  "block.animewitchery.silver_ore": "Silver Ore"
+,
+  "block.animewitchery.silver_pressure_plate": "Silver Pressure Plate"
+,
+  "block.animewitchery.silver_slab": "Silver Slab"
+,
+  "block.animewitchery.silver_stairs": "Silver Stairs"
+,
+  "block.animewitchery.silver_trapdoor": "Silver Trapdoor"
+,
+  "block.animewitchery.silver_wall": "Silver Wall"
+,
+  "block.animewitchery.sound_block": "Sound Block"
+,
+  "block.animewitchery.sound_block2": "Sound Block 2"
+,
+  "block.animewitchery.spell_trigger_block": "Spell Trigger Block"
+,
+  "block.animewitchery.starlight_block": "Starlight"
+,
+  "block.animewitchery.transmutation_pyre_block": "Transmutation Pyre"
+,
+  "block.animewitchery.white_concrete_slab": "White Concrete Slab"
+,
+  "block.animewitchery.white_concrete_stairs": "White Concrete Stairs"
+,
+  "block.animewitchery.world_button": "World Button"
+,
+  "block.animewitchery.yellow_concrete_slab": "Yellow Concrete Slab"
+,
+  "block.animewitchery.yellow_concrete_stairs": "Yellow Concrete Stairs"
+,
+  "container.animewitchery.alchemy_table": "Alchemy Table",
+  "gui.animewitchery.alchemy_xp_cost": "XP Cost: {0}",
+  "block.animewitchery.marble_bricks": "Marble Bricks",
+  "block.animewitchery.marble_brick_stairs": "Marble Brick Stairs",
+  "block.animewitchery.marble_brick_slab": "Marble Brick Slab",
+  "block.animewitchery.marble_brick_wall": "Marble Brick Wall",
+  "block.animewitchery.marble_pillar": "Marble Pillar",
+  "block.animewitchery.polished_marble": "Polished Marble",
+  "block.animewitchery.polished_marble_stairs": "Polished Marble Stairs",
+  "block.animewitchery.polished_marble_slab": "Polished Marble Slab",
+  "block.animewitchery.polished_marble_wall": "Polished Marble Wall",
   "block.animewitchery.ancient_variable_switch": "Ancient Variable Switch",
-  "block.animewitchery.crystallized_starlight": "Crystallized Starlight",
-  "block.animewitchery.ruin_brick": "Ruin Brick",
-  "block.animewitchery.ruin_floor": "Ruin Floor",
-  "block.animewitchery.dark_brick": "Dark Bricks",
-  "block.animewitchery.dark_grass": "Dark Grass",
-  "block.animewitchery.dark_flagstone": "Dark Flagstone",
-  "block.animewitchery.dark_brick_stairs": "Dark Brick Stairs",
-  "block.animewitchery.dark_brick_slab": "Dark Brick Slab",
-  "block.animewitchery.ruin_brick_stairs": "Ruin Brick Stairs",
-  "block.animewitchery.ruin_brick_slab": "Ruin Brick Slab",
-  "block.animewitchery.antifountain": "Antifountain",
-  "block.animewitchery.dark_fountain": "Dark Fountain",
-  "block.animewitchery.dark_pedestal": "Dark Pedestal",
-  "block.animewitchery.pocket_veil": "Pocket Veil",
-  "block.animewitchery.pocket_return": "Pocket Return",
-  "block.animewitchery.pocket_expansion_jigsaw": "Pocket Expansion Jigsaw",
-
-
-
-  "item.animewitchery.blaze_powder_sack": "Blaze Powder Sack",
-  "item.animewitchery.silver_ingot": "Silver Ingot",
-  "item.animewitchery.wand": "Wand",
-  "item.animewitchery.stardrop_wand": "Stardrop Wand",
-  "item.animewitchery.silver_smithing_template": "Silver Smithing Template",
-  "item.animewitchery.mana_reader": "Mana Gauge",
-  "item.animewitchery.resonant_catalyst": "Resonant Catalyst",
-  "item.animewitchery.alchemical_catalyst": "Alchemical Catalyst",
-  "item.animewitchery.diamond_shard": "Diamond Shard",
-  "item.animewitchery.stardrop": "StarDrop",
-  "item.animewitchery.starlight_dust": "Starlight Dust",
-  "item.animewitchery.raw_silver": "Raw_Silver",
-  "item.animewitchery.starlight_bottle": "Bottled Starlight",
-  "item.animewitchery.starlight_bucket": "Starlight Bucket",
-  "fluid_type.animewitchery.starlight": "Starlight",
-
-  "block.animewitchery.liquified_skulk": "Liquified Skulk",
-  "item.animewitchery.liquified_skulk_bucket": "Liquified Skulk Bucket",
-  "fluid_type.animewitchery.liquified_skulk": "Liquified Skulk",
-
-  "block.animewitchery.liquid_experience": "Liquid Experience",
-  "item.animewitchery.liquid_experience_bucket": "Liquid Experience Bucket",
-  "fluid_type.animewitchery.liquid_experience": "Liquid Experience",
-
-  "block.animewitchery.obsidian_tears": "Obsidian Tears",
-  "item.animewitchery.obsidian_tears_bucket": "Obsidian Tears Bucket",
-  "fluid_type.animewitchery.obsidian_tears": "Obsidian Tears",
-
+  "block.animewitchery.antifluid": "Anti-Fluid",
+  "block.animewitchery.antifountain": "Anti-Fountain",
   "block.animewitchery.blood": "Blood",
-  "item.animewitchery.blood_bucket": "Blood Bucket",
-  "fluid_type.animewitchery.blood": "Blood",
-
-  "block.animewitchery.antifluid": "Antifluid",
+  "block.animewitchery.blume": "Blume",
+  "block.animewitchery.crystallized_starlight": "Crystallized Starlight",
+  "block.animewitchery.dark_brick": "Dark Brick",
+  "block.animewitchery.dark_brick_slab": "Dark Brick Slab",
+  "block.animewitchery.dark_brick_stairs": "Dark Brick Stairs",
+  "block.animewitchery.dark_flagstone": "Dark Flagstone",
+  "block.animewitchery.dark_fountain": "Dark Fountain",
+  "block.animewitchery.dark_grass": "Dark Grass",
+  "block.animewitchery.dark_leaves": "Dark Leaves",
+  "block.animewitchery.dark_log": "Dark Log",
+  "block.animewitchery.dark_pedestal": "Dark Pedestal",
+  "block.animewitchery.dark_planks": "Dark Planks",
+  "block.animewitchery.dark_planks_slab": "Dark Planks Slab",
+  "block.animewitchery.dark_planks_stairs": "Dark Planks Stairs",
+  "block.animewitchery.dark_sapling": "Dark Sapling",
+  "block.animewitchery.deepslate_scheelite_ore": "Deepslate Scheelite Ore",
+  "block.animewitchery.liquid_experience": "Liquid Experience",
+  "block.animewitchery.liquified_skulk": "Liquified Skulk",
+  "block.animewitchery.luna_crystal": "Luna Crystal",
+  "block.animewitchery.marble": "Marble",
+  "block.animewitchery.marble_slab": "Marble Slab",
+  "block.animewitchery.marble_stairs": "Marble Stairs",
+  "block.animewitchery.marble_wall": "Marble Wall",
+  "block.animewitchery.obsidian_tears": "Obsidian Tears",
+  "block.animewitchery.pocket_expansion_jigsaw": "Pocket Expansion Jigsaw",
+  "block.animewitchery.pocket_return": "Pocket Return",
+  "block.animewitchery.pocket_veil": "Pocket Veil",
+  "block.animewitchery.raw_silver_block": "Raw Silver Block",
+  "block.animewitchery.ruin_brick": "Ruin Brick",
+  "block.animewitchery.ruin_brick_slab": "Ruin Brick Slab",
+  "block.animewitchery.ruin_brick_stairs": "Ruin Brick Stairs",
+  "block.animewitchery.ruin_floor": "Ruin Floor",
+  "block.animewitchery.ruin_leaf_litter": "Ruin Leaf Litter",
+  "block.animewitchery.ruin_leaves": "Ruin Leaves",
+  "block.animewitchery.scheelite_block": "Scheelite Block",
+  "block.animewitchery.stardrop_lantern": "Stardrop Lantern",
+  "block.animewitchery.starlight": "Starlight",
+  "block.animewitchery.starlight_infusion_altar": "Starlight Infusion Altar",
+  "block.animewitchery.starlight_infusion_pedestal": "Starlight Infusion Pedestal",
+  "block.animewitchery.starlight_pool": "Starlight Pool",
+  "item.animewitchery.alchemy_recipe_book": "Alchemy Recipe Book",
   "item.animewitchery.antifluid_bucket": "Antifluid Bucket",
-  "fluid_type.animewitchery.antifluid": "Antifluid"
+  "item.animewitchery.blood_bucket": "Blood Bucket",
+  "item.animewitchery.diamond_shard": "Diamond Shard",
+  "item.animewitchery.liquid_experience_bucket": "Liquid Experience Bucket",
+  "item.animewitchery.liquified_skulk_bucket": "Liquified Skulk Bucket",
+  "item.animewitchery.mana_reader": "Mana Reader",
+  "item.animewitchery.obsidian_tears_bucket": "Obsidian Tears Bucket",
+  "item.animewitchery.raw_silver": "Raw Silver",
+  "item.animewitchery.scheelite_crystal": "Scheelite Crystal",
+  "item.animewitchery.scheelite_dust": "Scheelite Dust",
+  "item.animewitchery.silver_ingot": "Silver Ingot",
+  "item.animewitchery.stardrop": "Stardrop",
+  "item.animewitchery.stardrop_wand": "Stardrop Wand",
+  "item.animewitchery.starlight_bottle": "Starlight Bottle",
+  "item.animewitchery.starlight_dust": "Starlight Dust"
 }
+

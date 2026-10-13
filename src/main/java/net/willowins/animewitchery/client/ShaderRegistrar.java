@@ -10,6 +10,7 @@ import net.willowins.animewitchery.AnimeWitchery;
 
 @EventBusSubscriber(modid = AnimeWitchery.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
 public class ShaderRegistrar {
+    private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger(ShaderRegistrar.class);
 
     @SubscribeEvent
     public static void onRegisterShaders(RegisterShadersEvent event) {
@@ -22,6 +23,10 @@ public class ShaderRegistrar {
                     ),
                     shader -> AntifluidShaders.antifluidPortalShader = shader
             );
+        } catch (Exception exception) {
+            LOGGER.error("Could not load the antifluid portal shader", exception);
+        }
+        try {
             event.registerShader(
                     new ShaderInstance(
                             event.getResourceProvider(),
@@ -30,8 +35,8 @@ public class ShaderRegistrar {
                     ),
                     shader -> AntifluidShaders.antifluidSpaceShader = shader
             );
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to register antifluid portal shader", e);
+        } catch (Exception exception) {
+            LOGGER.error("Could not load the antifluid space shader", exception);
         }
     }
 }

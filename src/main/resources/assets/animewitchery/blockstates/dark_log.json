@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "animewitchery:block/dark_log"
+    },
+    "axis=z": {
+      "model": "animewitchery:block/dark_log_horizontal",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "animewitchery:block/dark_log_horizontal",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

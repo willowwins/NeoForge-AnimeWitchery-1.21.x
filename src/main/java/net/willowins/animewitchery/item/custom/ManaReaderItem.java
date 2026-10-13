@@ -11,8 +11,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.willowins.animewitchery.ManaData;
-import net.willowins.animewitchery.ModAttachments;
 
 public class ManaReaderItem extends Item {
 
@@ -26,11 +24,12 @@ public class ManaReaderItem extends Item {
 
         // Always check !level.isClientSide for data safety, though action bar messages can be sent from the server
         if (!level.isClientSide()) {
-            // 1. Fetch the data attachment from the player
-            ManaData manaData = player.getData(ModAttachments.MANA);
+            // 1. Fetch mana via the PlayerMana helper (includes pendant bonuses and locked-player caps)
+            int current = net.willowins.animewitchery.mana.PlayerMana.getMana(player);
+            int max = net.willowins.animewitchery.mana.PlayerMana.getMaxMana(player);
 
             // 2. Format the message string
-            String message = "Mana: " + manaData.current() + " / " + manaData.max();
+            String message = "Mana: " + current + " / " + max;
 
             // 3. Send the message. Setting the second parameter to 'true' forces it above the hotbar (action bar)
             player.displayClientMessage(Component.literal(message), true);

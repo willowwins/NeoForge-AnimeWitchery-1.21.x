@@ -63,7 +63,7 @@ public class PocketVeilBlockEntity extends BlockEntity {
                 return;
             }
             PocketDimensions.recordEntryPosition(serverPlayer, worldPosition);
-            PocketDimensions.teleportTo(serverPlayer, target, entry.pocketOrigin().offset(0, 1, 2));
+            PocketDimensions.teleportTo(serverPlayer, target, PocketDimensions.computePocketSpawn(target, entry));
         }
     }
 

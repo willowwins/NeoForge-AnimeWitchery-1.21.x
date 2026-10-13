@@ -2,8 +2,19 @@
   "required": true,
   "package": "net.willowins.animewitchery.mixin",
   "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ItemStackMixin",
+    "PacifismMixin",
+    "PiglinGoldTrimMixin",
+    "AbstractBlockAccessor",
+    "TorchflowerLightMixin"
+  ],
   "client": [
-    "AntifluidBufferSourceMixin"
+    "AntifluidBufferSourceMixin",
+    "client.CapeFeatureRendererMixin",
+    "LivingEntityRendererMixin",
+    "PlayerRendererMixin",
+    "AbstractInventoryScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

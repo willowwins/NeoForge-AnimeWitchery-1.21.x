@@ -31,12 +31,18 @@ public class PocketReturnBlock extends Block implements EntityBlock {
     }
 
     @Override
-    protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-        super.entityInside(state, level, pos, entity);
+    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
+        super.stepOn(level, pos, state, entity);
         if (!level.isClientSide && entity instanceof Player player) {
             if (level.getBlockEntity(pos) instanceof PocketVeilBlockEntity be) {
                 be.teleport(player);
             }
         }
+    }
+
+    @Override
+    public void fallOn(Level level, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
+        // No fall damage when landing on a return block.
+        entity.resetFallDistance();
     }
 }
