@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "animewitchery:block/ancient_steel_slab"
+    },
+    "type=double": {
+      "model": "animewitchery:block/ancient_steel_block"
+    },
+    "type=top": {
+      "model": "animewitchery:block/ancient_steel_slab_top"
+    }
+  }
+}

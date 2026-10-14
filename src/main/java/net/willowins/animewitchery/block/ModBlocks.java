@@ -26,6 +26,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.willowins.animewitchery.AnimeWitchery;
+import net.willowins.animewitchery.block.custom.AncientSteelLampBlock;
 import net.willowins.animewitchery.block.custom.AncientVariableSwitchBlock;
 import net.willowins.animewitchery.block.custom.AlchemyTableBlock;
 import net.willowins.animewitchery.block.custom.AntifluidBlock;
@@ -207,6 +208,33 @@ public class ModBlocks {
             () -> new AncientVariableSwitchBlock(BlockBehaviour.Properties.of()
                     .strength(2F).sound(SoundType.WOOD).noOcclusion()));
 
+    public static final DeferredBlock<Block> ANCIENT_STEEL_BLOCK = registerBlock("ancient_steel_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)));
+
+    public static final DeferredBlock<Block> ANCIENT_STEEL_LAMP = registerBlock("ancient_steel_lamp",
+            () -> new AncientSteelLampBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)
+                    .lightLevel(AncientSteelLampBlock::getLightLevel)));
+
+    public static final DeferredBlock<Block> ANCIENT_STEEL_GRATE = registerBlock("ancient_steel_grate",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK).noOcclusion()));
+
+    public static final DeferredBlock<Block> ANCIENT_STEEL_STAIRS = registerBlock("ancient_steel_stairs",
+            () -> new StairBlock(ANCIENT_STEEL_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)));
+
+    public static final DeferredBlock<Block> ANCIENT_STEEL_SLAB = registerBlock("ancient_steel_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)));
+
+    public static final DeferredBlock<Block> ANCIENT_STEEL_GRATE_STAIRS = registerBlock("ancient_steel_grate_stairs",
+            () -> new StairBlock(ANCIENT_STEEL_GRATE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK).noOcclusion()));
+
+    public static final DeferredBlock<Block> ANCIENT_STEEL_GRATE_SLAB = registerBlock("ancient_steel_grate_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK).noOcclusion()));
+
+    public static final DeferredBlock<Block> ANCIENT_STEEL_PILLAR = registerBlock("ancient_steel_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERITE_BLOCK)));
+
     public static final DeferredBlock<Block> CRYSTALLIZED_STARLIGHT = registerBlock("crystallized_starlight",
             () -> new CrystallizedStarlightBlock(BlockBehaviour.Properties.of()
                     .strength(0.5F).sound(SoundType.AMETHYST).noOcclusion().lightLevel(state -> 8)));
@@ -233,7 +261,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<DarkPedestalBlock> DARK_PEDESTAL = registerBlock("dark_pedestal",
             () -> new DarkPedestalBlock(BlockBehaviour.Properties.of()
-                    .strength(6F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
+                    .strength(6F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES).noOcclusion()));
 
     public static final DeferredBlock<Block> DARK_LOG = registerBlock("dark_log",
             () -> new net.minecraft.world.level.block.RotatedPillarBlock(BlockBehaviour.Properties.of()

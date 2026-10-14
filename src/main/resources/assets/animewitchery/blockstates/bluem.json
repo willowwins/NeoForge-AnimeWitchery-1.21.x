@@ -1,5 +1,7 @@
 {
+  "render_type": "minecraft:cutout",
   "variants": {
+
     "half=lower": {
       "model": "animewitchery:block/bluem_bottom"
     },

@@ -223,6 +223,14 @@ public static  final Supplier<CreativeModeTab> ANIME_WITCHERY_BASIC = CREATIVE_M
                     output.accept(new ItemStack(ModBlocks.POCKET_VEIL.get()));
                     output.accept(new ItemStack(ModBlocks.POCKET_RETURN.get()));
                     output.accept(new ItemStack(ModBlocks.POCKET_EXPANSION_JIGSAW.get()));
+                    output.accept(new ItemStack(ModBlocks.ANCIENT_STEEL_BLOCK.get()));
+                    output.accept(new ItemStack(ModBlocks.ANCIENT_STEEL_LAMP.get()));
+                    output.accept(new ItemStack(ModBlocks.ANCIENT_STEEL_GRATE.get()));
+                    output.accept(new ItemStack(ModBlocks.ANCIENT_STEEL_STAIRS.get()));
+                    output.accept(new ItemStack(ModBlocks.ANCIENT_STEEL_SLAB.get()));
+                    output.accept(new ItemStack(ModBlocks.ANCIENT_STEEL_GRATE_STAIRS.get()));
+                    output.accept(new ItemStack(ModBlocks.ANCIENT_STEEL_GRATE_SLAB.get()));
+                    output.accept(new ItemStack(ModBlocks.ANCIENT_STEEL_PILLAR.get()));
 
 
                 }).build());

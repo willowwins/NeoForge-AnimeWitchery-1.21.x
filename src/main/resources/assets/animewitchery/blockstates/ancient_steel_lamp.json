@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "animewitchery:block/ancient_steel_lamp_off"
+    },
+    "lit=true": {
+      "model": "animewitchery:block/ancient_steel_lamp_on"
+    }
+  }
+}

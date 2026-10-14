@@ -1,0 +1,4 @@
+    public static final DeferredBlock<Block> BLUME = registerBlock("blume",
+            () -> new net.willowins.animewitchery.block.custom.BlumeBlock(
+                    BlockBehaviour.Properties.of()
+                            .strength(0.0F).sound(SoundType.GRASS).noOcclusion().noCollission())));

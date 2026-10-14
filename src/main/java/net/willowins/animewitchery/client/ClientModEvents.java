@@ -37,6 +37,9 @@ public class ClientModEvents {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.RUIN_LEAF_LITTER.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.STARLIGHT_POOL.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.CRYSTALLIZED_STARLIGHT.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ANCIENT_STEEL_GRATE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ANCIENT_STEEL_GRATE_STAIRS.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.ANCIENT_STEEL_GRATE_SLAB.get(), RenderType.cutout());
         });
     }
 

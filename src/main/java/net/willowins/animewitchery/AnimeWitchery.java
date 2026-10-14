@@ -96,8 +96,12 @@ public class AnimeWitchery {
     private static void registerFlammables() {
         net.minecraft.world.level.block.FireBlock fire = (net.minecraft.world.level.block.FireBlock) Blocks.FIRE;
         fire.setFlammable(ModBlocks.DARK_LOG.get(), 5, 5);
+        fire.setFlammable(ModBlocks.ROSEWILLOW_LOG.get(), 5, 5);
+        fire.setFlammable(ModBlocks.ROSEWILLOW_LOG_BLOOMING.get(), 5, 5);
         fire.setFlammable(ModBlocks.DARK_LEAVES.get(), 30, 60);
+        fire.setFlammable(ModBlocks.ROSEWILLOW_LEAVES.get(), 30, 60);
         fire.setFlammable(ModBlocks.DARK_PLANKS.get(), 5, 20);
+        fire.setFlammable(ModBlocks.ROSEWILLOW_PLANKS.get(), 5, 20);
         fire.setFlammable(ModBlocks.DARK_PLANKS_STAIRS.get(), 5, 20);
         fire.setFlammable(ModBlocks.DARK_PLANKS_SLAB.get(), 5, 20);
         fire.setFlammable(ModBlocks.DARK_SAPLING.get(), 60, 100);
